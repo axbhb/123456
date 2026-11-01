@@ -1,0 +1,77 @@
+{
+  "method": "APGD-DetLoss-v1",
+  "status": "completed",
+  "steps": 20,
+  "restarts": 1,
+  "epsilon": 0.03137254901960784,
+  "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+  "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 22.511301040649414,
+      "stored_final_loss": 68.75944519042969,
+      "best_continuous_loss": 68.75944519042969,
+      "loss_trace": [
+        22.511301040649414,
+        22.511301040649414,
+        29.052751541137695,
+        33.38847351074219,
+        31.712732315063477,
+        35.85108947753906,
+        40.10495376586914,
+        40.15846252441406,
+        43.41868209838867,
+        42.23393249511719,
+        43.56584548950195,
+        49.946834564208984,
+        53.563560485839844,
+        54.354801177978516,
+        55.882633209228516,
+        57.973854064941406,
+        58.08395767211914,
+        59.53459930419922,
+        61.376380920410156,
+        59.333587646484375,
+        67.2868881225586,
+        68.75944519042969,
+        68.75944519042969
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 10.50443959236145,
+      "augmentation": {
+        "resize": 0.47456570170288714,
+        "dims": [
+          759,
+          427
+        ],
+        "crop": [
+          38,
+          171,
+          742,
+          427
+        ],
+        "flip": false
+      },
+      "previous_context_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69"
+    }
+  ],
+  "seconds": 16.4754638671875,
+  "frame": 1,
+  "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+  "objective_calls": 23,
+  "last_loss": 68.75944519042969,
+  "frames": 1,
+  "changed_cameras": 6,
+  "peak_memory_gib": 5.0033979415893555
+}

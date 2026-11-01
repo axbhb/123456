@@ -1,0 +1,23 @@
+{
+  "reviewed_generated_frames": 14,
+  "reviewed_tokens": [
+    "796b1988dd254f74bf2fb19ba9c5b8c6",
+    "27749aa3de2545219186c61d4d415e1c",
+    "ac8b4d49731d43289579f014cb7c97ef",
+    "9ee4020153674b9e9943d395ff8cfdf3",
+    "de9432d4fc7a4e5a985e2bc628eb614c",
+    "ebce5a3b3484446580028d6538e69a81",
+    "dcbe451d383e450786aaad04ab9d3790",
+    "b1303058fa624645b753d7283d70de45",
+    "e63b83b436a0479db7362338cdfab118",
+    "ae5004bf4ebb4db0a84cb3c27bd398d1",
+    "61d47d1198184bfdaa6777e9448d825d",
+    "55c258972acb4300a3a6077a531ab050",
+    "acf9fcbeb1e346b98640f694f15460e8",
+    "e3bcde4a06124931a097ef2a211aaaef"
+  ],
+  "scope": "All six camera pairs of the first keyframe inspected; additionally one largest GT-region edit-flow camera per generated keyframe inspected through contact sheets.",
+  "finding": "No obvious added object position displacement relative to paired Clean observed in the inspected views.",
+  "limits": "Qualitative partial view review and edit consistency diagnostics; not a formal semantic or temporal alignment guarantee.",
+  "unreviewed_frames_remaining": 0
+}

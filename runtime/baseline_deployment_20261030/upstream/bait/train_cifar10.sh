@@ -1,0 +1,1 @@
+python perturbation.py --train_step 1 --num_steps 1 --config_path configs/cifar10 --train_data_type CIFAR10 --test_data_type CIFAR10 --train_data_path datasets --test_data_path datasets  --noise_shape 10 3 32 32 --epoch 90  --use_pretrained_surrogate --pretrained_type imagenet --lr 0.1 --meta_warmup_step 1 

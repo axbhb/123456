@@ -1,0 +1,84 @@
+{
+  "method": "BAIT-ROI-transfer-v1",
+  "status": "completed",
+  "epsilon": 0.03137254901960784,
+  "source": "https://github.com/zhli-cs/BAIT",
+  "surrogate_pretraining_epochs": 3,
+  "outer_rounds": 3,
+  "stages": [
+    "hard_negative",
+    "random_incorrect",
+    "most_dissimilar"
+  ],
+  "pilot_note": "one outer round per stage; shortened attack optimization, full downstream finetuning retained",
+  "test_data_used": false,
+  "surrogate": "ImageNet pretrained ResNet18, nuScenes10 head",
+  "class_balancing": "each outer batch contains every nuScenes class; 130 crops (13 per class), deterministic resampling",
+  "class_space": "nuScenes10; CIFAR10 flag only selects ten-class branch in official toolbox",
+  "completed_epochs": 3,
+  "last_loss": 0.34198443100763737,
+  "seconds": 57.49283218383789,
+  "stage": "most_dissimilar",
+  "completed_outer_batches": 97,
+  "total_outer_batches": 97,
+  "last_outer_loss": 8.06745433807373,
+  "rounds": [
+    {
+      "stage": "hard_negative",
+      "inner_loss": 2.1030690670013428,
+      "last_outer_loss": 2.3292253017425537,
+      "class_counts": [
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0
+      ]
+    },
+    {
+      "stage": "random_incorrect",
+      "inner_loss": 1.9764719009399414,
+      "last_outer_loss": 2.2442588806152344,
+      "class_counts": [
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0
+      ]
+    },
+    {
+      "stage": "most_dissimilar",
+      "inner_loss": 1.9067151546478271,
+      "last_outer_loss": 2.127817392349243,
+      "class_counts": [
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0,
+        1261.0
+      ]
+    }
+  ],
+  "selected_frames": 1,
+  "changed_frames": 1,
+  "changed_cameras": 6,
+  "max_uint8_delta": 8,
+  "overlap_policy": "far-to-near overwrite, then final Linf projection; deterministic crop mapping",
+  "peak_memory_gib": 2.5447068214416504
+}

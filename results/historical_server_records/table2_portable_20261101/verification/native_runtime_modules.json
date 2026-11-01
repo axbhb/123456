@@ -1,0 +1,118 @@
+{
+  "frozendrive": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "runtime_modules": {
+        "torch": {
+          "version": "1.11.0+cu113",
+          "module_file": "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/__init__.py"
+        },
+        "torchvision": {
+          "version": "0.12.0+cu113",
+          "module_file": "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torchvision/__init__.py"
+        },
+        "numpy": {
+          "version": "1.23.1",
+          "module_file": "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/numpy/__init__.py"
+        },
+        "mmcv": {
+          "version": "1.7.0",
+          "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py"
+        },
+        "mmdet": {
+          "version": "2.28.2",
+          "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmdet/__init__.py"
+        },
+        "mmdet3d": {
+          "version": null,
+          "module_file": "/srv/table2/frozendrive_deployment_20261029/source/WorldDreamer/third_party/bevfusion/mmdet3d/__init__.py"
+        },
+        "diffusers": {
+          "version": "0.17.1",
+          "module_file": "/srv/table2/frozendrive_deployment_20261029/source/WorldDreamer/third_party/diffusers/src/diffusers/__init__.py"
+        },
+        "transformers": {
+          "version": "4.27.4",
+          "module_file": "/srv/table2/envs/frozendrive/lib/python3.9/site-packages/transformers/__init__.py"
+        },
+        "xformers": {
+          "version": "0.0.19",
+          "module_file": "/srv/table2/frozendrive_deployment_20261029/source/WorldDreamer/third_party/xformers/xformers/__init__.py"
+        },
+        "nuscenes": {
+          "version": null,
+          "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/nuscenes/__init__.py"
+        }
+      },
+      "pipeline_params": null,
+      "precision": null,
+      "sampling_steps": null,
+      "guidance_steps": 10
+    }
+  ],
+  "magicdrive": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "runtime_modules": null,
+      "pipeline_params": {
+        "guidance_scale": 2,
+        "num_inference_steps": 20,
+        "eta": 0.0,
+        "controlnet_conditioning_scale": 1.0,
+        "guess_mode": false,
+        "use_zero_map_as_unconditional": false,
+        "bbox_max_length": null,
+        "init_noise": "rand_all",
+        "view_order": [
+          "CAM_FRONT_LEFT",
+          "CAM_FRONT",
+          "CAM_FRONT_RIGHT",
+          "CAM_BACK_RIGHT",
+          "CAM_BACK",
+          "CAM_BACK_LEFT"
+        ],
+        "double_cfg_inference": true,
+        "decode_bs": 1,
+        "keyframe_rate": 6
+      },
+      "precision": null,
+      "sampling_steps": null,
+      "guidance_steps": 10
+    }
+  ],
+  "panacea_plus": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "runtime_modules": {
+        "torch": {
+          "version": "2.2.2+cu121",
+          "module_file": "/home/user/anaconda3/envs/torch200/lib/python3.9/site-packages/torch/__init__.py"
+        },
+        "torchvision": {
+          "version": "0.17.2+cu121",
+          "module_file": "/home/user/anaconda3/envs/torch200/lib/python3.9/site-packages/torchvision/__init__.py"
+        },
+        "numpy": {
+          "version": "1.25.2",
+          "module_file": "/home/user/anaconda3/envs/torch200/lib/python3.9/site-packages/numpy/__init__.py"
+        },
+        "transformers": {
+          "version": "4.27.4",
+          "module_file": "/srv/table2/envs/panacea_plus/lib/python3.9/site-packages/transformers/__init__.py"
+        },
+        "sgm": {
+          "version": "0.1.0",
+          "module_file": "/srv/table2/generator_deployment_20261028/sources/panacea_plus/sgm/__init__.py"
+        }
+      },
+      "pipeline_params": null,
+      "precision": {
+        "denoiser": "fp16 weights and autocast",
+        "vae": "fp32, one panorama per encode/decode",
+        "conditioning": "native fp32 weights with fp16 autocast"
+      },
+      "sampling_steps": 25,
+      "guidance_steps": 10
+    }
+  ]
+}

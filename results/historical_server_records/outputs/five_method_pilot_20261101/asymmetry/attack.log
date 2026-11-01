@@ -1,0 +1,939 @@
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/five_method_pilot_20261101/run_existing_guard.py", line 9, in <module>
+    runpy.run_path(str(R/'frameworks/20261028-v1/run_gpu_smoke.py'),run_name='__main__')
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/five_method_pilot_20261101/run_existing_guard.py", line 9, in <module>
+    runpy.run_path(str(R/'frameworks/20261028-v1/run_gpu_smoke.py'),run_name='__main__')
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/five_method_pilot_20261101/run_existing_guard.py", line 9, in <module>
+    runpy.run_path(str(R/'frameworks/20261028-v1/run_gpu_smoke.py'),run_name='__main__')
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+{"id": "28caf86684f040489e9314777d267f94", "framework": "streampetr", "started": 1793516992.5004396, "allowed_seconds": 7200, "gpu": {"uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e", "total_mib": 32768, "free_mib": 20773}, "script": "/srv/table2/five_method_pilot_20261101/attack_asymmetry.py", "log": "/srv/table2/frameworks/28caf86684f040489e9314777d267f94.log", "pid": 15453, "returncode": 1, "status": "failed_process", "charged_seconds": 96.47120963037014, "finished": 1793517088.9996364}
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+{"id": "bf0980aeb1214e52a7d917066410400f", "framework": "streampetr", "started": 1793517535.1565166, "allowed_seconds": 7200, "gpu": {"uuid": "GPU-837bb383-adf1-8444-a8d2-31075996841d", "total_mib": 32768, "free_mib": 18971}, "script": "/srv/table2/five_method_pilot_20261101/attack_asymmetry.py", "log": "/srv/table2/frameworks/bf0980aeb1214e52a7d917066410400f.log", "pid": 20568, "returncode": 0, "status": "passed_process", "charged_seconds": 923.5528769046068, "finished": 1793518458.7411234}
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 38, in main
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+{"id": "0a62d0e6a6234cf8aed31875e4e129f5", "framework": "streampetr", "started": 1793519158.4535773, "allowed_seconds": 7200, "gpu": {"uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e", "total_mib": 32768, "free_mib": 26927}, "script": "/srv/table2/five_method_pilot_20261101/attack_asymmetry.py", "log": "/srv/table2/frameworks/0a62d0e6a6234cf8aed31875e4e129f5.log", "pid": 38034, "returncode": 0, "status": "passed_process", "charged_seconds": 14.785760641098022, "finished": 1793519173.2681687}

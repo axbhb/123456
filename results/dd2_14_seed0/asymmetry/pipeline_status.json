@@ -1,0 +1,24 @@
+{
+  "method": "asymmetry",
+  "generator": "dd2",
+  "selected_frames": 14,
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 14.985064029693604,
+      "including_wait_seconds": 3125.2053368091583,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/attack.log"
+    },
+    "audit": {
+      "seconds": 1.3559916019439697,
+      "including_wait_seconds": 1.355994701385498,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/audit.log"
+    }
+  },
+  "started": 1793516048.1042697,
+  "elapsed_seconds": 3126.571932554245,
+  "pending_stage": "attack",
+  "finished": 1793519174.6761963
+}

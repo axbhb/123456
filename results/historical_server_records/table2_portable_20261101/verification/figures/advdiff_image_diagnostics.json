@@ -1,0 +1,239 @@
+{
+  "scope": "one generated six-camera validation keyframe per generator; image diagnostics do not prove semantic alignment",
+  "views": [
+    {
+      "generator": "frozendrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT",
+      "native_size": [
+        800,
+        448
+      ],
+      "MAE": 0.07370256696428572,
+      "Linf": 48,
+      "PSNR_dB": 55.88065944442687,
+      "gray_SSIM": 0.9997149170344307
+    },
+    {
+      "generator": "frozendrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT_RIGHT",
+      "native_size": [
+        800,
+        448
+      ],
+      "MAE": 0.042421875,
+      "Linf": 3,
+      "PSNR_dB": 61.84805493715668,
+      "gray_SSIM": 0.9997949920728766
+    },
+    {
+      "generator": "frozendrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT_LEFT",
+      "native_size": [
+        800,
+        448
+      ],
+      "MAE": 0.05775855654761905,
+      "Linf": 21,
+      "PSNR_dB": 58.80819555611702,
+      "gray_SSIM": 0.9997289149082508
+    },
+    {
+      "generator": "frozendrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK",
+      "native_size": [
+        800,
+        448
+      ],
+      "MAE": 0.12023716517857143,
+      "Linf": 55,
+      "PSNR_dB": 54.08570855149637,
+      "gray_SSIM": 0.9995031002949208
+    },
+    {
+      "generator": "frozendrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK_LEFT",
+      "native_size": [
+        800,
+        448
+      ],
+      "MAE": 0.07296409970238095,
+      "Linf": 28,
+      "PSNR_dB": 57.16917433711601,
+      "gray_SSIM": 0.9996140421678879
+    },
+    {
+      "generator": "frozendrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK_RIGHT",
+      "native_size": [
+        800,
+        448
+      ],
+      "MAE": 0.05209077380952381,
+      "Linf": 12,
+      "PSNR_dB": 60.45587680430239,
+      "gray_SSIM": 0.9997223121571958
+    },
+    {
+      "generator": "magicdrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT",
+      "native_size": [
+        400,
+        224
+      ],
+      "MAE": 0.1305952380952381,
+      "Linf": 25,
+      "PSNR_dB": 53.70819959564183,
+      "gray_SSIM": 0.9995303553351137
+    },
+    {
+      "generator": "magicdrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT_RIGHT",
+      "native_size": [
+        400,
+        224
+      ],
+      "MAE": 0.05149181547619048,
+      "Linf": 6,
+      "PSNR_dB": 60.70403147457202,
+      "gray_SSIM": 0.9997072449581716
+    },
+    {
+      "generator": "magicdrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT_LEFT",
+      "native_size": [
+        400,
+        224
+      ],
+      "MAE": 0.12105282738095238,
+      "Linf": 40,
+      "PSNR_dB": 53.751776914209884,
+      "gray_SSIM": 0.9995332854902697
+    },
+    {
+      "generator": "magicdrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK",
+      "native_size": [
+        400,
+        224
+      ],
+      "MAE": 0.9559821428571429,
+      "Linf": 149,
+      "PSNR_dB": 38.58798358851742,
+      "gray_SSIM": 0.9955010366695133
+    },
+    {
+      "generator": "magicdrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK_LEFT",
+      "native_size": [
+        400,
+        224
+      ],
+      "MAE": 0.274375,
+      "Linf": 40,
+      "PSNR_dB": 47.12858586268002,
+      "gray_SSIM": 0.9987323690862528
+    },
+    {
+      "generator": "magicdrive",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK_RIGHT",
+      "native_size": [
+        400,
+        224
+      ],
+      "MAE": 0.14356026785714285,
+      "Linf": 16,
+      "PSNR_dB": 55.127699380968906,
+      "gray_SSIM": 0.9995482897365424
+    },
+    {
+      "generator": "panacea_plus",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT",
+      "native_size": [
+        512,
+        256
+      ],
+      "MAE": 0.15488433837890625,
+      "Linf": 31,
+      "PSNR_dB": 54.131524485394145,
+      "gray_SSIM": 0.9991927619883608
+    },
+    {
+      "generator": "panacea_plus",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT_RIGHT",
+      "native_size": [
+        512,
+        256
+      ],
+      "MAE": 0.1934178670247396,
+      "Linf": 7,
+      "PSNR_dB": 54.70750666122367,
+      "gray_SSIM": 0.9986416385980823
+    },
+    {
+      "generator": "panacea_plus",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_FRONT_LEFT",
+      "native_size": [
+        512,
+        256
+      ],
+      "MAE": 0.25363922119140625,
+      "Linf": 19,
+      "PSNR_dB": 51.915746815286724,
+      "gray_SSIM": 0.9987824713876294
+    },
+    {
+      "generator": "panacea_plus",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK",
+      "native_size": [
+        512,
+        256
+      ],
+      "MAE": 0.183990478515625,
+      "Linf": 22,
+      "PSNR_dB": 52.82458055850455,
+      "gray_SSIM": 0.9987685795747889
+    },
+    {
+      "generator": "panacea_plus",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK_LEFT",
+      "native_size": [
+        512,
+        256
+      ],
+      "MAE": 0.1981074015299479,
+      "Linf": 17,
+      "PSNR_dB": 53.76008261459848,
+      "gray_SSIM": 0.9989084765294184
+    },
+    {
+      "generator": "panacea_plus",
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "camera": "CAM_BACK_RIGHT",
+      "native_size": [
+        512,
+        256
+      ],
+      "MAE": 0.27065277099609375,
+      "Linf": 16,
+      "PSNR_dB": 52.37353001342814,
+      "gray_SSIM": 0.9981122925220137
+    }
+  ]
+}

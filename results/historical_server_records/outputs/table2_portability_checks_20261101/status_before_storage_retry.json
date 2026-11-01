@@ -1,0 +1,54 @@
+{
+  "status": "running",
+  "events": [
+    {
+      "name": "dataset_interface",
+      "returncode": 0,
+      "seconds": 3.058443307876587
+    },
+    {
+      "name": "plan_interface",
+      "returncode": 0,
+      "seconds": 0.2377920150756836
+    },
+    {
+      "name": "register_clean_interface",
+      "returncode": 0,
+      "seconds": 3.659607410430908
+    },
+    {
+      "name": "batch_cli_native_train_evaluate",
+      "returncode": 0,
+      "seconds": 387.52876353263855
+    },
+    {
+      "name": "frozendrive_final_native_advdiff",
+      "returncode": 0,
+      "seconds": 760.310976266861
+    }
+  ],
+  "storage_interruption": {
+    "id": "5f1937bc7feb48c883d6a24752117acb",
+    "framework": "streampetr",
+    "started": 1793535429.0647962,
+    "allowed_seconds": 7200,
+    "gpu": {
+      "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+      "total_mib": 32768,
+      "free_mib": 27491
+    },
+    "script": "/srv/table2/table2_portable_20261101/run_train.py",
+    "log": "/srv/table2/frameworks/5f1937bc7feb48c883d6a24752117acb.log",
+    "pid": 16591,
+    "status": "failed_process",
+    "returncode": 1,
+    "finished": 1793535585.690605,
+    "charged_seconds": 156.6258087158203,
+    "charged_seconds_estimated": true,
+    "reconciliation": {
+      "reason": "Disk was observed full; process and process group are gone; final ledger write was interrupted",
+      "duration_source": "last native log modification time minus recorded start",
+      "reconciled_at": 1793536943.5969794
+    }
+  }
+}

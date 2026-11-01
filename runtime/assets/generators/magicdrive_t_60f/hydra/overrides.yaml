@@ -1,0 +1,4 @@
+- runner=8gpus_t
+- +exp=rawbox_mv2.0t_0.4.3_60
+- task_id=2.0t_0.4.3_60
+- ++runner.pipeline_param.decode_bs=1

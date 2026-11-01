@@ -1,0 +1,33 @@
+{
+  "method": "asymmetry",
+  "generator": "frozendrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 179.3630166053772,
+      "including_wait_seconds": 179.3630349636078,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/asymmetry/attack.log"
+    },
+    "train": {
+      "seconds": 561.4235725402832,
+      "including_wait_seconds": 561.4235951900482,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/asymmetry/train.log"
+    },
+    "audit": {
+      "seconds": 2.0844497680664062,
+      "including_wait_seconds": 2.08451771736145,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/asymmetry/audit.log"
+    },
+    "evaluate": {
+      "seconds": 290.4902608394623,
+      "including_wait_seconds": 290.49030804634094,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/asymmetry/evaluate.log"
+    }
+  },
+  "started": 1793531502.2203193,
+  "elapsed_seconds": 1035.7526733875275,
+  "finished": 1793532537.972989
+}

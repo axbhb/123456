@@ -1,0 +1,174 @@
+{
+  "method": "PIL-ROI-transfer-v1",
+  "status": "completed",
+  "pretrain_epochs": 30,
+  "attack_steps": 30,
+  "epsilon": 0.03137254901960784,
+  "alpha": 0.003137254901960784,
+  "lambda": 0.9,
+  "classifier": "official LinearModel, two linear factors, no nonlinear activation",
+  "source": "https://github.com/jinlinll/pil",
+  "test_data_used": false,
+  "completed_epochs": 30,
+  "training": [
+    {
+      "epoch": 1,
+      "loss": 1.816479069519043,
+      "train_accuracy": 0.45968
+    },
+    {
+      "epoch": 2,
+      "loss": 1.7014321785736084,
+      "train_accuracy": 0.48064
+    },
+    {
+      "epoch": 3,
+      "loss": 1.6865317168807983,
+      "train_accuracy": 0.51904
+    },
+    {
+      "epoch": 4,
+      "loss": 1.6045646535873412,
+      "train_accuracy": 0.482
+    },
+    {
+      "epoch": 5,
+      "loss": 1.5437807107543946,
+      "train_accuracy": 0.4764
+    },
+    {
+      "epoch": 6,
+      "loss": 1.4952475870895385,
+      "train_accuracy": 0.46792
+    },
+    {
+      "epoch": 7,
+      "loss": 1.4746119148254395,
+      "train_accuracy": 0.456
+    },
+    {
+      "epoch": 8,
+      "loss": 1.4606365291976928,
+      "train_accuracy": 0.42888
+    },
+    {
+      "epoch": 9,
+      "loss": 1.4942843241500854,
+      "train_accuracy": 0.45424
+    },
+    {
+      "epoch": 10,
+      "loss": 1.5312087061309814,
+      "train_accuracy": 0.45456
+    },
+    {
+      "epoch": 11,
+      "loss": 1.5025394339752198,
+      "train_accuracy": 0.43248
+    },
+    {
+      "epoch": 12,
+      "loss": 1.4574187446594238,
+      "train_accuracy": 0.44576
+    },
+    {
+      "epoch": 13,
+      "loss": 1.4535723828887939,
+      "train_accuracy": 0.47112
+    },
+    {
+      "epoch": 14,
+      "loss": 1.4486004465484619,
+      "train_accuracy": 0.46992
+    },
+    {
+      "epoch": 15,
+      "loss": 1.431231455154419,
+      "train_accuracy": 0.47624
+    },
+    {
+      "epoch": 16,
+      "loss": 1.4162667597198486,
+      "train_accuracy": 0.48312
+    },
+    {
+      "epoch": 17,
+      "loss": 1.404507718925476,
+      "train_accuracy": 0.48688
+    },
+    {
+      "epoch": 18,
+      "loss": 1.3935618279647828,
+      "train_accuracy": 0.49144
+    },
+    {
+      "epoch": 19,
+      "loss": 1.3832004009628296,
+      "train_accuracy": 0.49704
+    },
+    {
+      "epoch": 20,
+      "loss": 1.3737071248245238,
+      "train_accuracy": 0.49928
+    },
+    {
+      "epoch": 21,
+      "loss": 1.3651092231750488,
+      "train_accuracy": 0.50384
+    },
+    {
+      "epoch": 22,
+      "loss": 1.3574131300354004,
+      "train_accuracy": 0.50864
+    },
+    {
+      "epoch": 23,
+      "loss": 1.3506387939453126,
+      "train_accuracy": 0.51248
+    },
+    {
+      "epoch": 24,
+      "loss": 1.3447883209991456,
+      "train_accuracy": 0.51656
+    },
+    {
+      "epoch": 25,
+      "loss": 1.3398508108901979,
+      "train_accuracy": 0.51856
+    },
+    {
+      "epoch": 26,
+      "loss": 1.3358006390380859,
+      "train_accuracy": 0.5204
+    },
+    {
+      "epoch": 27,
+      "loss": 1.3326001776123046,
+      "train_accuracy": 0.52248
+    },
+    {
+      "epoch": 28,
+      "loss": 1.3302031477355958,
+      "train_accuracy": 0.52384
+    },
+    {
+      "epoch": 29,
+      "loss": 1.3285575912475587,
+      "train_accuracy": 0.52472
+    },
+    {
+      "epoch": 30,
+      "loss": 1.3276086575317383,
+      "train_accuracy": 0.52496
+    }
+  ],
+  "seconds": 10.63920283317566,
+  "completed_crops": 49,
+  "total_crops": 49,
+  "selected_frames": 1,
+  "changed_frames": 1,
+  "changed_cameras": 6,
+  "max_uint8_delta": 8,
+  "overlap_policy": "far-to-near overwrite, then final Linf projection; deterministic crop mapping",
+  "peak_memory_gib": 0.007506370544433594
+}

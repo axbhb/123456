@@ -1,0 +1,30 @@
+五种方法的适配版本与实现
+
+所有分支均只替换选中的六视角训练关键帧。其他训练图像路径、3D/2D 标注、相机标定、位姿、时间戳保持。检测任务为 StreamPETR R50，保留同一配对 Clean 的初始化、优化器、学习率、增强、AMP、采样与真实测试流程。
+
+APGD-DetLoss-v1
+attack_apgd.py。采用官方 APGD 求解器，将分类目标替换为原生检测训练损失总和；20 步、1 restart、Linf=8/255、Clean 初始化。每次候选恢复同一前序 Clean 帧记忆，固定增强和 DN 随机性。精确执行原生 uint8/cv2/PIL 前向，BPDA 近似其反向；记录前向重放误差。保留自适应步长、投影与 best-loss 机制，不是整个 AutoAttack ensemble。
+
+BAIT-ROI-transfer-v1
+prepare_roi.py、roi_common.py、attack_bait.py。以训练 GT 2D 框映射到各生成器原生像素，裁成 32x32；ImageNet 预训练 ResNet18 更换 10 类头，训练 3 轮，SGD lr=.001、momentum=.9、weight_decay=0，RGB 使用 ImageNet mean/std。保留官方 Generator/toolbox、高阶内层更新和 hard-negative/random/most-dissimilar 三阶段；当前 higher 内层每阶段 1 步，toolbox num_steps=1；每阶段 1 个外轮，外层批次数 ceil(训练ROI数/130)，每批 130 个裁剪、每类 13 个。按类汇总扰动并映射回框内，重叠区域 far-to-near 覆盖，最终投影到 8/255。CIFAR10 标志只用于官方 toolbox 的 10 类分支，不将 nuScenes 标签当成 CIFAR 语义。
+
+PIL-ROI-transfer-v1
+attack_pil.py。使用相同训练 ROI 与原生 2D 类别 ID。官方两层纯线性模型，预训练 30 轮，SGD lr=.003、momentum=.9、weight_decay=0、cosine；攻击 30 步，epsilon=8/255、alpha=8/2550、lambda=.9。保留 CE(noise,y)+KL(U||prediction(x-noise)) 及官方 x-noise 输出约定。运行时仅将均匀 KL 目标展开为完整 batch 形状，兼容 Torch1.11 反向，数学目标不变。
+
+Asymmetry-inspired-physical-patch-v1
+prepare_physical.py、retry_physical_anchors.py、attack_asymmetry.py。原生任务为 MapTR 的 RSA/ETA，此处采用检测损失代理，不是原任务复现。基于训练集测量/重建的路面语义点、相机标定/位姿和遮挡，锚定每个选中关键帧一个 1m x 1m 世界平面贴片，64x64 纹理，Adam lr=.01，每帧 200 步。最终将静态世界纹理投影到同场景相关选中帧；非选中帧仍为 Clean。保存图像在有效投影 mask 外不改动。像素幅度不受 8/255 限制。
+轻量几何缓存仅保留实际近路面筛选使用的原始 float64 点，顺序和值不变；未使用的法线、远处点和非路面点未打包。原 DD2 14 帧世界贴片角点最大误差 0，可见像素数量一致，记录见 provenance/road_cache_equivalence.json。
+
+AdvDiff-inspired-DD2-v1 / AdvDiff-inspired-native-{generator}-v1
+attack_advdiff_dd2.py、attack_advdiff_native.py、native_guidance.py 和 generate_*_guided.py。各生成器保留原生条件、分辨率、原生采样器和配对 Clean 噪声种子。在最后 10 次原生去噪更新的预测干净样本上加入检测梯度，强度 .025，sigma^2 加权、RMS 归一化；UNet 预测停止梯度。DD2 使用其 Euler 参数化，FrozenDrive/MagicDrive 在原生 UniPC 预测干净样本转换处引导，Panacea 在原生 SGM 的 CFG 干净预测处引导。
+VAE 解码后由独立 Torch1.11 检测器 RPC 返回图像导数，再做 VAE VJP。原生图像前向与 BPDA 检测预处理一致；使用两遍 VAE 解码分离计算图，保存 RGB 重算误差和非零有限梯度记录。UNet/ControlNet 在 VAE 梯度阶段临时放到 CPU，检测器在返回导数后放回 CPU。Panacea 保持原生 FP32 VAE；旧版检测器不继承新版 PyTorch 分配器选项。
+DD2 原生 30 步、FrozenDrive 原生 50 步、MagicDrive 当前配置 20 步、Panacea 当前配置 25 步，最后 10 次执行引导；运行记录为准。只导出选中时间槽的六张图，其余关键帧仍用原 Clean 图像；不把中间生成的未选中图像混入训练。
+这些是原生机制的任务适配，不是原 AdvDiff ImageNet 采样器复现。各模型的优化变量、可编辑区域、噪声尺度和原生总步数不同，不应把同一替换比例解释为同一威胁或相同计算预算。
+
+共享入口
+common.py：数据、模型根目录与种子。
+prepare.py：确定性帧选择；训练 seed、选择 seed、攻击随机数 seed 分开记录，默认均为 0。
+run_experiment.py：生成器/方法/比例/seed 批量入口。
+run_pipeline.py、run_train.py、evaluate_clean.py：原生微调、评估和记录。
+audit_training.py、audit_replacement.py：运行后核验真实更新、权重、像素、元数据与有效配置。
+原始 baseline 及 runtime 修改来源见 provenance/source_versions.json 和 baseline_deployment_20261030/{upstream,runtime,deps}。

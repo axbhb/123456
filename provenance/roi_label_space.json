@@ -1,0 +1,40 @@
+{
+  "roi_surrogate_labels": "native converter labels2d; retained consistently for training and perturbation export",
+  "source_2d_class_names": [
+    "car",
+    "truck",
+    "trailer",
+    "bus",
+    "construction_vehicle",
+    "bicycle",
+    "motorcycle",
+    "pedestrian",
+    "traffic_cone",
+    "barrier"
+  ],
+  "downstream_3d_class_names": [
+    "car",
+    "truck",
+    "construction_vehicle",
+    "bus",
+    "trailer",
+    "barrier",
+    "motorcycle",
+    "bicycle",
+    "pedestrian",
+    "traffic_cone"
+  ],
+  "map_2d_index_to_3d_index": [
+    0,
+    1,
+    4,
+    3,
+    2,
+    7,
+    6,
+    8,
+    9,
+    5
+  ],
+  "note": "The native 2D ROI head and 3D detector use different category index orders. BAIT/PIL train a new 10-way head with the native 2D encoding; no training annotations are relabeled."
+}

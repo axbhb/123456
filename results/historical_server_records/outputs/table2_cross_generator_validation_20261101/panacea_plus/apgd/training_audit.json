@@ -1,0 +1,22 @@
+{
+  "checkpoint_iteration": 282,
+  "optimizer_step_counts": {
+    "276": 240
+  },
+  "representative_parameter_max_changes": {
+    "img_backbone.conv1.weight": 0.0003178119659423828,
+    "pts_bbox_head.reference_points.weight": 0.0011262297630310059
+  },
+  "all_model_weights_finite": true,
+  "checkpoint_bytes": 452697962,
+  "amp_state": {
+    "loss_scaler": {
+      "scale": 512.0,
+      "growth_factor": 2.0,
+      "backoff_factor": 0.5,
+      "growth_interval": 2000,
+      "_growth_tracker": 173
+    }
+  },
+  "gpu_used": false
+}

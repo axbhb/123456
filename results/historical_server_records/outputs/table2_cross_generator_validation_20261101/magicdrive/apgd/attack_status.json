@@ -1,0 +1,77 @@
+{
+  "method": "APGD-DetLoss-v1",
+  "status": "completed",
+  "steps": 20,
+  "restarts": 1,
+  "epsilon": 0.03137254901960784,
+  "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+  "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 27.388385772705078,
+      "stored_final_loss": 77.44575500488281,
+      "best_continuous_loss": 77.44575500488281,
+      "loss_trace": [
+        27.388385772705078,
+        27.388385772705078,
+        32.9693603515625,
+        39.0141487121582,
+        40.17461395263672,
+        40.39970016479492,
+        44.716453552246094,
+        41.313385009765625,
+        47.178489685058594,
+        51.588069915771484,
+        49.7052001953125,
+        55.658653259277344,
+        59.2457160949707,
+        60.091270446777344,
+        61.480316162109375,
+        64.06327819824219,
+        65.20866394042969,
+        67.30488586425781,
+        66.39069366455078,
+        72.47132873535156,
+        75.13665771484375,
+        77.44575500488281,
+        77.44575500488281
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.790059089660645,
+      "augmentation": {
+        "resize": 0.47456570170288714,
+        "dims": [
+          759,
+          427
+        ],
+        "crop": [
+          38,
+          171,
+          742,
+          427
+        ],
+        "flip": false
+      },
+      "previous_context_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69"
+    }
+  ],
+  "seconds": 14.800143718719482,
+  "frame": 1,
+  "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+  "objective_calls": 23,
+  "last_loss": 77.44575500488281,
+  "frames": 1,
+  "changed_cameras": 6,
+  "peak_memory_gib": 4.462987422943115
+}

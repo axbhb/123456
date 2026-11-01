@@ -1,0 +1,831 @@
+{
+  "method": "APGD-DetLoss-v1",
+  "status": "completed",
+  "steps": 20,
+  "restarts": 1,
+  "epsilon": 0.03137254901960784,
+  "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+  "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 25.594518661499023,
+      "stored_final_loss": 69.44819641113281,
+      "best_continuous_loss": 69.44819641113281,
+      "loss_trace": [
+        25.594518661499023,
+        25.594518661499023,
+        30.18067169189453,
+        34.47209167480469,
+        35.433746337890625,
+        38.13798522949219,
+        37.99609375,
+        38.08209228515625,
+        36.794132232666016,
+        40.33216857910156,
+        43.224246978759766,
+        43.61606216430664,
+        46.421051025390625,
+        43.312355041503906,
+        51.7415771484375,
+        52.936397552490234,
+        54.02878189086914,
+        57.618934631347656,
+        60.09200668334961,
+        60.63306427001953,
+        59.21745300292969,
+        69.44819641113281,
+        69.44819641113281
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.809160232543945,
+      "augmentation": {
+        "resize": 0.47456570170288714,
+        "dims": [
+          759,
+          427
+        ],
+        "crop": [
+          38,
+          171,
+          742,
+          427
+        ],
+        "flip": false
+      },
+      "previous_context_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69"
+    },
+    {
+      "token": "27749aa3de2545219186c61d4d415e1c",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/27749aa3de2545219186c61d4d415e1c/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/27749aa3de2545219186c61d4d415e1c/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/27749aa3de2545219186c61d4d415e1c/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/27749aa3de2545219186c61d4d415e1c/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/27749aa3de2545219186c61d4d415e1c/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/27749aa3de2545219186c61d4d415e1c/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 22.318222045898438,
+      "stored_final_loss": 112.24264526367188,
+      "best_continuous_loss": 112.24264526367188,
+      "loss_trace": [
+        22.318222045898438,
+        22.318222045898438,
+        30.325042724609375,
+        38.15213394165039,
+        33.53721237182617,
+        39.92949295043945,
+        44.40042495727539,
+        40.06648254394531,
+        48.406455993652344,
+        58.22273254394531,
+        67.1855697631836,
+        64.78582000732422,
+        74.54236602783203,
+        76.60004425048828,
+        83.44104766845703,
+        89.26640319824219,
+        90.654541015625,
+        93.71500396728516,
+        99.32020568847656,
+        104.87997436523438,
+        103.05162048339844,
+        112.24264526367188,
+        112.24264526367188
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.055037260055542,
+      "augmentation": {
+        "resize": 0.41901607346493613,
+        "dims": [
+          670,
+          377
+        ],
+        "crop": [
+          0,
+          121,
+          704,
+          377
+        ],
+        "flip": true
+      },
+      "previous_context_token": "3f2ddc9476eb475b8c46f777f508cedb"
+    },
+    {
+      "token": "ac8b4d49731d43289579f014cb7c97ef",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ac8b4d49731d43289579f014cb7c97ef/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ac8b4d49731d43289579f014cb7c97ef/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ac8b4d49731d43289579f014cb7c97ef/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ac8b4d49731d43289579f014cb7c97ef/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ac8b4d49731d43289579f014cb7c97ef/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ac8b4d49731d43289579f014cb7c97ef/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 19.39892578125,
+      "stored_final_loss": 77.14775085449219,
+      "best_continuous_loss": 77.14775085449219,
+      "loss_trace": [
+        19.39892578125,
+        19.39892578125,
+        28.33771324157715,
+        35.22356033325195,
+        31.589126586914062,
+        38.437461853027344,
+        42.77785873413086,
+        42.14495086669922,
+        45.25368118286133,
+        51.32931137084961,
+        54.78836441040039,
+        58.953269958496094,
+        59.33427810668945,
+        59.2096061706543,
+        69.28978729248047,
+        69.48516845703125,
+        71.92729187011719,
+        72.57788848876953,
+        73.14635467529297,
+        75.92393493652344,
+        77.14775085449219,
+        76.65149688720703,
+        77.14775085449219
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.871762990951538,
+      "augmentation": {
+        "resize": 0.4814015864800426,
+        "dims": [
+          770,
+          433
+        ],
+        "crop": [
+          3,
+          177,
+          707,
+          433
+        ],
+        "flip": false
+      },
+      "previous_context_token": "ae5004bf4ebb4db0a84cb3c27bd398d1"
+    },
+    {
+      "token": "9ee4020153674b9e9943d395ff8cfdf3",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 22.681493759155273,
+      "stored_final_loss": 73.63764953613281,
+      "best_continuous_loss": 73.63764953613281,
+      "loss_trace": [
+        22.681493759155273,
+        22.681493759155273,
+        26.050758361816406,
+        31.24976921081543,
+        29.438648223876953,
+        32.80378723144531,
+        39.019989013671875,
+        43.26192855834961,
+        44.766136169433594,
+        45.466251373291016,
+        50.481239318847656,
+        45.311561584472656,
+        56.214256286621094,
+        56.735904693603516,
+        58.154624938964844,
+        60.06019973754883,
+        60.43910598754883,
+        62.80096435546875,
+        64.86164093017578,
+        63.88390350341797,
+        71.09246063232422,
+        73.63764953613281,
+        73.63764953613281
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.78125810623169,
+      "augmentation": {
+        "resize": 0.46159228692249465,
+        "dims": [
+          738,
+          415
+        ],
+        "crop": [
+          22,
+          159,
+          726,
+          415
+        ],
+        "flip": false
+      },
+      "previous_context_token": "fdc39b23ab4242eda6ec5e1e6574fe33"
+    },
+    {
+      "token": "de9432d4fc7a4e5a985e2bc628eb614c",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 35.54985046386719,
+      "stored_final_loss": 216.40576171875,
+      "best_continuous_loss": 216.40576171875,
+      "loss_trace": [
+        35.54985046386719,
+        35.54985046386719,
+        38.986083984375,
+        47.784358978271484,
+        44.956939697265625,
+        45.04081726074219,
+        50.13436508178711,
+        52.25692367553711,
+        53.55643844604492,
+        61.06086349487305,
+        57.19609832763672,
+        75.593017578125,
+        81.44397735595703,
+        83.82244110107422,
+        103.11920928955078,
+        98.99778747558594,
+        118.83734130859375,
+        140.48460388183594,
+        157.3491973876953,
+        182.1965789794922,
+        194.9085693359375,
+        216.40576171875,
+        216.40576171875
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.066803455352783,
+      "augmentation": {
+        "resize": 0.5142328705612212,
+        "dims": [
+          822,
+          462
+        ],
+        "crop": [
+          5,
+          206,
+          709,
+          462
+        ],
+        "flip": false
+      },
+      "previous_context_token": "225aa2795d63442ebc496cd0c49d3bdb"
+    },
+    {
+      "token": "ebce5a3b3484446580028d6538e69a81",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ebce5a3b3484446580028d6538e69a81/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ebce5a3b3484446580028d6538e69a81/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ebce5a3b3484446580028d6538e69a81/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ebce5a3b3484446580028d6538e69a81/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ebce5a3b3484446580028d6538e69a81/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ebce5a3b3484446580028d6538e69a81/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 18.044326782226562,
+      "stored_final_loss": 94.87020874023438,
+      "best_continuous_loss": 94.87020874023438,
+      "loss_trace": [
+        18.044326782226562,
+        18.044326782226562,
+        25.723461151123047,
+        28.866439819335938,
+        29.165929794311523,
+        34.991329193115234,
+        36.11589050292969,
+        42.33935546875,
+        38.916648864746094,
+        46.17881774902344,
+        48.967594146728516,
+        52.43503189086914,
+        54.1276741027832,
+        55.812198638916016,
+        53.442989349365234,
+        67.55272674560547,
+        74.53252410888672,
+        77.11090850830078,
+        84.62779235839844,
+        87.2838134765625,
+        88.30656433105469,
+        94.87020874023438,
+        94.87020874023438
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 7.995718479156494,
+      "augmentation": {
+        "resize": 0.44858245053884893,
+        "dims": [
+          717,
+          403
+        ],
+        "crop": [
+          12,
+          147,
+          716,
+          403
+        ],
+        "flip": false
+      },
+      "previous_context_token": "8c0372d87281421aba897bec0084d0da"
+    },
+    {
+      "token": "dcbe451d383e450786aaad04ab9d3790",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/dcbe451d383e450786aaad04ab9d3790/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/dcbe451d383e450786aaad04ab9d3790/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/dcbe451d383e450786aaad04ab9d3790/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/dcbe451d383e450786aaad04ab9d3790/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/dcbe451d383e450786aaad04ab9d3790/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/dcbe451d383e450786aaad04ab9d3790/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 26.209354400634766,
+      "stored_final_loss": 80.5594711303711,
+      "best_continuous_loss": 80.5594711303711,
+      "loss_trace": [
+        26.209354400634766,
+        26.209354400634766,
+        33.34815979003906,
+        40.19776916503906,
+        36.65946960449219,
+        40.09021759033203,
+        43.9607048034668,
+        40.98796081542969,
+        44.94922637939453,
+        49.68319320678711,
+        50.533782958984375,
+        55.394046783447266,
+        55.81913757324219,
+        57.40230941772461,
+        58.04864501953125,
+        59.84757614135742,
+        61.85550308227539,
+        63.64883041381836,
+        61.16183853149414,
+        71.9819564819336,
+        73.89527893066406,
+        80.5594711303711,
+        80.5594711303711
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.343172550201416,
+      "augmentation": {
+        "resize": 0.43762814079527645,
+        "dims": [
+          700,
+          393
+        ],
+        "crop": [
+          0,
+          137,
+          704,
+          393
+        ],
+        "flip": true
+      },
+      "previous_context_token": "739b12938d0e410d9b8fc832dfad5510"
+    },
+    {
+      "token": "b1303058fa624645b753d7283d70de45",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/b1303058fa624645b753d7283d70de45/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/b1303058fa624645b753d7283d70de45/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/b1303058fa624645b753d7283d70de45/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/b1303058fa624645b753d7283d70de45/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/b1303058fa624645b753d7283d70de45/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/b1303058fa624645b753d7283d70de45/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 26.557199478149414,
+      "stored_final_loss": 65.07221984863281,
+      "best_continuous_loss": 65.07221984863281,
+      "loss_trace": [
+        26.557199478149414,
+        26.557199478149414,
+        29.736112594604492,
+        34.16654968261719,
+        32.2314567565918,
+        35.531497955322266,
+        39.46589660644531,
+        41.445594787597656,
+        44.29940414428711,
+        42.99783706665039,
+        40.48553466796875,
+        49.520225524902344,
+        46.96385955810547,
+        51.841976165771484,
+        54.81029510498047,
+        55.537235260009766,
+        57.5782356262207,
+        58.24298095703125,
+        60.1589241027832,
+        59.40163040161133,
+        62.056636810302734,
+        65.07221984863281,
+        65.07221984863281
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.869696140289307,
+      "augmentation": {
+        "resize": 0.44313632169779155,
+        "dims": [
+          709,
+          398
+        ],
+        "crop": [
+          3,
+          142,
+          707,
+          398
+        ],
+        "flip": true
+      },
+      "previous_context_token": "609d5177362340458a3bfd4949cd1e64"
+    },
+    {
+      "token": "e63b83b436a0479db7362338cdfab118",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e63b83b436a0479db7362338cdfab118/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e63b83b436a0479db7362338cdfab118/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e63b83b436a0479db7362338cdfab118/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e63b83b436a0479db7362338cdfab118/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e63b83b436a0479db7362338cdfab118/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e63b83b436a0479db7362338cdfab118/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 19.36882781982422,
+      "stored_final_loss": 55.74790954589844,
+      "best_continuous_loss": 55.74790954589844,
+      "loss_trace": [
+        19.36882781982422,
+        19.36882781982422,
+        22.277732849121094,
+        25.94297218322754,
+        24.520429611206055,
+        26.50718116760254,
+        29.001415252685547,
+        30.617435455322266,
+        31.226940155029297,
+        33.35963439941406,
+        31.05141258239746,
+        36.8117790222168,
+        39.2578010559082,
+        40.821407318115234,
+        43.10743713378906,
+        44.22090148925781,
+        45.39310836791992,
+        43.00234603881836,
+        49.352935791015625,
+        52.539695739746094,
+        54.429931640625,
+        55.74790954589844,
+        55.74790954589844
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.77260684967041,
+      "augmentation": {
+        "resize": 0.42236857402209976,
+        "dims": [
+          675,
+          380
+        ],
+        "crop": [
+          0,
+          124,
+          704,
+          380
+        ],
+        "flip": true
+      },
+      "previous_context_token": "e00dc15130dc44e796687baadd076ae4"
+    },
+    {
+      "token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 21.819232940673828,
+      "stored_final_loss": 84.48506164550781,
+      "best_continuous_loss": 84.48506164550781,
+      "loss_trace": [
+        21.819232940673828,
+        21.819232940673828,
+        23.832616806030273,
+        28.740081787109375,
+        27.373733520507812,
+        31.646879196166992,
+        37.20836639404297,
+        34.97874450683594,
+        37.28740692138672,
+        42.86330795288086,
+        46.732505798339844,
+        50.311058044433594,
+        48.47822189331055,
+        58.43251419067383,
+        61.046485900878906,
+        67.66046905517578,
+        68.64396667480469,
+        71.3729248046875,
+        69.73180389404297,
+        78.24343872070312,
+        84.48506164550781,
+        79.51703643798828,
+        84.48506164550781
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.884373426437378,
+      "augmentation": {
+        "resize": 0.48521795248236377,
+        "dims": [
+          776,
+          436
+        ],
+        "crop": [
+          12,
+          180,
+          716,
+          436
+        ],
+        "flip": true
+      },
+      "previous_context_token": "07fad91090c746ccaa1b2bdb55329e20"
+    },
+    {
+      "token": "61d47d1198184bfdaa6777e9448d825d",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/61d47d1198184bfdaa6777e9448d825d/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/61d47d1198184bfdaa6777e9448d825d/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/61d47d1198184bfdaa6777e9448d825d/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/61d47d1198184bfdaa6777e9448d825d/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/61d47d1198184bfdaa6777e9448d825d/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/61d47d1198184bfdaa6777e9448d825d/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 31.608299255371094,
+      "stored_final_loss": 158.82028198242188,
+      "best_continuous_loss": 158.82028198242188,
+      "loss_trace": [
+        31.608299255371094,
+        31.608299255371094,
+        36.704566955566406,
+        48.75294876098633,
+        51.25189208984375,
+        57.177005767822266,
+        60.041404724121094,
+        53.567569732666016,
+        53.777347564697266,
+        73.19487762451172,
+        65.72958374023438,
+        80.22079467773438,
+        84.32008361816406,
+        89.12619018554688,
+        94.39225006103516,
+        103.63501739501953,
+        109.28528594970703,
+        106.5488510131836,
+        129.18304443359375,
+        145.56015014648438,
+        152.92489624023438,
+        158.82028198242188,
+        158.82028198242188
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.374326467514038,
+      "augmentation": {
+        "resize": 0.5437696656054747,
+        "dims": [
+          870,
+          489
+        ],
+        "crop": [
+          30,
+          233,
+          734,
+          489
+        ],
+        "flip": false
+      },
+      "previous_context_token": "ac9af15d1aba4f5786877dde9f0b1c93"
+    },
+    {
+      "token": "55c258972acb4300a3a6077a531ab050",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/55c258972acb4300a3a6077a531ab050/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/55c258972acb4300a3a6077a531ab050/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/55c258972acb4300a3a6077a531ab050/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/55c258972acb4300a3a6077a531ab050/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/55c258972acb4300a3a6077a531ab050/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/55c258972acb4300a3a6077a531ab050/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 22.149154663085938,
+      "stored_final_loss": 56.96211624145508,
+      "best_continuous_loss": 56.96211624145508,
+      "loss_trace": [
+        22.149154663085938,
+        22.149154663085938,
+        26.41979217529297,
+        30.37173843383789,
+        28.169431686401367,
+        30.2487850189209,
+        35.22967529296875,
+        32.96245574951172,
+        34.041744232177734,
+        37.57038116455078,
+        36.65951156616211,
+        39.659912109375,
+        42.88953399658203,
+        44.475303649902344,
+        45.3492317199707,
+        47.16762161254883,
+        47.77663040161133,
+        50.866390228271484,
+        50.20188903808594,
+        54.09728240966797,
+        56.269771575927734,
+        56.96211624145508,
+        56.96211624145508
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 9.077568769454956,
+      "augmentation": {
+        "resize": 0.5498965765424868,
+        "dims": [
+          879,
+          494
+        ],
+        "crop": [
+          60,
+          238,
+          764,
+          494
+        ],
+        "flip": true
+      },
+      "previous_context_token": "8573a885a7cb41d185c05029eeb9a54e"
+    },
+    {
+      "token": "acf9fcbeb1e346b98640f694f15460e8",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/acf9fcbeb1e346b98640f694f15460e8/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/acf9fcbeb1e346b98640f694f15460e8/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/acf9fcbeb1e346b98640f694f15460e8/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/acf9fcbeb1e346b98640f694f15460e8/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/acf9fcbeb1e346b98640f694f15460e8/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/acf9fcbeb1e346b98640f694f15460e8/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 24.58499526977539,
+      "stored_final_loss": 76.39339447021484,
+      "best_continuous_loss": 76.39339447021484,
+      "loss_trace": [
+        24.58499526977539,
+        24.58499526977539,
+        28.9324893951416,
+        33.698448181152344,
+        34.572547912597656,
+        34.03982925415039,
+        36.30177688598633,
+        39.51103973388672,
+        38.97760009765625,
+        45.11628341674805,
+        45.76958465576172,
+        51.78583526611328,
+        54.917266845703125,
+        54.05986404418945,
+        58.71877670288086,
+        63.815067291259766,
+        66.66104125976562,
+        64.8281478881836,
+        69.64292907714844,
+        72.1997299194336,
+        74.13522338867188,
+        76.39339447021484,
+        76.39339447021484
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.795767068862915,
+      "augmentation": {
+        "resize": 0.49693666084278,
+        "dims": [
+          795,
+          447
+        ],
+        "crop": [
+          43,
+          191,
+          747,
+          447
+        ],
+        "flip": false
+      },
+      "previous_context_token": "3b594af1b130490989536590345c9dc9"
+    },
+    {
+      "token": "e3bcde4a06124931a097ef2a211aaaef",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e3bcde4a06124931a097ef2a211aaaef/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e3bcde4a06124931a097ef2a211aaaef/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e3bcde4a06124931a097ef2a211aaaef/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e3bcde4a06124931a097ef2a211aaaef/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e3bcde4a06124931a097ef2a211aaaef/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/apgd/images/e3bcde4a06124931a097ef2a211aaaef/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 30.992326736450195,
+      "stored_final_loss": 191.07118225097656,
+      "best_continuous_loss": 191.07118225097656,
+      "loss_trace": [
+        30.992326736450195,
+        30.992326736450195,
+        43.25175094604492,
+        54.820655822753906,
+        51.92750549316406,
+        59.37884521484375,
+        69.20376586914062,
+        70.49227142333984,
+        82.695068359375,
+        80.09043884277344,
+        83.86920928955078,
+        98.9878158569336,
+        112.4159164428711,
+        111.37069702148438,
+        126.69493865966797,
+        136.52426147460938,
+        144.30506896972656,
+        154.3129119873047,
+        163.86209106445312,
+        159.6619415283203,
+        179.166015625,
+        191.07118225097656,
+        191.07118225097656
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 8.127718210220337,
+      "augmentation": {
+        "resize": 0.4631849544411703,
+        "dims": [
+          741,
+          416
+        ],
+        "crop": [
+          12,
+          160,
+          716,
+          416
+        ],
+        "flip": false
+      },
+      "previous_context_token": "73ccc9c10a3547849b8ff130d50bac98"
+    }
+  ],
+  "seconds": 126.00173044204712,
+  "frame": 14,
+  "token": "e3bcde4a06124931a097ef2a211aaaef",
+  "objective_calls": 23,
+  "last_loss": 191.07118225097656,
+  "frames": 14,
+  "changed_cameras": 84,
+  "peak_memory_gib": 5.097573280334473
+}

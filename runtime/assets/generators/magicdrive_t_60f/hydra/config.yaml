@@ -1,0 +1,615 @@
+task_id: 2.0t_0.4.3_60
+log_root_prefix: ../magicdrive-t-log
+projname: ${model.name}
+try_run: false
+debug: false
+log_root: ???
+init_method: env://
+seed: 42
+fix_seed_within_batch: false
+resume_from_checkpoint: null
+resume_reset_scheduler: false
+validation_only: false
+model:
+  name: SDv1.5mv-rawbox-t
+  pretrained_model_name_or_path: xxxx
+  bbox_mode: all-xyz
+  bbox_view_shared: false
+  crossview_attn_type: basic
+  train_with_same_noise: false
+  train_with_same_t: true
+  load_pretrain_from: null
+  allow_partial_load: false
+  pretrained_magicdrive: xxxx
+  train_with_same_noise_t: false
+  video_length: 61
+  sc_attn_index:
+  - - 0
+    - 0
+    - 6
+    - 12
+  - - 0
+    - 6
+    - 0
+    - 1
+  - - 0
+    - 6
+    - 1
+    - 2
+  - - 0
+    - 6
+    - 2
+    - 3
+  - - 0
+    - 6
+    - 3
+    - 4
+  - - 0
+    - 6
+    - 4
+    - 5
+  - - 0
+    - 6
+    - 6
+    - 12
+  - - 6
+    - 12
+    - 6
+    - 7
+  - - 6
+    - 12
+    - 7
+    - 8
+  - - 6
+    - 12
+    - 8
+    - 9
+  - - 6
+    - 12
+    - 9
+    - 10
+  - - 6
+    - 12
+    - 10
+    - 11
+  - - 6
+    - 12
+    - 12
+    - 18
+  - - 12
+    - 18
+    - 12
+    - 13
+  - - 12
+    - 18
+    - 13
+    - 14
+  - - 12
+    - 18
+    - 14
+    - 15
+  - - 12
+    - 18
+    - 15
+    - 16
+  - - 12
+    - 18
+    - 16
+    - 17
+  - - 12
+    - 18
+    - 18
+    - 24
+  - - 18
+    - 24
+    - 18
+    - 19
+  - - 18
+    - 24
+    - 19
+    - 20
+  - - 18
+    - 24
+    - 20
+    - 21
+  - - 18
+    - 24
+    - 21
+    - 22
+  - - 18
+    - 24
+    - 22
+    - 23
+  - - 18
+    - 24
+    - 24
+    - 30
+  - - 24
+    - 30
+    - 24
+    - 25
+  - - 24
+    - 30
+    - 25
+    - 26
+  - - 24
+    - 30
+    - 26
+    - 27
+  - - 24
+    - 30
+    - 27
+    - 28
+  - - 24
+    - 30
+    - 28
+    - 29
+  - - 24
+    - 30
+    - 30
+    - 36
+  - - 30
+    - 36
+    - 30
+    - 31
+  - - 30
+    - 36
+    - 31
+    - 32
+  - - 30
+    - 36
+    - 32
+    - 33
+  - - 30
+    - 36
+    - 33
+    - 34
+  - - 30
+    - 36
+    - 34
+    - 35
+  - - 30
+    - 36
+    - 36
+    - 42
+  - - 36
+    - 42
+    - 36
+    - 37
+  - - 36
+    - 42
+    - 37
+    - 38
+  - - 36
+    - 42
+    - 38
+    - 39
+  - - 36
+    - 42
+    - 39
+    - 40
+  - - 36
+    - 42
+    - 40
+    - 41
+  - - 36
+    - 42
+    - 42
+    - 48
+  - - 42
+    - 48
+    - 42
+    - 43
+  - - 42
+    - 48
+    - 43
+    - 44
+  - - 42
+    - 48
+    - 44
+    - 45
+  - - 42
+    - 48
+    - 45
+    - 46
+  - - 42
+    - 48
+    - 46
+    - 47
+  - - 42
+    - 48
+    - 48
+    - 54
+  - - 48
+    - 54
+    - 48
+    - 49
+  - - 48
+    - 54
+    - 49
+    - 50
+  - - 48
+    - 54
+    - 50
+    - 51
+  - - 48
+    - 54
+    - 51
+    - 52
+  - - 48
+    - 54
+    - 52
+    - 53
+  - - 48
+    - 54
+    - 54
+    - 60
+  - - 54
+    - 60
+    - 54
+    - 55
+  - - 54
+    - 60
+    - 55
+    - 56
+  - - 54
+    - 60
+    - 56
+    - 57
+  - - 54
+    - 60
+    - 57
+    - 58
+  - - 54
+    - 60
+    - 58
+    - 59
+  - - 54
+    - 60
+    - 60
+    - 60
+  runner_module: magicdrive.runner.multiview_t_runner.MultiviewTRunner
+  pipe_module: magicdrive.pipeline.pipeline_bev_controlnet_t.StableDiffusionBEVControlNetTPipeline
+  unet_module: magicdrive.networks.unet_2d_condition_multiview_t.UNet2DConditionModelMultiviewT
+  use_fp32_for_unet_trainable: true
+  unet_dir: unet
+  unet:
+    video_length: ${..video_length}
+    temp_attn_type: _s_ff_t_last
+    temp_pos_emb: learnable
+    zero_module_type2: none
+    spatial_trainable: true
+  model_module: magicdrive.networks.unet_addon_rawbox.BEVControlNetModel
+  controlnet_dir: controlnet
+  controlnet: {}
+dataset:
+  dataset_type: NuScenesTDataset
+  dataset_root: ../data/nuscenes/
+  dataset_process_root: ../data/nuscenes_mmdet3d-12Hz/
+  dataset_cache_file_tag: 26x200x200_12Hz_advanced
+  dataset_cache_dirname: nuscenes_map_aux_12Hz_adv
+  dataset_cache_file:
+  - ${..dataset_process_root}../${..dataset_cache_dirname}/train_${..dataset_cache_file_tag}.h5
+  - ${..dataset_process_root}../${..dataset_cache_dirname}/val_${..dataset_cache_file_tag}.h5
+  template: A driving scene image at {location}. {description}.
+  collect_meta_keys:
+  - camera_intrinsics
+  - lidar2ego
+  - lidar2camera
+  - camera2lidar
+  - lidar2image
+  - img_aug_matrix
+  - next2top
+  collect_meta_lis_keys:
+  - timeofday
+  - location
+  - description
+  - filename
+  - token
+  image_size:
+  - 224
+  - 400
+  map_bound:
+    x:
+    - -50.0
+    - 50.0
+    - 0.5
+    'y':
+    - -50.0
+    - 50.0
+    - 0.5
+  view_order:
+  - CAM_FRONT_LEFT
+  - CAM_FRONT
+  - CAM_FRONT_RIGHT
+  - CAM_BACK_RIGHT
+  - CAM_BACK
+  - CAM_BACK_LEFT
+  neighboring_view_pair:
+    0:
+    - 5
+    - 1
+    1:
+    - 0
+    - 2
+    2:
+    - 1
+    - 3
+    3:
+    - 2
+    - 4
+    4:
+    - 3
+    - 5
+    5:
+    - 4
+    - 0
+  back_resize:
+  - 896
+  - 1600
+  back_pad:
+  - 0
+  - 4
+  - 0
+  - 0
+  augment2d:
+    resize:
+    - - 0.25
+      - 0.25
+    rotate: null
+  aux_data:
+  - visibility
+  - center_offset
+  - center_ohw
+  - height
+  augment3d:
+    scale:
+    - 1.0
+    - 1.0
+    rotate:
+    - 0.0
+    - 0.0
+    translate: 0
+    flip_ratio: 0.0
+    flip_direction: null
+  object_classes:
+  - car
+  - truck
+  - construction_vehicle
+  - bus
+  - trailer
+  - barrier
+  - motorcycle
+  - bicycle
+  - pedestrian
+  - traffic_cone
+  map_classes:
+  - drivable_area
+  - ped_crossing
+  - walkway
+  - stop_line
+  - carpark_area
+  - road_divider
+  - lane_divider
+  - road_block
+  input_modality:
+    use_lidar: false
+    use_camera: true
+    use_radar: false
+    use_map: false
+    use_external: false
+  train_pipeline:
+  - type: LoadMultiViewImageFromFiles
+    to_float32: true
+  - type: LoadAnnotations3D
+    with_bbox_3d: true
+    with_label_3d: true
+    with_attr_label: false
+  - type: ImageAug3D
+    final_dim: ${...image_size}
+    resize_lim: ${...augment2d.resize[0]}
+    bot_pct_lim:
+    - 0.0
+    - 0.0
+    rot_lim: ${...augment2d.rotate}
+    rand_flip: false
+    is_train: false
+  - type: GlobalRotScaleTrans
+    resize_lim: ${...augment3d.scale}
+    rot_lim: ${...augment3d.rotate}
+    trans_lim: ${...augment3d.translate}
+    is_train: true
+  - type: ObjectNameFilter
+    classes: ${...object_classes}
+  - type: LoadBEVSegmentation
+    dataset_root: ${...dataset_root}
+    xbound: ${...map_bound.x}
+    ybound: ${...map_bound.y}
+    classes: ${...map_classes}
+    object_classes: null
+    aux_data: null
+    cache_file: ${...dataset_cache_file.0}
+  - type: RandomFlip3DwithViews
+    flip_ratio: ${...augment3d.flip_ratio}
+    direction: ${...augment3d.flip_direction}
+  - type: ReorderMultiViewImages
+    order: ${...view_order}
+    safe: false
+  - type: ImageNormalize
+    mean:
+    - 0.5
+    - 0.5
+    - 0.5
+    std:
+    - 0.5
+    - 0.5
+    - 0.5
+  - type: DefaultFormatBundle3D
+    classes: ${...object_classes}
+  - type: Collect3D
+    keys:
+    - img
+    - gt_bboxes_3d
+    - gt_labels_3d
+    - gt_masks_bev
+    meta_keys: ${...collect_meta_keys}
+    meta_lis_keys: ${...collect_meta_lis_keys}
+  test_pipeline:
+  - type: LoadMultiViewImageFromFiles
+    to_float32: true
+  - type: LoadAnnotations3D
+    with_bbox_3d: true
+    with_label_3d: true
+    with_attr_label: false
+  - type: ImageAug3D
+    final_dim: ${...image_size}
+    resize_lim: ${...augment2d.resize[0]}
+    bot_pct_lim:
+    - 0.0
+    - 0.0
+    rot_lim:
+    - 0.0
+    - 0.0
+    rand_flip: false
+    is_train: false
+  - type: GlobalRotScaleTrans
+    resize_lim: ${...augment3d.scale}
+    rot_lim: ${...augment3d.rotate}
+    trans_lim: ${...augment3d.translate}
+    is_train: true
+  - type: ObjectNameFilter
+    classes: ${...object_classes}
+  - type: LoadBEVSegmentation
+    dataset_root: ${...dataset_root}
+    xbound: ${...map_bound.x}
+    ybound: ${...map_bound.y}
+    classes: ${...map_classes}
+    object_classes: null
+    aux_data: null
+    cache_file: ${...dataset_cache_file.1}
+  - type: ReorderMultiViewImages
+    order: ${...view_order}
+    safe: false
+  - type: ImageNormalize
+    mean:
+    - 0.5
+    - 0.5
+    - 0.5
+    std:
+    - 0.5
+    - 0.5
+    - 0.5
+  - type: DefaultFormatBundle3D
+    classes: ${...object_classes}
+  - type: Collect3D
+    keys:
+    - img
+    - gt_bboxes_3d
+    - gt_labels_3d
+    - gt_masks_bev
+    meta_keys: ${...collect_meta_keys}
+    meta_lis_keys: ${...collect_meta_lis_keys}
+  data:
+    train:
+      type: ${...dataset_type}
+      dataset_root: ${...dataset_root}
+      ann_file: ${...dataset_process_root}nuscenes_advanced_12Hz_infos_train.pkl
+      pipeline: ${...train_pipeline}
+      object_classes: ${...object_classes}
+      map_classes: ${...map_classes}
+      modality: ${...input_modality}
+      test_mode: false
+      force_all_boxes: true
+      box_type_3d: LiDAR
+      filter_empty_gt: false
+      video_length: ${model.video_length}
+    val:
+      type: ${...dataset_type}
+      dataset_root: ${...dataset_root}
+      ann_file: ${...dataset_process_root}nuscenes_advanced_12Hz_infos_val.pkl
+      pipeline: ${...test_pipeline}
+      object_classes: ${...object_classes}
+      map_classes: ${...map_classes}
+      modality: ${...input_modality}
+      test_mode: false
+      force_all_boxes: true
+      box_type_3d: LiDAR
+      filter_empty_gt: false
+      video_length: ${model.video_length}
+    test:
+      type: ${...dataset_type}
+      dataset_root: ${...dataset_root}
+      ann_file: ${...dataset_process_root}nuscenes_advanced_12Hz_infos_val.pkl
+      pipeline: ${...test_pipeline}
+      object_classes: ${...object_classes}
+      map_classes: ${...map_classes}
+      modality: ${...input_modality}
+      test_mode: true
+      force_all_boxes: true
+      box_type_3d: LiDAR
+      filter_empty_gt: false
+      video_length: ${model.video_length}
+accelerator:
+  gradient_accumulation_steps: 1
+  mixed_precision: fp16
+  report_to: tensorboard
+runner:
+  foreground_loss_mode: null
+  foreground_loss_weight: 0.0
+  bbox_drop_ratio: 0.4
+  bbox_add_ratio: 0
+  bbox_add_num: 3
+  keyframe_rate: 6
+  num_train_epochs: 100
+  train_batch_size: 1
+  max_train_steps: null
+  num_workers: 4
+  prefetch_factor: 4
+  display_per_epoch: 40
+  display_per_n_min: 10
+  max_grad_norm: 1.0
+  set_grads_to_none: true
+  enable_xformers_memory_efficient_attention: true
+  unet_in_fp16: true
+  enable_unet_checkpointing: true
+  enable_controlnet_checkpointing: false
+  noise_offset: 0.0
+  train_with_same_offset: true
+  use_8bit_adam: false
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 0.01
+  adam_epsilon: 1.0e-08
+  learning_rate: 8.0e-05
+  lr_scheduler: constant_with_warmup
+  gradient_accumulation_steps: 1
+  lr_num_cycles: 1
+  lr_power: 1.0
+  lr_warmup_steps: 3000
+  checkpointing_steps: 1000
+  validation_steps: 5000
+  save_model_per_epoch: 1
+  validation_before_run: true
+  validation_index:
+  - 1356
+  - 5967
+  - 12135
+  - 20499
+  validation_times: 1
+  validation_batch_size: 1
+  validation_show_box: true
+  validation_seed_global: false
+  pipeline_param:
+    guidance_scale: 2
+    num_inference_steps: 20
+    eta: 0.0
+    controlnet_conditioning_scale: 1.0
+    guess_mode: false
+    use_zero_map_as_unconditional: false
+    bbox_max_length: null
+    init_noise: rand_all
+    view_order: ${dataset.view_order}
+    double_cfg_inference: true
+    decode_bs: 1
+    keyframe_rate: 6
+fps: 12

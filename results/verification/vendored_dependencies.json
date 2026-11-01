@@ -1,0 +1,14 @@
+[
+  {
+    "name": "higher",
+    "version": "0.2.1"
+  },
+  {
+    "name": "mlconfig",
+    "version": "0.1.8"
+  },
+  {
+    "name": "oyaml",
+    "version": "1.0"
+  }
+]

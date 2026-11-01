@@ -1,0 +1,9 @@
+- runner=2gpus
+- runner.train_batch_size=2
+- runner.max_train_steps=200000
+- resume_from_checkpoint=/mnt/ssd3/42dot/DriveArena_ssk/WorldDreamer/dreamer-log/SDv1.5_mv_single_ref_2025-09-15_23-05-55_224x400/checkpoint-150000
+- runner.checkpointing_steps=5000
+- runner.validation_steps=2500
+- runner.save_model_per_step=2500
+- runner.validation_before_run=false
+- runner.validation_index=[0,4000,15000,32632]

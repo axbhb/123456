@@ -1,0 +1,1355 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+projects.mmdet3d_plugin
+fatal: not a git repository (or any of the parent directories): .git
+2026-11-01 20:17:15,735 - mmdet - INFO - Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.9.15 (main, Nov 24 2022, 14:31:59) [GCC 11.2.0]
+CUDA available: True
+GPU 0: Tesla V100-PCIE-32GB
+CUDA_HOME: /usr/local/cuda
+NVCC: Cuda compilation tools, release 11.3, V11.3.58
+GCC: gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0
+PyTorch: 1.11.0+cu113
+PyTorch compiling details: PyTorch built with:
+  - GCC 7.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.5.2 (Git Hash a9302535553c73243c632ad3c4c80beec3d19a1e)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX2
+  - CUDA Runtime 11.3
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.2
+  - Magma 2.5.2
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.3, CUDNN_VERSION=8.2.0, CXX_COMPILER=/opt/rh/devtoolset-7/root/usr/bin/c++, CXX_FLAGS= -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-sign-compare -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-unused-local-typedefs -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.11.0, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=OFF, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
+
+TorchVision: 0.12.0+cu113
+OpenCV: 4.8.0
+MMCV: 1.7.0
+MMCV Compiler: GCC 9.3
+MMCV CUDA Compiler: 11.3
+MMDetection: 2.28.2
+MMSegmentation: 0.30.0
+MMDetection3D: 1.0.0rc6+
+spconv2.0: False
+------------------------------------------------------------
+
+2026-11-01 20:17:17,117 - mmdet - INFO - Distributed training: True
+2026-11-01 20:17:18,388 - mmdet - INFO - Config:
+backbone_norm_cfg = dict(type='LN', requires_grad=True)
+plugin = True
+plugin_dir = 'projects/mmdet3d_plugin/'
+point_cloud_range = [-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]
+voxel_size = [0.2, 0.2, 8]
+img_norm_cfg = dict(
+    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+class_names = [
+    'car', 'truck', 'construction_vehicle', 'bus', 'trailer', 'barrier',
+    'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
+]
+num_gpus = 1
+batch_size = 1
+num_iters_per_epoch = 283
+num_epochs = 1
+queue_length = 1
+num_frame_losses = 1
+collect_keys = [
+    'lidar2img', 'intrinsics', 'extrinsics', 'timestamp', 'img_timestamp',
+    'ego_pose', 'ego_pose_inv'
+]
+input_modality = dict(
+    use_lidar=False,
+    use_camera=True,
+    use_radar=False,
+    use_map=False,
+    use_external=True)
+model = dict(
+    type='Petr3D',
+    num_frame_head_grads=1,
+    num_frame_backbone_grads=1,
+    num_frame_losses=1,
+    use_grid_mask=True,
+    img_backbone=dict(
+        pretrained=None,
+        type='ResNet',
+        depth=50,
+        num_stages=4,
+        out_indices=(2, 3),
+        frozen_stages=-1,
+        norm_cfg=dict(type='BN2d', requires_grad=False),
+        norm_eval=True,
+        with_cp=True,
+        style='pytorch'),
+    img_neck=dict(
+        type='CPFPN', in_channels=[1024, 2048], out_channels=256, num_outs=2),
+    img_roi_head=dict(
+        type='FocalHead',
+        num_classes=10,
+        in_channels=256,
+        loss_cls2d=dict(
+            type='QualityFocalLoss',
+            use_sigmoid=True,
+            beta=2.0,
+            loss_weight=2.0),
+        loss_centerness=dict(
+            type='GaussianFocalLoss', reduction='mean', loss_weight=1.0),
+        loss_bbox2d=dict(type='L1Loss', loss_weight=5.0),
+        loss_iou2d=dict(type='GIoULoss', loss_weight=2.0),
+        loss_centers2d=dict(type='L1Loss', loss_weight=10.0),
+        train_cfg=dict(
+            assigner2d=dict(
+                type='HungarianAssigner2D',
+                cls_cost=dict(type='FocalLossCost', weight=2.0),
+                reg_cost=dict(
+                    type='BBoxL1Cost', weight=5.0, box_format='xywh'),
+                iou_cost=dict(type='IoUCost', iou_mode='giou', weight=2.0),
+                centers2d_cost=dict(type='BBox3DL1Cost', weight=10.0)))),
+    pts_bbox_head=dict(
+        type='StreamPETRHead',
+        num_classes=10,
+        in_channels=256,
+        num_query=644,
+        memory_len=1024,
+        topk_proposals=256,
+        num_propagated=256,
+        with_ego_pos=True,
+        match_with_velo=False,
+        scalar=10,
+        noise_scale=1.0,
+        dn_weight=1.0,
+        split=0.75,
+        LID=True,
+        with_position=True,
+        position_range=[-61.2, -61.2, -10.0, 61.2, 61.2, 10.0],
+        code_weights=[2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0],
+        transformer=dict(
+            type='PETRTemporalTransformer',
+            decoder=dict(
+                type='PETRTransformerDecoder',
+                return_intermediate=True,
+                num_layers=6,
+                transformerlayers=dict(
+                    type='PETRTemporalDecoderLayer',
+                    attn_cfgs=[
+                        dict(
+                            type='MultiheadAttention',
+                            embed_dims=256,
+                            num_heads=8,
+                            dropout=0.1),
+                        dict(
+                            type='PETRMultiheadAttention',
+                            embed_dims=256,
+                            num_heads=8,
+                            dropout=0.1,
+                            fp16=True)
+                    ],
+                    feedforward_channels=2048,
+                    ffn_dropout=0.1,
+                    with_cp=True,
+                    operation_order=('self_attn', 'norm', 'cross_attn', 'norm',
+                                     'ffn', 'norm')))),
+        bbox_coder=dict(
+            type='NMSFreeCoder',
+            post_center_range=[-61.2, -61.2, -10.0, 61.2, 61.2, 10.0],
+            pc_range=[-51.2, -51.2, -5.0, 51.2, 51.2, 3.0],
+            max_num=300,
+            voxel_size=[0.2, 0.2, 8],
+            num_classes=10),
+        loss_cls=dict(
+            type='FocalLoss',
+            use_sigmoid=True,
+            gamma=2.0,
+            alpha=0.25,
+            loss_weight=2.0),
+        loss_bbox=dict(type='L1Loss', loss_weight=0.25),
+        loss_iou=dict(type='GIoULoss', loss_weight=0.0)),
+    train_cfg=dict(
+        pts=dict(
+            grid_size=[512, 512, 1],
+            voxel_size=[0.2, 0.2, 8],
+            point_cloud_range=[-51.2, -51.2, -5.0, 51.2, 51.2, 3.0],
+            out_size_factor=4,
+            assigner=dict(
+                type='HungarianAssigner3D',
+                cls_cost=dict(type='FocalLossCost', weight=2.0),
+                reg_cost=dict(type='BBox3DL1Cost', weight=0.25),
+                iou_cost=dict(type='IoUCost', weight=0.0),
+                pc_range=[-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]))))
+dataset_type = 'CustomNuScenesDataset'
+data_root = './data/nuscenes/'
+file_client_args = dict(backend='disk')
+ida_aug_conf = dict(
+    resize_lim=(0.38, 0.55),
+    final_dim=(256, 704),
+    bot_pct_lim=(0.0, 0.0),
+    rot_lim=(0.0, 0.0),
+    H=900,
+    W=1600,
+    rand_flip=True)
+train_pipeline = [
+    dict(type='LoadMultiViewImageFromFiles', to_float32=True),
+    dict(
+        type='LoadAnnotations3D',
+        with_bbox_3d=True,
+        with_label_3d=True,
+        with_bbox=True,
+        with_label=True,
+        with_bbox_depth=True),
+    dict(
+        type='ObjectRangeFilter',
+        point_cloud_range=[-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]),
+    dict(
+        type='ObjectNameFilter',
+        classes=[
+            'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+            'barrier', 'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
+        ]),
+    dict(
+        type='ResizeCropFlipRotImage',
+        data_aug_conf=dict(
+            resize_lim=(0.38, 0.55),
+            final_dim=(256, 704),
+            bot_pct_lim=(0.0, 0.0),
+            rot_lim=(0.0, 0.0),
+            H=900,
+            W=1600,
+            rand_flip=True),
+        training=True),
+    dict(
+        type='GlobalRotScaleTransImage',
+        rot_range=[-0.3925, 0.3925],
+        translation_std=[0, 0, 0],
+        scale_ratio_range=[0.95, 1.05],
+        reverse_angle=True,
+        training=True),
+    dict(
+        type='NormalizeMultiviewImage',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='PadMultiViewImage', size_divisor=32),
+    dict(
+        type='PETRFormatBundle3D',
+        class_names=[
+            'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+            'barrier', 'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
+        ],
+        collect_keys=[
+            'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+            'img_timestamp', 'ego_pose', 'ego_pose_inv', 'prev_exists'
+        ]),
+    dict(
+        type='Collect3D',
+        keys=[
+            'gt_bboxes_3d', 'gt_labels_3d', 'img', 'gt_bboxes', 'gt_labels',
+            'centers2d', 'depths', 'prev_exists', 'lidar2img', 'intrinsics',
+            'extrinsics', 'timestamp', 'img_timestamp', 'ego_pose',
+            'ego_pose_inv'
+        ],
+        meta_keys=('filename', 'ori_shape', 'img_shape', 'pad_shape',
+                   'scale_factor', 'flip', 'box_mode_3d', 'box_type_3d',
+                   'img_norm_cfg', 'scene_token', 'gt_bboxes_3d',
+                   'gt_labels_3d'))
+]
+test_pipeline = [
+    dict(type='LoadMultiViewImageFromFiles', to_float32=True),
+    dict(
+        type='ResizeCropFlipRotImage',
+        data_aug_conf=dict(
+            resize_lim=(0.38, 0.55),
+            final_dim=(256, 704),
+            bot_pct_lim=(0.0, 0.0),
+            rot_lim=(0.0, 0.0),
+            H=900,
+            W=1600,
+            rand_flip=True),
+        training=False),
+    dict(
+        type='NormalizeMultiviewImage',
+        mean=[123.675, 116.28, 103.53],
+        std=[58.395, 57.12, 57.375],
+        to_rgb=True),
+    dict(type='PadMultiViewImage', size_divisor=32),
+    dict(
+        type='MultiScaleFlipAug3D',
+        img_scale=(1333, 800),
+        pts_scale_ratio=1,
+        flip=False,
+        transforms=[
+            dict(
+                type='PETRFormatBundle3D',
+                collect_keys=[
+                    'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+                    'img_timestamp', 'ego_pose', 'ego_pose_inv'
+                ],
+                class_names=[
+                    'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+                    'barrier', 'motorcycle', 'bicycle', 'pedestrian',
+                    'traffic_cone'
+                ],
+                with_label=False),
+            dict(
+                type='Collect3D',
+                keys=[
+                    'img', 'lidar2img', 'intrinsics', 'extrinsics',
+                    'timestamp', 'img_timestamp', 'ego_pose', 'ego_pose_inv'
+                ],
+                meta_keys=('filename', 'ori_shape', 'img_shape', 'pad_shape',
+                           'scale_factor', 'flip', 'box_mode_3d',
+                           'box_type_3d', 'img_norm_cfg', 'scene_token'))
+        ])
+]
+data = dict(
+    samples_per_gpu=1,
+    workers_per_gpu=0,
+    train=dict(
+        type='MiniCameraStreamPETRDataset',
+        data_root=
+        '/srv/table2/datasets/streampetr_mini_scene_283_121',
+        ann_file=
+        '/srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/infos_train.pkl',
+        num_frame_losses=1,
+        seq_split_num=1,
+        seq_mode=True,
+        pipeline=[
+            dict(type='LoadMultiViewImageFromFiles', to_float32=True),
+            dict(
+                type='RestoreGeneratorCanvas',
+                source_to_generated=[[0.28, 0.0, 0.0],
+                                     [0.0, 0.28444444444444444, 0.0],
+                                     [0.0, 0.0, 1.0]]),
+            dict(
+                type='LoadAnnotations3D',
+                with_bbox_3d=True,
+                with_label_3d=True,
+                with_bbox=True,
+                with_label=True,
+                with_bbox_depth=True),
+            dict(
+                type='ObjectRangeFilter',
+                point_cloud_range=[-51.2, -51.2, -5.0, 51.2, 51.2, 3.0]),
+            dict(
+                type='ObjectNameFilter',
+                classes=[
+                    'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+                    'barrier', 'motorcycle', 'bicycle', 'pedestrian',
+                    'traffic_cone'
+                ]),
+            dict(
+                type='ResizeCropFlipRotImage',
+                data_aug_conf=dict(
+                    resize_lim=(0.38, 0.55),
+                    final_dim=(256, 704),
+                    bot_pct_lim=(0.0, 0.0),
+                    rot_lim=(0.0, 0.0),
+                    H=900,
+                    W=1600,
+                    rand_flip=True),
+                training=True),
+            dict(
+                type='GlobalRotScaleTransImage',
+                rot_range=[-0.3925, 0.3925],
+                translation_std=[0, 0, 0],
+                scale_ratio_range=[0.95, 1.05],
+                reverse_angle=True,
+                training=True),
+            dict(
+                type='NormalizeMultiviewImage',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='PadMultiViewImage', size_divisor=32),
+            dict(
+                type='PETRFormatBundle3D',
+                class_names=[
+                    'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+                    'barrier', 'motorcycle', 'bicycle', 'pedestrian',
+                    'traffic_cone'
+                ],
+                collect_keys=[
+                    'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+                    'img_timestamp', 'ego_pose', 'ego_pose_inv', 'prev_exists'
+                ]),
+            dict(
+                type='Collect3D',
+                keys=[
+                    'gt_bboxes_3d', 'gt_labels_3d', 'img', 'gt_bboxes',
+                    'gt_labels', 'centers2d', 'depths', 'prev_exists',
+                    'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+                    'img_timestamp', 'ego_pose', 'ego_pose_inv'
+                ],
+                meta_keys=('filename', 'ori_shape', 'img_shape', 'pad_shape',
+                           'scale_factor', 'flip', 'box_mode_3d',
+                           'box_type_3d', 'img_norm_cfg', 'scene_token',
+                           'gt_bboxes_3d', 'gt_labels_3d'))
+        ],
+        classes=[
+            'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+            'barrier', 'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
+        ],
+        modality=dict(
+            use_lidar=False,
+            use_camera=True,
+            use_radar=False,
+            use_map=False,
+            use_external=True),
+        collect_keys=[
+            'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+            'img_timestamp', 'ego_pose', 'ego_pose_inv', 'img', 'prev_exists',
+            'img_metas'
+        ],
+        queue_length=1,
+        test_mode=False,
+        use_valid_flag=True,
+        filter_empty_gt=False,
+        box_type_3d='LiDAR',
+        load_interval=1),
+    val=dict(
+        type='MiniCameraStreamPETRDataset',
+        pipeline=[
+            dict(type='LoadMultiViewImageFromFiles', to_float32=True),
+            dict(
+                type='ResizeCropFlipRotImage',
+                data_aug_conf=dict(
+                    resize_lim=(0.38, 0.55),
+                    final_dim=(256, 704),
+                    bot_pct_lim=(0.0, 0.0),
+                    rot_lim=(0.0, 0.0),
+                    H=900,
+                    W=1600,
+                    rand_flip=True),
+                training=False),
+            dict(
+                type='NormalizeMultiviewImage',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='PadMultiViewImage', size_divisor=32),
+            dict(
+                type='MultiScaleFlipAug3D',
+                img_scale=(1333, 800),
+                pts_scale_ratio=1,
+                flip=False,
+                transforms=[
+                    dict(
+                        type='PETRFormatBundle3D',
+                        collect_keys=[
+                            'lidar2img', 'intrinsics', 'extrinsics',
+                            'timestamp', 'img_timestamp', 'ego_pose',
+                            'ego_pose_inv'
+                        ],
+                        class_names=[
+                            'car', 'truck', 'construction_vehicle', 'bus',
+                            'trailer', 'barrier', 'motorcycle', 'bicycle',
+                            'pedestrian', 'traffic_cone'
+                        ],
+                        with_label=False),
+                    dict(
+                        type='Collect3D',
+                        keys=[
+                            'img', 'lidar2img', 'intrinsics', 'extrinsics',
+                            'timestamp', 'img_timestamp', 'ego_pose',
+                            'ego_pose_inv'
+                        ],
+                        meta_keys=('filename', 'ori_shape', 'img_shape',
+                                   'pad_shape', 'scale_factor', 'flip',
+                                   'box_mode_3d', 'box_type_3d',
+                                   'img_norm_cfg', 'scene_token'))
+                ])
+        ],
+        collect_keys=[
+            'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+            'img_timestamp', 'ego_pose', 'ego_pose_inv', 'img', 'img_metas'
+        ],
+        queue_length=1,
+        ann_file=
+        '/srv/table2/datasets/streampetr_mini_scene_283_121/infos_test.pkl',
+        classes=[
+            'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+            'barrier', 'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
+        ],
+        modality=dict(
+            use_lidar=False,
+            use_camera=True,
+            use_radar=False,
+            use_map=False,
+            use_external=True),
+        data_root=
+        '/srv/table2/datasets/streampetr_mini_scene_283_121',
+        test_mode=True,
+        filter_empty_gt=False,
+        load_interval=1),
+    test=dict(
+        type='MiniCameraStreamPETRDataset',
+        pipeline=[
+            dict(type='LoadMultiViewImageFromFiles', to_float32=True),
+            dict(
+                type='ResizeCropFlipRotImage',
+                data_aug_conf=dict(
+                    resize_lim=(0.38, 0.55),
+                    final_dim=(256, 704),
+                    bot_pct_lim=(0.0, 0.0),
+                    rot_lim=(0.0, 0.0),
+                    H=900,
+                    W=1600,
+                    rand_flip=True),
+                training=False),
+            dict(
+                type='NormalizeMultiviewImage',
+                mean=[123.675, 116.28, 103.53],
+                std=[58.395, 57.12, 57.375],
+                to_rgb=True),
+            dict(type='PadMultiViewImage', size_divisor=32),
+            dict(
+                type='MultiScaleFlipAug3D',
+                img_scale=(1333, 800),
+                pts_scale_ratio=1,
+                flip=False,
+                transforms=[
+                    dict(
+                        type='PETRFormatBundle3D',
+                        collect_keys=[
+                            'lidar2img', 'intrinsics', 'extrinsics',
+                            'timestamp', 'img_timestamp', 'ego_pose',
+                            'ego_pose_inv'
+                        ],
+                        class_names=[
+                            'car', 'truck', 'construction_vehicle', 'bus',
+                            'trailer', 'barrier', 'motorcycle', 'bicycle',
+                            'pedestrian', 'traffic_cone'
+                        ],
+                        with_label=False),
+                    dict(
+                        type='Collect3D',
+                        keys=[
+                            'img', 'lidar2img', 'intrinsics', 'extrinsics',
+                            'timestamp', 'img_timestamp', 'ego_pose',
+                            'ego_pose_inv'
+                        ],
+                        meta_keys=('filename', 'ori_shape', 'img_shape',
+                                   'pad_shape', 'scale_factor', 'flip',
+                                   'box_mode_3d', 'box_type_3d',
+                                   'img_norm_cfg', 'scene_token'))
+                ])
+        ],
+        collect_keys=[
+            'lidar2img', 'intrinsics', 'extrinsics', 'timestamp',
+            'img_timestamp', 'ego_pose', 'ego_pose_inv', 'img', 'img_metas'
+        ],
+        queue_length=1,
+        ann_file=
+        '/srv/table2/datasets/streampetr_mini_scene_283_121/infos_test.pkl',
+        classes=[
+            'car', 'truck', 'construction_vehicle', 'bus', 'trailer',
+            'barrier', 'motorcycle', 'bicycle', 'pedestrian', 'traffic_cone'
+        ],
+        modality=dict(
+            use_lidar=False,
+            use_camera=True,
+            use_radar=False,
+            use_map=False,
+            use_external=True),
+        data_root=
+        '/srv/table2/datasets/streampetr_mini_scene_283_121',
+        test_mode=True,
+        filter_empty_gt=False,
+        load_interval=1),
+    shuffler_sampler=dict(type='InfiniteGroupEachSampleInBatchSampler'),
+    nonshuffler_sampler=dict(type='DistributedSampler'))
+optimizer = dict(
+    type='AdamW',
+    lr=2.5e-05,
+    paramwise_cfg=dict(custom_keys=dict(img_backbone=dict(lr_mult=0.25))),
+    weight_decay=0.01)
+optimizer_config = dict(
+    type='Fp16OptimizerHook',
+    loss_scale='dynamic',
+    grad_clip=dict(max_norm=35, norm_type=2))
+lr_config = dict(
+    policy='CosineAnnealing',
+    warmup='linear',
+    warmup_iters=20,
+    warmup_ratio=0.3333333333333333,
+    min_lr_ratio=0.001)
+evaluation = dict(interval=283)
+find_unused_parameters = False
+checkpoint_config = dict(interval=283, max_keep_ckpts=1)
+runner = dict(type='IterBasedRunner', max_iters=283)
+load_from = '/srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth'
+resume_from = None
+workflow = [('train', 1)]
+dist_params = dict(backend='nccl')
+log_level = 'INFO'
+log_config = dict(interval=10, hooks=[dict(type='TextLoggerHook')])
+custom_imports = dict(
+    imports=['mini_camera_dataset', 'synthetic_camera_pipeline'],
+    allow_failed_imports=False)
+work_dir = '/srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/train'
+gpu_ids = range(0, 1)
+
+2026-11-01 20:17:18,388 - mmdet - INFO - Set random seed to 0, deterministic: False
+2026-11-01 20:17:18,744 - mmdet - INFO - initialize ResNet with init_cfg [{'type': 'Kaiming', 'layer': 'Conv2d'}, {'type': 'Constant', 'val': 1, 'layer': ['_BatchNorm', 'GroupNorm']}]
+2026-11-01 20:17:18,887 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,888 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,888 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,889 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,890 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,891 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,891 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,893 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,894 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,895 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,897 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,898 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,899 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,902 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,907 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,910 - mmdet - INFO - initialize Bottleneck with init_cfg {'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+2026-11-01 20:17:18,925 - mmdet - INFO - initialize CPFPN with init_cfg {'type': 'Xavier', 'layer': 'Conv2d', 'distribution': 'uniform'}
+2026-11-01 20:17:18,938 - mmdet - INFO - Model:
+Petr3D(
+  (pts_bbox_head): StreamPETRHead(
+    (loss_cls): FocalLoss()
+    (loss_bbox): L1Loss()
+    (cls_branches): ModuleList(
+      (0): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (2): ReLU(inplace=True)
+        (3): Linear(in_features=256, out_features=256, bias=True)
+        (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (5): ReLU(inplace=True)
+        (6): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (2): ReLU(inplace=True)
+        (3): Linear(in_features=256, out_features=256, bias=True)
+        (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (5): ReLU(inplace=True)
+        (6): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (2): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (2): ReLU(inplace=True)
+        (3): Linear(in_features=256, out_features=256, bias=True)
+        (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (5): ReLU(inplace=True)
+        (6): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (3): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (2): ReLU(inplace=True)
+        (3): Linear(in_features=256, out_features=256, bias=True)
+        (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (5): ReLU(inplace=True)
+        (6): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (4): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (2): ReLU(inplace=True)
+        (3): Linear(in_features=256, out_features=256, bias=True)
+        (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (5): ReLU(inplace=True)
+        (6): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (5): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (2): ReLU(inplace=True)
+        (3): Linear(in_features=256, out_features=256, bias=True)
+        (4): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+        (5): ReLU(inplace=True)
+        (6): Linear(in_features=256, out_features=10, bias=True)
+      )
+    )
+    (reg_branches): ModuleList(
+      (0): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=256, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (1): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=256, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (2): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=256, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (3): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=256, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (4): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=256, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+      (5): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): ReLU()
+        (2): Linear(in_features=256, out_features=256, bias=True)
+        (3): ReLU()
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+    )
+    (position_encoder): Sequential(
+      (0): Linear(in_features=192, out_features=1024, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (memory_embed): Sequential(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+    )
+    (featurized_pe): SELayer_Linear(
+      (conv_reduce): Linear(in_features=256, out_features=256, bias=True)
+      (act1): ReLU()
+      (conv_expand): Linear(in_features=256, out_features=256, bias=True)
+      (gate): Sigmoid()
+    )
+    (reference_points): Embedding(644, 3)
+    (pseudo_reference_points): Embedding(256, 3)
+    (query_embedding): Sequential(
+      (0): Linear(in_features=384, out_features=256, bias=True)
+      (1): ReLU()
+      (2): Linear(in_features=256, out_features=256, bias=True)
+    )
+    (spatial_alignment): MLN(
+      (reduce): Sequential(
+        (0): Linear(in_features=8, out_features=256, bias=True)
+        (1): ReLU()
+      )
+      (gamma): Linear(in_features=256, out_features=256, bias=True)
+      (beta): Linear(in_features=256, out_features=256, bias=True)
+      (ln): LayerNorm((256,), eps=1e-05, elementwise_affine=False)
+    )
+    (time_embedding): Sequential(
+      (0): Linear(in_features=256, out_features=256, bias=True)
+      (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+    )
+    (ego_pose_pe): MLN(
+      (reduce): Sequential(
+        (0): Linear(in_features=180, out_features=256, bias=True)
+        (1): ReLU()
+      )
+      (gamma): Linear(in_features=256, out_features=256, bias=True)
+      (beta): Linear(in_features=256, out_features=256, bias=True)
+      (ln): LayerNorm((256,), eps=1e-05, elementwise_affine=False)
+    )
+    (ego_pose_memory): MLN(
+      (reduce): Sequential(
+        (0): Linear(in_features=180, out_features=256, bias=True)
+        (1): ReLU()
+      )
+      (gamma): Linear(in_features=256, out_features=256, bias=True)
+      (beta): Linear(in_features=256, out_features=256, bias=True)
+      (ln): LayerNorm((256,), eps=1e-05, elementwise_affine=False)
+    )
+    (loss_iou): GIoULoss()
+    (transformer): PETRTemporalTransformer(
+      (decoder): PETRTransformerDecoder(
+        (layers): ModuleList(
+          (0): PETRTemporalDecoderLayer(
+            (attentions): ModuleList(
+              (0): MultiheadAttention(
+                (attn): MultiheadAttention(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+              (1): PETRMultiheadAttention(
+                (attn): MultiheadAttentionWrapper(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffns): ModuleList(
+              (0): FFN(
+                (activate): ReLU(inplace=True)
+                (layers): Sequential(
+                  (0): Sequential(
+                    (0): Linear(in_features=256, out_features=2048, bias=True)
+                    (1): ReLU(inplace=True)
+                    (2): Dropout(p=0.1, inplace=False)
+                  )
+                  (1): Linear(in_features=2048, out_features=256, bias=True)
+                  (2): Dropout(p=0.1, inplace=False)
+                )
+                (dropout_layer): Identity()
+              )
+            )
+            (norms): ModuleList(
+              (0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+          (1): PETRTemporalDecoderLayer(
+            (attentions): ModuleList(
+              (0): MultiheadAttention(
+                (attn): MultiheadAttention(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+              (1): PETRMultiheadAttention(
+                (attn): MultiheadAttentionWrapper(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffns): ModuleList(
+              (0): FFN(
+                (activate): ReLU(inplace=True)
+                (layers): Sequential(
+                  (0): Sequential(
+                    (0): Linear(in_features=256, out_features=2048, bias=True)
+                    (1): ReLU(inplace=True)
+                    (2): Dropout(p=0.1, inplace=False)
+                  )
+                  (1): Linear(in_features=2048, out_features=256, bias=True)
+                  (2): Dropout(p=0.1, inplace=False)
+                )
+                (dropout_layer): Identity()
+              )
+            )
+            (norms): ModuleList(
+              (0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+          (2): PETRTemporalDecoderLayer(
+            (attentions): ModuleList(
+              (0): MultiheadAttention(
+                (attn): MultiheadAttention(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+              (1): PETRMultiheadAttention(
+                (attn): MultiheadAttentionWrapper(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffns): ModuleList(
+              (0): FFN(
+                (activate): ReLU(inplace=True)
+                (layers): Sequential(
+                  (0): Sequential(
+                    (0): Linear(in_features=256, out_features=2048, bias=True)
+                    (1): ReLU(inplace=True)
+                    (2): Dropout(p=0.1, inplace=False)
+                  )
+                  (1): Linear(in_features=2048, out_features=256, bias=True)
+                  (2): Dropout(p=0.1, inplace=False)
+                )
+                (dropout_layer): Identity()
+              )
+            )
+            (norms): ModuleList(
+              (0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+          (3): PETRTemporalDecoderLayer(
+            (attentions): ModuleList(
+              (0): MultiheadAttention(
+                (attn): MultiheadAttention(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+              (1): PETRMultiheadAttention(
+                (attn): MultiheadAttentionWrapper(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffns): ModuleList(
+              (0): FFN(
+                (activate): ReLU(inplace=True)
+                (layers): Sequential(
+                  (0): Sequential(
+                    (0): Linear(in_features=256, out_features=2048, bias=True)
+                    (1): ReLU(inplace=True)
+                    (2): Dropout(p=0.1, inplace=False)
+                  )
+                  (1): Linear(in_features=2048, out_features=256, bias=True)
+                  (2): Dropout(p=0.1, inplace=False)
+                )
+                (dropout_layer): Identity()
+              )
+            )
+            (norms): ModuleList(
+              (0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+          (4): PETRTemporalDecoderLayer(
+            (attentions): ModuleList(
+              (0): MultiheadAttention(
+                (attn): MultiheadAttention(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+              (1): PETRMultiheadAttention(
+                (attn): MultiheadAttentionWrapper(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffns): ModuleList(
+              (0): FFN(
+                (activate): ReLU(inplace=True)
+                (layers): Sequential(
+                  (0): Sequential(
+                    (0): Linear(in_features=256, out_features=2048, bias=True)
+                    (1): ReLU(inplace=True)
+                    (2): Dropout(p=0.1, inplace=False)
+                  )
+                  (1): Linear(in_features=2048, out_features=256, bias=True)
+                  (2): Dropout(p=0.1, inplace=False)
+                )
+                (dropout_layer): Identity()
+              )
+            )
+            (norms): ModuleList(
+              (0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+          (5): PETRTemporalDecoderLayer(
+            (attentions): ModuleList(
+              (0): MultiheadAttention(
+                (attn): MultiheadAttention(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+              (1): PETRMultiheadAttention(
+                (attn): MultiheadAttentionWrapper(
+                  (out_proj): NonDynamicallyQuantizableLinear(in_features=256, out_features=256, bias=True)
+                )
+                (proj_drop): Dropout(p=0.0, inplace=False)
+                (dropout_layer): Dropout(p=0.1, inplace=False)
+              )
+            )
+            (ffns): ModuleList(
+              (0): FFN(
+                (activate): ReLU(inplace=True)
+                (layers): Sequential(
+                  (0): Sequential(
+                    (0): Linear(in_features=256, out_features=2048, bias=True)
+                    (1): ReLU(inplace=True)
+                    (2): Dropout(p=0.1, inplace=False)
+                  )
+                  (1): Linear(in_features=2048, out_features=256, bias=True)
+                  (2): Dropout(p=0.1, inplace=False)
+                )
+                (dropout_layer): Identity()
+              )
+            )
+            (norms): ModuleList(
+              (0): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+              (2): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+            )
+          )
+        )
+        (post_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+  )
+  (img_backbone): ResNet(
+    (conv1): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)
+    (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (relu): ReLU(inplace=True)
+    (maxpool): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)
+    (layer1): ResLayer(
+      (0): Bottleneck(
+        (conv1): Conv2d(64, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (downsample): Sequential(
+          (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+          (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (1): Bottleneck(
+        (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (2): Bottleneck(
+        (conv1): Conv2d(256, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+    )
+    (layer2): ResLayer(
+      (0): Bottleneck(
+        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (downsample): Sequential(
+          (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (1): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (2): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (3): Bottleneck(
+        (conv1): Conv2d(512, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(128, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+    )
+    (layer3): ResLayer(
+      (0): Bottleneck(
+        (conv1): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (downsample): Sequential(
+          (0): Conv2d(512, 1024, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (1): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (2): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (3): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (4): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (5): Bottleneck(
+        (conv1): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(256, 1024, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+    )
+    (layer4): ResLayer(
+      (0): Bottleneck(
+        (conv1): Conv2d(1024, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(2, 2), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+        (downsample): Sequential(
+          (0): Conv2d(1024, 2048, kernel_size=(1, 1), stride=(2, 2), bias=False)
+          (1): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        )
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (1): Bottleneck(
+        (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+      (2): Bottleneck(
+        (conv1): Conv2d(2048, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+        (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (conv3): Conv2d(512, 2048, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (bn3): BatchNorm2d(2048, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+        (relu): ReLU(inplace=True)
+      )
+      init_cfg={'type': 'Constant', 'val': 0, 'override': {'name': 'norm3'}}
+    )
+  )
+  init_cfg=[{'type': 'Kaiming', 'layer': 'Conv2d'}, {'type': 'Constant', 'val': 1, 'layer': ['_BatchNorm', 'GroupNorm']}]
+  (img_neck): CPFPN(
+    (lateral_convs): ModuleList(
+      (0): ConvModule(
+        (conv): Conv2d(1024, 256, kernel_size=(1, 1), stride=(1, 1))
+      )
+      (1): ConvModule(
+        (conv): Conv2d(2048, 256, kernel_size=(1, 1), stride=(1, 1))
+      )
+    )
+    (fpn_convs): ModuleList(
+      (0): ConvModule(
+        (conv): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      )
+    )
+  )
+  init_cfg={'type': 'Xavier', 'layer': 'Conv2d', 'distribution': 'uniform'}
+  (img_roi_head): FocalHead(
+    (loss_cls): FocalLoss()
+    (loss_bbox): IoULoss()
+    (cls): Conv2d(256, 10, kernel_size=(1, 1), stride=(1, 1))
+    (shared_reg): Sequential(
+      (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+      (2): ReLU()
+    )
+    (shared_cls): Sequential(
+      (0): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): GroupNorm(32, 256, eps=1e-05, affine=True)
+      (2): ReLU()
+    )
+    (centerness): Conv2d(256, 1, kernel_size=(1, 1), stride=(1, 1))
+    (ltrb): Conv2d(256, 4, kernel_size=(1, 1), stride=(1, 1))
+    (center2d): Conv2d(256, 2, kernel_size=(1, 1), stride=(1, 1))
+    (loss_cls2d): QualityFocalLoss()
+    (loss_bbox2d): L1Loss()
+    (loss_iou2d): GIoULoss()
+    (loss_centers2d): L1Loss()
+    (loss_centerness): GaussianFocalLoss()
+  )
+  (grid_mask): GridMask()
+)
+2026-11-01 20:17:23,928 - mmdet - INFO - load checkpoint from local path: /srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth
+2026-11-01 20:17:24,116 - mmdet - INFO - Start running, host: pth@gpuserver, work_dir: /srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/train
+2026-11-01 20:17:24,117 - mmdet - INFO - Hooks will be executed in the following order:
+before_run:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(ABOVE_NORMAL) Fp16OptimizerHook                  
+(NORMAL      ) CheckpointHook                     
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_epoch:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_train_iter:
+(VERY_HIGH   ) CosineAnnealingLrUpdaterHook       
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_train_iter:
+(ABOVE_NORMAL) Fp16OptimizerHook                  
+(NORMAL      ) CheckpointHook                     
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_train_epoch:
+(NORMAL      ) CheckpointHook                     
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_epoch:
+(LOW         ) IterTimerHook                      
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+before_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_iter:
+(LOW         ) IterTimerHook                      
+ -------------------- 
+after_val_epoch:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+after_run:
+(VERY_LOW    ) TextLoggerHook                     
+ -------------------- 
+2026-11-01 20:17:24,117 - mmdet - INFO - workflow: [('train', 1)], max: 283 iters
+2026-11-01 20:17:24,118 - mmdet - INFO - Checkpoints will be saved to /srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/train by HardDiskBackend.
+2026-11-01 20:17:25,010 - mmcv - INFO - Reducer buckets have been rebuilt in this iteration.
+2026-11-01 20:17:29,517 - mmdet - INFO - Iter [10/283]	lr: 1.579e-05, eta: 0:02:27, time: 0.540, data_time: 0.242, memory: 2217, frame_0_loss_cls: 0.5463, frame_0_loss_bbox: 1.0685, frame_0_d0.loss_cls: 0.5684, frame_0_d0.loss_bbox: 1.0846, frame_0_d1.loss_cls: 0.5528, frame_0_d1.loss_bbox: 1.0812, frame_0_d2.loss_cls: 0.5666, frame_0_d2.loss_bbox: 1.0700, frame_0_d3.loss_cls: 0.5450, frame_0_d3.loss_bbox: 1.0628, frame_0_d4.loss_cls: 0.5496, frame_0_d4.loss_bbox: 1.0672, frame_0_dn_loss_cls: 0.5156, frame_0_dn_loss_bbox: 0.8307, frame_0_d0.dn_loss_cls: 0.5103, frame_0_d0.dn_loss_bbox: 0.8841, frame_0_d1.dn_loss_cls: 0.5187, frame_0_d1.dn_loss_bbox: 0.8685, frame_0_d2.dn_loss_cls: 0.5210, frame_0_d2.dn_loss_bbox: 0.8456, frame_0_d3.dn_loss_cls: 0.5154, frame_0_d3.dn_loss_bbox: 0.8353, frame_0_d4.dn_loss_cls: 0.5199, frame_0_d4.dn_loss_bbox: 0.8322, frame_0_enc_loss_cls: 0.6880, frame_0_enc_loss_bbox: 0.2531, frame_0_enc_loss_iou: 0.6164, frame_0_centers2d_losses: 0.1900, frame_0_centerness_losses: 0.4245, loss: 20.1325, grad_norm: nan
+2026-11-01 20:17:34,775 - mmdet - INFO - Iter [20/283]	lr: 2.390e-05, eta: 0:02:20, time: 0.526, data_time: 0.228, memory: 2217, frame_0_loss_cls: 0.3437, frame_0_loss_bbox: 0.7826, frame_0_d0.loss_cls: 0.3424, frame_0_d0.loss_bbox: 0.7871, frame_0_d1.loss_cls: 0.3466, frame_0_d1.loss_bbox: 0.7863, frame_0_d2.loss_cls: 0.3470, frame_0_d2.loss_bbox: 0.7757, frame_0_d3.loss_cls: 0.3475, frame_0_d3.loss_bbox: 0.7751, frame_0_d4.loss_cls: 0.3453, frame_0_d4.loss_bbox: 0.7809, frame_0_dn_loss_cls: 0.4729, frame_0_dn_loss_bbox: 0.7315, frame_0_d0.dn_loss_cls: 0.4720, frame_0_d0.dn_loss_bbox: 0.7730, frame_0_d1.dn_loss_cls: 0.4716, frame_0_d1.dn_loss_bbox: 0.7547, frame_0_d2.dn_loss_cls: 0.4676, frame_0_d2.dn_loss_bbox: 0.7426, frame_0_d3.dn_loss_cls: 0.4718, frame_0_d3.dn_loss_bbox: 0.7366, frame_0_d4.dn_loss_cls: 0.4721, frame_0_d4.dn_loss_bbox: 0.7326, frame_0_enc_loss_cls: 0.7356, frame_0_enc_loss_bbox: 0.3425, frame_0_enc_loss_iou: 0.6585, frame_0_centers2d_losses: 0.2375, frame_0_centerness_losses: 0.5484, loss: 16.5814, grad_norm: 75.4976
+2026-11-01 20:17:39,837 - mmdet - INFO - Iter [30/283]	lr: 2.436e-05, eta: 0:02:12, time: 0.506, data_time: 0.222, memory: 2217, frame_0_loss_cls: 0.3877, frame_0_loss_bbox: 0.8302, frame_0_d0.loss_cls: 0.3914, frame_0_d0.loss_bbox: 0.8136, frame_0_d1.loss_cls: 0.4015, frame_0_d1.loss_bbox: 0.8176, frame_0_d2.loss_cls: 0.3949, frame_0_d2.loss_bbox: 0.8294, frame_0_d3.loss_cls: 0.3905, frame_0_d3.loss_bbox: 0.8344, frame_0_d4.loss_cls: 0.3903, frame_0_d4.loss_bbox: 0.8326, frame_0_dn_loss_cls: 0.4158, frame_0_dn_loss_bbox: 0.6925, frame_0_d0.dn_loss_cls: 0.4288, frame_0_d0.dn_loss_bbox: 0.7408, frame_0_d1.dn_loss_cls: 0.4245, frame_0_d1.dn_loss_bbox: 0.7177, frame_0_d2.dn_loss_cls: 0.4228, frame_0_d2.dn_loss_bbox: 0.6988, frame_0_d3.dn_loss_cls: 0.4202, frame_0_d3.dn_loss_bbox: 0.6914, frame_0_d4.dn_loss_cls: 0.4194, frame_0_d4.dn_loss_bbox: 0.6944, frame_0_enc_loss_cls: 0.6422, frame_0_enc_loss_bbox: 0.3244, frame_0_enc_loss_iou: 0.6556, frame_0_centers2d_losses: 0.2307, frame_0_centerness_losses: 0.5558, loss: 16.4898, grad_norm: 98.9795
+2026-11-01 20:17:44,932 - mmdet - INFO - Iter [40/283]	lr: 2.385e-05, eta: 0:02:06, time: 0.509, data_time: 0.234, memory: 2217, frame_0_loss_cls: 0.2944, frame_0_loss_bbox: 0.6960, frame_0_d0.loss_cls: 0.3201, frame_0_d0.loss_bbox: 0.6991, frame_0_d1.loss_cls: 0.3145, frame_0_d1.loss_bbox: 0.7016, frame_0_d2.loss_cls: 0.3124, frame_0_d2.loss_bbox: 0.6851, frame_0_d3.loss_cls: 0.2994, frame_0_d3.loss_bbox: 0.6967, frame_0_d4.loss_cls: 0.2962, frame_0_d4.loss_bbox: 0.6968, frame_0_dn_loss_cls: 0.3844, frame_0_dn_loss_bbox: 0.6408, frame_0_d0.dn_loss_cls: 0.4098, frame_0_d0.dn_loss_bbox: 0.7077, frame_0_d1.dn_loss_cls: 0.4006, frame_0_d1.dn_loss_bbox: 0.6895, frame_0_d2.dn_loss_cls: 0.3953, frame_0_d2.dn_loss_bbox: 0.6640, frame_0_d3.dn_loss_cls: 0.3931, frame_0_d3.dn_loss_bbox: 0.6487, frame_0_d4.dn_loss_cls: 0.3890, frame_0_d4.dn_loss_bbox: 0.6428, frame_0_enc_loss_cls: 0.6340, frame_0_enc_loss_bbox: 0.2555, frame_0_enc_loss_iou: 0.5798, frame_0_centers2d_losses: 0.1776, frame_0_centerness_losses: 0.4271, loss: 14.4519, grad_norm: 80.0661
+2026-11-01 20:17:49,824 - mmdet - INFO - Iter [50/283]	lr: 2.320e-05, eta: 0:01:59, time: 0.489, data_time: 0.222, memory: 2217, frame_0_loss_cls: 0.5726, frame_0_loss_bbox: 1.1290, frame_0_d0.loss_cls: 0.5800, frame_0_d0.loss_bbox: 1.1865, frame_0_d1.loss_cls: 0.5826, frame_0_d1.loss_bbox: 1.1713, frame_0_d2.loss_cls: 0.5734, frame_0_d2.loss_bbox: 1.1440, frame_0_d3.loss_cls: 0.5710, frame_0_d3.loss_bbox: 1.1410, frame_0_d4.loss_cls: 0.5687, frame_0_d4.loss_bbox: 1.1409, frame_0_dn_loss_cls: 0.4333, frame_0_dn_loss_bbox: 0.9064, frame_0_d0.dn_loss_cls: 0.4498, frame_0_d0.dn_loss_bbox: 0.9735, frame_0_d1.dn_loss_cls: 0.4412, frame_0_d1.dn_loss_bbox: 0.9262, frame_0_d2.dn_loss_cls: 0.4373, frame_0_d2.dn_loss_bbox: 0.9068, frame_0_d3.dn_loss_cls: 0.4358, frame_0_d3.dn_loss_bbox: 0.9055, frame_0_d4.dn_loss_cls: 0.4336, frame_0_d4.dn_loss_bbox: 0.9082, frame_0_enc_loss_cls: 0.4284, frame_0_enc_loss_bbox: 0.2666, frame_0_enc_loss_iou: 0.7520, frame_0_centers2d_losses: 0.1725, frame_0_centerness_losses: 0.4680, loss: 20.6062, grad_norm: inf
+2026-11-01 20:17:54,807 - mmdet - INFO - Iter [60/283]	lr: 2.242e-05, eta: 0:01:54, time: 0.498, data_time: 0.219, memory: 2217, frame_0_loss_cls: 0.4565, frame_0_loss_bbox: 1.0315, frame_0_d0.loss_cls: 0.4661, frame_0_d0.loss_bbox: 1.0696, frame_0_d1.loss_cls: 0.4633, frame_0_d1.loss_bbox: 1.0615, frame_0_d2.loss_cls: 0.4693, frame_0_d2.loss_bbox: 1.0359, frame_0_d3.loss_cls: 0.4622, frame_0_d3.loss_bbox: 1.0337, frame_0_d4.loss_cls: 0.4549, frame_0_d4.loss_bbox: 1.0367, frame_0_dn_loss_cls: 0.4331, frame_0_dn_loss_bbox: 0.7794, frame_0_d0.dn_loss_cls: 0.4473, frame_0_d0.dn_loss_bbox: 0.8589, frame_0_d1.dn_loss_cls: 0.4371, frame_0_d1.dn_loss_bbox: 0.8007, frame_0_d2.dn_loss_cls: 0.4351, frame_0_d2.dn_loss_bbox: 0.7799, frame_0_d3.dn_loss_cls: 0.4335, frame_0_d3.dn_loss_bbox: 0.7784, frame_0_d4.dn_loss_cls: 0.4330, frame_0_d4.dn_loss_bbox: 0.7815, frame_0_enc_loss_cls: 0.3971, frame_0_enc_loss_bbox: 0.2420, frame_0_enc_loss_iou: 0.7939, frame_0_centers2d_losses: 0.1652, frame_0_centerness_losses: 0.4468, loss: 18.4839, grad_norm: 89.2573
+2026-11-01 20:17:59,870 - mmdet - INFO - Iter [70/283]	lr: 2.151e-05, eta: 0:01:48, time: 0.506, data_time: 0.221, memory: 2217, frame_0_loss_cls: 0.4555, frame_0_loss_bbox: 0.8516, frame_0_d0.loss_cls: 0.4634, frame_0_d0.loss_bbox: 0.8716, frame_0_d1.loss_cls: 0.4656, frame_0_d1.loss_bbox: 0.8669, frame_0_d2.loss_cls: 0.4560, frame_0_d2.loss_bbox: 0.8621, frame_0_d3.loss_cls: 0.4519, frame_0_d3.loss_bbox: 0.8580, frame_0_d4.loss_cls: 0.4557, frame_0_d4.loss_bbox: 0.8505, frame_0_dn_loss_cls: 0.4146, frame_0_dn_loss_bbox: 0.6929, frame_0_d0.dn_loss_cls: 0.4268, frame_0_d0.dn_loss_bbox: 0.7717, frame_0_d1.dn_loss_cls: 0.4190, frame_0_d1.dn_loss_bbox: 0.7298, frame_0_d2.dn_loss_cls: 0.4214, frame_0_d2.dn_loss_bbox: 0.7139, frame_0_d3.dn_loss_cls: 0.4174, frame_0_d3.dn_loss_bbox: 0.6964, frame_0_d4.dn_loss_cls: 0.4168, frame_0_d4.dn_loss_bbox: 0.6949, frame_0_enc_loss_cls: 0.4336, frame_0_enc_loss_bbox: 0.2277, frame_0_enc_loss_iou: 0.7454, frame_0_centers2d_losses: 0.1643, frame_0_centerness_losses: 0.3604, loss: 16.6558, grad_norm: 85.6269
+2026-11-01 20:18:05,064 - mmdet - INFO - Iter [80/283]	lr: 2.050e-05, eta: 0:01:43, time: 0.519, data_time: 0.234, memory: 2217, frame_0_loss_cls: 0.4721, frame_0_loss_bbox: 0.7650, frame_0_d0.loss_cls: 0.4778, frame_0_d0.loss_bbox: 0.7832, frame_0_d1.loss_cls: 0.4721, frame_0_d1.loss_bbox: 0.7828, frame_0_d2.loss_cls: 0.4734, frame_0_d2.loss_bbox: 0.7754, frame_0_d3.loss_cls: 0.4738, frame_0_d3.loss_bbox: 0.7736, frame_0_d4.loss_cls: 0.4752, frame_0_d4.loss_bbox: 0.7636, frame_0_dn_loss_cls: 0.4362, frame_0_dn_loss_bbox: 0.7337, frame_0_d0.dn_loss_cls: 0.4539, frame_0_d0.dn_loss_bbox: 0.7957, frame_0_d1.dn_loss_cls: 0.4436, frame_0_d1.dn_loss_bbox: 0.7658, frame_0_d2.dn_loss_cls: 0.4378, frame_0_d2.dn_loss_bbox: 0.7453, frame_0_d3.dn_loss_cls: 0.4408, frame_0_d3.dn_loss_bbox: 0.7355, frame_0_d4.dn_loss_cls: 0.4371, frame_0_d4.dn_loss_bbox: 0.7321, frame_0_enc_loss_cls: 0.5376, frame_0_enc_loss_bbox: 0.2823, frame_0_enc_loss_iou: 0.7559, frame_0_centers2d_losses: 0.1838, frame_0_centerness_losses: 0.4696, loss: 16.8747, grad_norm: 94.9283
+2026-11-01 20:18:10,264 - mmdet - INFO - Iter [90/283]	lr: 1.939e-05, eta: 0:01:38, time: 0.520, data_time: 0.231, memory: 2217, frame_0_loss_cls: 0.7558, frame_0_loss_bbox: 1.5846, frame_0_d0.loss_cls: 0.7522, frame_0_d0.loss_bbox: 1.6074, frame_0_d1.loss_cls: 0.7374, frame_0_d1.loss_bbox: 1.5843, frame_0_d2.loss_cls: 0.7364, frame_0_d2.loss_bbox: 1.5816, frame_0_d3.loss_cls: 0.7530, frame_0_d3.loss_bbox: 1.5771, frame_0_d4.loss_cls: 0.7515, frame_0_d4.loss_bbox: 1.5834, frame_0_dn_loss_cls: 0.5658, frame_0_dn_loss_bbox: 1.0456, frame_0_d0.dn_loss_cls: 0.5951, frame_0_d0.dn_loss_bbox: 1.1248, frame_0_d1.dn_loss_cls: 0.5803, frame_0_d1.dn_loss_bbox: 1.0829, frame_0_d2.dn_loss_cls: 0.5759, frame_0_d2.dn_loss_bbox: 1.0639, frame_0_d3.dn_loss_cls: 0.5709, frame_0_d3.dn_loss_bbox: 1.0541, frame_0_d4.dn_loss_cls: 0.5615, frame_0_d4.dn_loss_bbox: 1.0431, frame_0_enc_loss_cls: 0.6466, frame_0_enc_loss_bbox: 0.3185, frame_0_enc_loss_iou: 0.7801, frame_0_centers2d_losses: 0.2157, frame_0_centerness_losses: 0.6770, loss: 26.5064, grad_norm: 196.8113
+2026-11-01 20:18:15,666 - mmdet - INFO - Iter [100/283]	lr: 1.819e-05, eta: 0:01:34, time: 0.540, data_time: 0.222, memory: 2217, frame_0_loss_cls: 0.6379, frame_0_loss_bbox: 1.1622, frame_0_d0.loss_cls: 0.6407, frame_0_d0.loss_bbox: 1.2335, frame_0_d1.loss_cls: 0.6274, frame_0_d1.loss_bbox: 1.2099, frame_0_d2.loss_cls: 0.6269, frame_0_d2.loss_bbox: 1.1854, frame_0_d3.loss_cls: 0.6374, frame_0_d3.loss_bbox: 1.1687, frame_0_d4.loss_cls: 0.6384, frame_0_d4.loss_bbox: 1.1692, frame_0_dn_loss_cls: 0.5244, frame_0_dn_loss_bbox: 0.8362, frame_0_d0.dn_loss_cls: 0.5386, frame_0_d0.dn_loss_bbox: 0.9349, frame_0_d1.dn_loss_cls: 0.5345, frame_0_d1.dn_loss_bbox: 0.8797, frame_0_d2.dn_loss_cls: 0.5342, frame_0_d2.dn_loss_bbox: 0.8601, frame_0_d3.dn_loss_cls: 0.5301, frame_0_d3.dn_loss_bbox: 0.8363, frame_0_d4.dn_loss_cls: 0.5272, frame_0_d4.dn_loss_bbox: 0.8356, frame_0_enc_loss_cls: 0.5682, frame_0_enc_loss_bbox: 0.2710, frame_0_enc_loss_iou: 0.8078, frame_0_centers2d_losses: 0.1935, frame_0_centerness_losses: 0.5629, loss: 21.7130, grad_norm: 108.8842
+2026-11-01 20:18:20,475 - mmdet - INFO - Iter [110/283]	lr: 1.692e-05, eta: 0:01:28, time: 0.481, data_time: 0.219, memory: 2217, frame_0_loss_cls: 0.4399, frame_0_loss_bbox: 0.8534, frame_0_d0.loss_cls: 0.4447, frame_0_d0.loss_bbox: 0.8818, frame_0_d1.loss_cls: 0.4587, frame_0_d1.loss_bbox: 0.8620, frame_0_d2.loss_cls: 0.4417, frame_0_d2.loss_bbox: 0.8738, frame_0_d3.loss_cls: 0.4447, frame_0_d3.loss_bbox: 0.8484, frame_0_d4.loss_cls: 0.4405, frame_0_d4.loss_bbox: 0.8516, frame_0_dn_loss_cls: 0.3951, frame_0_dn_loss_bbox: 0.7232, frame_0_d0.dn_loss_cls: 0.4097, frame_0_d0.dn_loss_bbox: 0.8248, frame_0_d1.dn_loss_cls: 0.4021, frame_0_d1.dn_loss_bbox: 0.7741, frame_0_d2.dn_loss_cls: 0.3956, frame_0_d2.dn_loss_bbox: 0.7543, frame_0_d3.dn_loss_cls: 0.3972, frame_0_d3.dn_loss_bbox: 0.7216, frame_0_d4.dn_loss_cls: 0.3957, frame_0_d4.dn_loss_bbox: 0.7203, frame_0_enc_loss_cls: 0.4478, frame_0_enc_loss_bbox: 0.2658, frame_0_enc_loss_iou: 0.7565, frame_0_centers2d_losses: 0.1729, frame_0_centerness_losses: 0.4553, loss: 16.8532, grad_norm: 129.8891
+2026-11-01 20:18:25,167 - mmdet - INFO - Iter [120/283]	lr: 1.560e-05, eta: 0:01:22, time: 0.469, data_time: 0.218, memory: 2217, frame_0_loss_cls: 0.3582, frame_0_loss_bbox: 0.9973, frame_0_d0.loss_cls: 0.4563, frame_0_d0.loss_bbox: 0.9561, frame_0_d1.loss_cls: 0.4238, frame_0_d1.loss_bbox: 0.9312, frame_0_d2.loss_cls: 0.3755, frame_0_d2.loss_bbox: 0.9857, frame_0_d3.loss_cls: 0.3595, frame_0_d3.loss_bbox: 0.9962, frame_0_d4.loss_cls: 0.3581, frame_0_d4.loss_bbox: 0.9957, frame_0_dn_loss_cls: 0.4140, frame_0_dn_loss_bbox: 0.7286, frame_0_d0.dn_loss_cls: 0.4301, frame_0_d0.dn_loss_bbox: 0.8454, frame_0_d1.dn_loss_cls: 0.4101, frame_0_d1.dn_loss_bbox: 0.7828, frame_0_d2.dn_loss_cls: 0.4097, frame_0_d2.dn_loss_bbox: 0.7500, frame_0_d3.dn_loss_cls: 0.4147, frame_0_d3.dn_loss_bbox: 0.7366, frame_0_d4.dn_loss_cls: 0.4128, frame_0_d4.dn_loss_bbox: 0.7278, frame_0_enc_loss_cls: 0.4698, frame_0_enc_loss_bbox: 0.2132, frame_0_enc_loss_iou: 0.7457, frame_0_centers2d_losses: 0.1480, frame_0_centerness_losses: 0.4911, loss: 17.3243, grad_norm: nan
+2026-11-01 20:18:29,870 - mmdet - INFO - Iter [130/283]	lr: 1.424e-05, eta: 0:01:17, time: 0.470, data_time: 0.218, memory: 2217, frame_0_loss_cls: 0.6976, frame_0_loss_bbox: 1.3412, frame_0_d0.loss_cls: 0.7087, frame_0_d0.loss_bbox: 1.4312, frame_0_d1.loss_cls: 0.7038, frame_0_d1.loss_bbox: 1.3297, frame_0_d2.loss_cls: 0.7087, frame_0_d2.loss_bbox: 1.3480, frame_0_d3.loss_cls: 0.7400, frame_0_d3.loss_bbox: 1.3194, frame_0_d4.loss_cls: 0.6878, frame_0_d4.loss_bbox: 1.3279, frame_0_dn_loss_cls: 0.5470, frame_0_dn_loss_bbox: 1.1163, frame_0_d0.dn_loss_cls: 0.5384, frame_0_d0.dn_loss_bbox: 1.3065, frame_0_d1.dn_loss_cls: 0.5469, frame_0_d1.dn_loss_bbox: 1.1931, frame_0_d2.dn_loss_cls: 0.5612, frame_0_d2.dn_loss_bbox: 1.1572, frame_0_d3.dn_loss_cls: 0.5521, frame_0_d3.dn_loss_bbox: 1.1202, frame_0_d4.dn_loss_cls: 0.5432, frame_0_d4.dn_loss_bbox: 1.1125, frame_0_enc_loss_cls: 0.5572, frame_0_enc_loss_bbox: 0.2074, frame_0_enc_loss_iou: 0.7899, frame_0_centers2d_losses: 0.1584, frame_0_centerness_losses: 0.4993, loss: 24.8509, grad_norm: 312.4539
+2026-11-01 20:18:34,606 - mmdet - INFO - Iter [140/283]	lr: 1.286e-05, eta: 0:01:11, time: 0.474, data_time: 0.222, memory: 2217, frame_0_loss_cls: 0.6540, frame_0_loss_bbox: 1.3329, frame_0_d0.loss_cls: 0.7016, frame_0_d0.loss_bbox: 1.4044, frame_0_d1.loss_cls: 0.6638, frame_0_d1.loss_bbox: 1.3815, frame_0_d2.loss_cls: 0.6722, frame_0_d2.loss_bbox: 1.3461, frame_0_d3.loss_cls: 0.6734, frame_0_d3.loss_bbox: 1.3263, frame_0_d4.loss_cls: 0.6698, frame_0_d4.loss_bbox: 1.3197, frame_0_dn_loss_cls: 0.4307, frame_0_dn_loss_bbox: 1.1267, frame_0_d0.dn_loss_cls: 0.4629, frame_0_d0.dn_loss_bbox: 1.3034, frame_0_d1.dn_loss_cls: 0.4493, frame_0_d1.dn_loss_bbox: 1.1998, frame_0_d2.dn_loss_cls: 0.4350, frame_0_d2.dn_loss_bbox: 1.1936, frame_0_d3.dn_loss_cls: 0.4418, frame_0_d3.dn_loss_bbox: 1.1375, frame_0_d4.dn_loss_cls: 0.4366, frame_0_d4.dn_loss_bbox: 1.1339, frame_0_enc_loss_cls: 0.3944, frame_0_enc_loss_bbox: 0.1884, frame_0_enc_loss_iou: 0.8188, frame_0_centers2d_losses: 0.1338, frame_0_centerness_losses: 0.4900, loss: 23.9224, grad_norm: 297.3569
+2026-11-01 20:18:39,202 - mmdet - INFO - Iter [150/283]	lr: 1.147e-05, eta: 0:01:06, time: 0.460, data_time: 0.214, memory: 2217, frame_0_loss_cls: 0.5564, frame_0_loss_bbox: 1.3117, frame_0_d0.loss_cls: 0.5853, frame_0_d0.loss_bbox: 1.3912, frame_0_d1.loss_cls: 0.5694, frame_0_d1.loss_bbox: 1.3487, frame_0_d2.loss_cls: 0.5749, frame_0_d2.loss_bbox: 1.3385, frame_0_d3.loss_cls: 0.5631, frame_0_d3.loss_bbox: 1.3253, frame_0_d4.loss_cls: 0.5406, frame_0_d4.loss_bbox: 1.3255, frame_0_dn_loss_cls: 0.4036, frame_0_dn_loss_bbox: 1.1569, frame_0_d0.dn_loss_cls: 0.4208, frame_0_d0.dn_loss_bbox: 1.2992, frame_0_d1.dn_loss_cls: 0.4195, frame_0_d1.dn_loss_bbox: 1.2362, frame_0_d2.dn_loss_cls: 0.4125, frame_0_d2.dn_loss_bbox: 1.1893, frame_0_d3.dn_loss_cls: 0.4154, frame_0_d3.dn_loss_bbox: 1.1607, frame_0_d4.dn_loss_cls: 0.4069, frame_0_d4.dn_loss_bbox: 1.1572, frame_0_enc_loss_cls: 0.4076, frame_0_enc_loss_bbox: 0.1820, frame_0_enc_loss_iou: 0.6498, frame_0_centers2d_losses: 0.1278, frame_0_centerness_losses: 0.5162, loss: 22.9921, grad_norm: 287.0133
+2026-11-01 20:18:43,738 - mmdet - INFO - Iter [160/283]	lr: 1.010e-05, eta: 0:01:01, time: 0.454, data_time: 0.212, memory: 2217, frame_0_loss_cls: 0.7567, frame_0_loss_bbox: 1.1458, frame_0_d0.loss_cls: 0.8093, frame_0_d0.loss_bbox: 1.1782, frame_0_d1.loss_cls: 0.8465, frame_0_d1.loss_bbox: 1.0912, frame_0_d2.loss_cls: 0.7692, frame_0_d2.loss_bbox: 1.1230, frame_0_d3.loss_cls: 0.7926, frame_0_d3.loss_bbox: 1.1028, frame_0_d4.loss_cls: 0.7464, frame_0_d4.loss_bbox: 1.1629, frame_0_dn_loss_cls: 0.6849, frame_0_dn_loss_bbox: 0.9165, frame_0_d0.dn_loss_cls: 0.7042, frame_0_d0.dn_loss_bbox: 1.0998, frame_0_d1.dn_loss_cls: 0.7306, frame_0_d1.dn_loss_bbox: 1.0241, frame_0_d2.dn_loss_cls: 0.6992, frame_0_d2.dn_loss_bbox: 0.9769, frame_0_d3.dn_loss_cls: 0.7008, frame_0_d3.dn_loss_bbox: 0.9477, frame_0_d4.dn_loss_cls: 0.7042, frame_0_d4.dn_loss_bbox: 0.9202, frame_0_enc_loss_cls: 0.7191, frame_0_enc_loss_bbox: 0.2339, frame_0_enc_loss_iou: 0.5818, frame_0_centers2d_losses: 0.1356, frame_0_centerness_losses: 0.4897, loss: 23.7939, grad_norm: 682.6005
+2026-11-01 20:18:48,321 - mmdet - INFO - Iter [170/283]	lr: 8.759e-06, eta: 0:00:55, time: 0.458, data_time: 0.210, memory: 2217, frame_0_loss_cls: 0.5599, frame_0_loss_bbox: 0.8530, frame_0_d0.loss_cls: 0.5872, frame_0_d0.loss_bbox: 0.9124, frame_0_d1.loss_cls: 0.5833, frame_0_d1.loss_bbox: 0.8482, frame_0_d2.loss_cls: 0.5923, frame_0_d2.loss_bbox: 0.8441, frame_0_d3.loss_cls: 0.6064, frame_0_d3.loss_bbox: 0.8215, frame_0_d4.loss_cls: 0.5543, frame_0_d4.loss_bbox: 0.8570, frame_0_dn_loss_cls: 0.4846, frame_0_dn_loss_bbox: 0.8313, frame_0_d0.dn_loss_cls: 0.4879, frame_0_d0.dn_loss_bbox: 1.0009, frame_0_d1.dn_loss_cls: 0.5090, frame_0_d1.dn_loss_bbox: 0.9028, frame_0_d2.dn_loss_cls: 0.4885, frame_0_d2.dn_loss_bbox: 0.8608, frame_0_d3.dn_loss_cls: 0.4838, frame_0_d3.dn_loss_bbox: 0.8534, frame_0_d4.dn_loss_cls: 0.4820, frame_0_d4.dn_loss_bbox: 0.8402, frame_0_enc_loss_cls: 0.8575, frame_0_enc_loss_bbox: 0.2676, frame_0_enc_loss_iou: 0.5204, frame_0_centers2d_losses: 0.2477, frame_0_centerness_losses: 0.7083, loss: 19.4464, grad_norm: 210.6181
+2026-11-01 20:18:52,958 - mmdet - INFO - Iter [180/283]	lr: 7.463e-06, eta: 0:00:50, time: 0.464, data_time: 0.214, memory: 2217, frame_0_loss_cls: 0.4564, frame_0_loss_bbox: 0.9837, frame_0_d0.loss_cls: 0.5302, frame_0_d0.loss_bbox: 1.0111, frame_0_d1.loss_cls: 0.4901, frame_0_d1.loss_bbox: 0.9484, frame_0_d2.loss_cls: 0.4900, frame_0_d2.loss_bbox: 0.9747, frame_0_d3.loss_cls: 0.4955, frame_0_d3.loss_bbox: 0.9665, frame_0_d4.loss_cls: 0.4573, frame_0_d4.loss_bbox: 0.9742, frame_0_dn_loss_cls: 0.3973, frame_0_dn_loss_bbox: 0.9530, frame_0_d0.dn_loss_cls: 0.4346, frame_0_d0.dn_loss_bbox: 1.2102, frame_0_d1.dn_loss_cls: 0.4320, frame_0_d1.dn_loss_bbox: 1.0193, frame_0_d2.dn_loss_cls: 0.4131, frame_0_d2.dn_loss_bbox: 0.9974, frame_0_d3.dn_loss_cls: 0.4052, frame_0_d3.dn_loss_bbox: 0.9671, frame_0_d4.dn_loss_cls: 0.3967, frame_0_d4.dn_loss_bbox: 0.9509, frame_0_enc_loss_cls: 0.7000, frame_0_enc_loss_bbox: 0.3076, frame_0_enc_loss_iou: 0.5626, frame_0_centers2d_losses: 0.2430, frame_0_centerness_losses: 0.6603, loss: 19.8282, grad_norm: 210.8668
+2026-11-01 20:18:57,666 - mmdet - INFO - Iter [190/283]	lr: 6.229e-06, eta: 0:00:45, time: 0.471, data_time: 0.219, memory: 2217, frame_0_loss_cls: 0.4660, frame_0_loss_bbox: 0.7447, frame_0_d0.loss_cls: 0.4785, frame_0_d0.loss_bbox: 0.8421, frame_0_d1.loss_cls: 0.4751, frame_0_d1.loss_bbox: 0.7985, frame_0_d2.loss_cls: 0.4800, frame_0_d2.loss_bbox: 0.7644, frame_0_d3.loss_cls: 0.4755, frame_0_d3.loss_bbox: 0.7618, frame_0_d4.loss_cls: 0.4778, frame_0_d4.loss_bbox: 0.7363, frame_0_dn_loss_cls: 0.4164, frame_0_dn_loss_bbox: 0.7157, frame_0_d0.dn_loss_cls: 0.4418, frame_0_d0.dn_loss_bbox: 0.9944, frame_0_d1.dn_loss_cls: 0.4177, frame_0_d1.dn_loss_bbox: 0.8436, frame_0_d2.dn_loss_cls: 0.4153, frame_0_d2.dn_loss_bbox: 0.7496, frame_0_d3.dn_loss_cls: 0.4180, frame_0_d3.dn_loss_bbox: 0.7305, frame_0_d4.dn_loss_cls: 0.4218, frame_0_d4.dn_loss_bbox: 0.7135, frame_0_enc_loss_cls: 0.9723, frame_0_enc_loss_bbox: 0.2980, frame_0_enc_loss_iou: 0.5589, frame_0_centers2d_losses: 0.2583, frame_0_centerness_losses: 0.7170, loss: 17.5836, grad_norm: 228.0484
+2026-11-01 20:19:02,413 - mmdet - INFO - Iter [200/283]	lr: 5.072e-06, eta: 0:00:40, time: 0.475, data_time: 0.221, memory: 2217, frame_0_loss_cls: 0.4396, frame_0_loss_bbox: 0.6976, frame_0_d0.loss_cls: 0.4763, frame_0_d0.loss_bbox: 0.7916, frame_0_d1.loss_cls: 0.4760, frame_0_d1.loss_bbox: 0.7751, frame_0_d2.loss_cls: 0.4731, frame_0_d2.loss_bbox: 0.7141, frame_0_d3.loss_cls: 0.4564, frame_0_d3.loss_bbox: 0.6965, frame_0_d4.loss_cls: 0.4429, frame_0_d4.loss_bbox: 0.7029, frame_0_dn_loss_cls: 0.3581, frame_0_dn_loss_bbox: 0.7198, frame_0_d0.dn_loss_cls: 0.4086, frame_0_d0.dn_loss_bbox: 0.9229, frame_0_d1.dn_loss_cls: 0.3975, frame_0_d1.dn_loss_bbox: 0.8458, frame_0_d2.dn_loss_cls: 0.3712, frame_0_d2.dn_loss_bbox: 0.7668, frame_0_d3.dn_loss_cls: 0.3681, frame_0_d3.dn_loss_bbox: 0.7417, frame_0_d4.dn_loss_cls: 0.3617, frame_0_d4.dn_loss_bbox: 0.7276, frame_0_enc_loss_cls: 0.7818, frame_0_enc_loss_bbox: 0.2340, frame_0_enc_loss_iou: 0.5214, frame_0_centers2d_losses: 0.2265, frame_0_centerness_losses: 0.6451, loss: 16.5409, grad_norm: 216.6866
+2026-11-01 20:19:07,235 - mmdet - INFO - Iter [210/283]	lr: 4.007e-06, eta: 0:00:35, time: 0.482, data_time: 0.223, memory: 2217, frame_0_loss_cls: 0.4534, frame_0_loss_bbox: 0.8772, frame_0_d0.loss_cls: 0.4797, frame_0_d0.loss_bbox: 0.9954, frame_0_d1.loss_cls: 0.4614, frame_0_d1.loss_bbox: 0.9526, frame_0_d2.loss_cls: 0.4532, frame_0_d2.loss_bbox: 0.9227, frame_0_d3.loss_cls: 0.4580, frame_0_d3.loss_bbox: 0.8903, frame_0_d4.loss_cls: 0.4517, frame_0_d4.loss_bbox: 0.8844, frame_0_dn_loss_cls: 0.4351, frame_0_dn_loss_bbox: 0.7800, frame_0_d0.dn_loss_cls: 0.4783, frame_0_d0.dn_loss_bbox: 1.0118, frame_0_d1.dn_loss_cls: 0.4603, frame_0_d1.dn_loss_bbox: 0.8947, frame_0_d2.dn_loss_cls: 0.4478, frame_0_d2.dn_loss_bbox: 0.8394, frame_0_d3.dn_loss_cls: 0.4426, frame_0_d3.dn_loss_bbox: 0.7963, frame_0_d4.dn_loss_cls: 0.4379, frame_0_d4.dn_loss_bbox: 0.7865, frame_0_enc_loss_cls: 0.8697, frame_0_enc_loss_bbox: 0.3098, frame_0_enc_loss_iou: 0.6082, frame_0_centers2d_losses: 0.2336, frame_0_centerness_losses: 0.7396, loss: 18.8518, grad_norm: 200.8278
+2026-11-01 20:19:12,024 - mmdet - INFO - Iter [220/283]	lr: 3.046e-06, eta: 0:00:30, time: 0.479, data_time: 0.220, memory: 2217, frame_0_loss_cls: 0.4541, frame_0_loss_bbox: 0.7657, frame_0_d0.loss_cls: 0.4985, frame_0_d0.loss_bbox: 0.8348, frame_0_d1.loss_cls: 0.4811, frame_0_d1.loss_bbox: 0.8032, frame_0_d2.loss_cls: 0.4700, frame_0_d2.loss_bbox: 0.7856, frame_0_d3.loss_cls: 0.4668, frame_0_d3.loss_bbox: 0.7723, frame_0_d4.loss_cls: 0.4621, frame_0_d4.loss_bbox: 0.7522, frame_0_dn_loss_cls: 0.4136, frame_0_dn_loss_bbox: 0.6625, frame_0_d0.dn_loss_cls: 0.4483, frame_0_d0.dn_loss_bbox: 0.8279, frame_0_d1.dn_loss_cls: 0.4279, frame_0_d1.dn_loss_bbox: 0.7508, frame_0_d2.dn_loss_cls: 0.4230, frame_0_d2.dn_loss_bbox: 0.7006, frame_0_d3.dn_loss_cls: 0.4171, frame_0_d3.dn_loss_bbox: 0.6695, frame_0_d4.dn_loss_cls: 0.4153, frame_0_d4.dn_loss_bbox: 0.6606, frame_0_enc_loss_cls: 0.7188, frame_0_enc_loss_bbox: 0.2453, frame_0_enc_loss_iou: 0.6087, frame_0_centers2d_losses: 0.1887, frame_0_centerness_losses: 0.6201, loss: 16.7452, grad_norm: 139.1534
+2026-11-01 20:19:16,892 - mmdet - INFO - Iter [230/283]	lr: 2.202e-06, eta: 0:00:25, time: 0.487, data_time: 0.228, memory: 2217, frame_0_loss_cls: 0.6155, frame_0_loss_bbox: 0.9508, frame_0_d0.loss_cls: 0.6368, frame_0_d0.loss_bbox: 1.0739, frame_0_d1.loss_cls: 0.6411, frame_0_d1.loss_bbox: 1.0007, frame_0_d2.loss_cls: 0.6306, frame_0_d2.loss_bbox: 0.9937, frame_0_d3.loss_cls: 0.6140, frame_0_d3.loss_bbox: 0.9782, frame_0_d4.loss_cls: 0.6119, frame_0_d4.loss_bbox: 0.9747, frame_0_dn_loss_cls: 0.4977, frame_0_dn_loss_bbox: 0.7828, frame_0_d0.dn_loss_cls: 0.5059, frame_0_d0.dn_loss_bbox: 0.9406, frame_0_d1.dn_loss_cls: 0.5136, frame_0_d1.dn_loss_bbox: 0.8448, frame_0_d2.dn_loss_cls: 0.5095, frame_0_d2.dn_loss_bbox: 0.8150, frame_0_d3.dn_loss_cls: 0.5045, frame_0_d3.dn_loss_bbox: 0.7840, frame_0_d4.dn_loss_cls: 0.5038, frame_0_d4.dn_loss_bbox: 0.7834, frame_0_enc_loss_cls: 0.7131, frame_0_enc_loss_bbox: 0.2408, frame_0_enc_loss_iou: 0.6806, frame_0_centers2d_losses: 0.1621, frame_0_centerness_losses: 0.6441, loss: 20.1483, grad_norm: 158.1709
+2026-11-01 20:19:21,743 - mmdet - INFO - Iter [240/283]	lr: 1.485e-06, eta: 0:00:21, time: 0.485, data_time: 0.224, memory: 2217, frame_0_loss_cls: 0.5745, frame_0_loss_bbox: 1.1815, frame_0_d0.loss_cls: 0.6152, frame_0_d0.loss_bbox: 1.2045, frame_0_d1.loss_cls: 0.5850, frame_0_d1.loss_bbox: 1.1737, frame_0_d2.loss_cls: 0.5776, frame_0_d2.loss_bbox: 1.1842, frame_0_d3.loss_cls: 0.5824, frame_0_d3.loss_bbox: 1.1566, frame_0_d4.loss_cls: 0.5821, frame_0_d4.loss_bbox: 1.1852, frame_0_dn_loss_cls: 0.4291, frame_0_dn_loss_bbox: 0.8825, frame_0_d0.dn_loss_cls: 0.4739, frame_0_d0.dn_loss_bbox: 1.0467, frame_0_d1.dn_loss_cls: 0.4400, frame_0_d1.dn_loss_bbox: 0.9368, frame_0_d2.dn_loss_cls: 0.4409, frame_0_d2.dn_loss_bbox: 0.9172, frame_0_d3.dn_loss_cls: 0.4337, frame_0_d3.dn_loss_bbox: 0.8800, frame_0_d4.dn_loss_cls: 0.4301, frame_0_d4.dn_loss_bbox: 0.8842, frame_0_enc_loss_cls: 0.6407, frame_0_enc_loss_bbox: 0.3103, frame_0_enc_loss_iou: 0.7587, frame_0_centers2d_losses: 0.1953, frame_0_centerness_losses: 0.7968, loss: 21.4995, grad_norm: 158.1440
+2026-11-01 20:19:26,616 - mmdet - INFO - Iter [250/283]	lr: 9.040e-07, eta: 0:00:16, time: 0.487, data_time: 0.220, memory: 2217, frame_0_loss_cls: 0.6979, frame_0_loss_bbox: 1.2239, frame_0_d0.loss_cls: 0.7110, frame_0_d0.loss_bbox: 1.2939, frame_0_d1.loss_cls: 0.7130, frame_0_d1.loss_bbox: 1.2543, frame_0_d2.loss_cls: 0.7046, frame_0_d2.loss_bbox: 1.2380, frame_0_d3.loss_cls: 0.6894, frame_0_d3.loss_bbox: 1.2405, frame_0_d4.loss_cls: 0.6938, frame_0_d4.loss_bbox: 1.2280, frame_0_dn_loss_cls: 0.5754, frame_0_dn_loss_bbox: 1.0626, frame_0_d0.dn_loss_cls: 0.6186, frame_0_d0.dn_loss_bbox: 1.1765, frame_0_d1.dn_loss_cls: 0.5984, frame_0_d1.dn_loss_bbox: 1.0967, frame_0_d2.dn_loss_cls: 0.5878, frame_0_d2.dn_loss_bbox: 1.0597, frame_0_d3.dn_loss_cls: 0.5713, frame_0_d3.dn_loss_bbox: 1.0633, frame_0_d4.dn_loss_cls: 0.5741, frame_0_d4.dn_loss_bbox: 1.0623, frame_0_enc_loss_cls: 0.7357, frame_0_enc_loss_bbox: 0.2978, frame_0_enc_loss_iou: 0.8663, frame_0_centers2d_losses: 0.2392, frame_0_centerness_losses: 0.7339, loss: 24.6081, grad_norm: 195.9931
+2026-11-01 20:19:31,540 - mmdet - INFO - Iter [260/283]	lr: 4.656e-07, eta: 0:00:11, time: 0.492, data_time: 0.220, memory: 2217, frame_0_loss_cls: 0.8157, frame_0_loss_bbox: 1.2709, frame_0_d0.loss_cls: 0.7738, frame_0_d0.loss_bbox: 1.3008, frame_0_d1.loss_cls: 0.7677, frame_0_d1.loss_bbox: 1.3043, frame_0_d2.loss_cls: 0.7747, frame_0_d2.loss_bbox: 1.2915, frame_0_d3.loss_cls: 0.7887, frame_0_d3.loss_bbox: 1.3183, frame_0_d4.loss_cls: 0.8111, frame_0_d4.loss_bbox: 1.2861, frame_0_dn_loss_cls: 0.6327, frame_0_dn_loss_bbox: 1.0551, frame_0_d0.dn_loss_cls: 0.6438, frame_0_d0.dn_loss_bbox: 1.1499, frame_0_d1.dn_loss_cls: 0.6316, frame_0_d1.dn_loss_bbox: 1.0823, frame_0_d2.dn_loss_cls: 0.6310, frame_0_d2.dn_loss_bbox: 1.0617, frame_0_d3.dn_loss_cls: 0.6350, frame_0_d3.dn_loss_bbox: 1.0747, frame_0_d4.dn_loss_cls: 0.6344, frame_0_d4.dn_loss_bbox: 1.0607, frame_0_enc_loss_cls: 0.8400, frame_0_enc_loss_bbox: 0.3130, frame_0_enc_loss_iou: 0.8182, frame_0_centers2d_losses: 0.2745, frame_0_centerness_losses: 0.6959, loss: 25.7380, grad_norm: 174.9348
+2026-11-01 20:19:36,464 - mmdet - INFO - Iter [270/283]	lr: 1.755e-07, eta: 0:00:06, time: 0.492, data_time: 0.219, memory: 2217, frame_0_loss_cls: 0.7269, frame_0_loss_bbox: 1.2496, frame_0_d0.loss_cls: 0.7477, frame_0_d0.loss_bbox: 1.2578, frame_0_d1.loss_cls: 0.7553, frame_0_d1.loss_bbox: 1.2646, frame_0_d2.loss_cls: 0.7320, frame_0_d2.loss_bbox: 1.2343, frame_0_d3.loss_cls: 0.7440, frame_0_d3.loss_bbox: 1.2533, frame_0_d4.loss_cls: 0.7341, frame_0_d4.loss_bbox: 1.2561, frame_0_dn_loss_cls: 0.6035, frame_0_dn_loss_bbox: 0.9980, frame_0_d0.dn_loss_cls: 0.6341, frame_0_d0.dn_loss_bbox: 1.1093, frame_0_d1.dn_loss_cls: 0.6130, frame_0_d1.dn_loss_bbox: 1.0481, frame_0_d2.dn_loss_cls: 0.6037, frame_0_d2.dn_loss_bbox: 1.0133, frame_0_d3.dn_loss_cls: 0.6104, frame_0_d3.dn_loss_bbox: 1.0234, frame_0_d4.dn_loss_cls: 0.6085, frame_0_d4.dn_loss_bbox: 1.0091, frame_0_enc_loss_cls: 0.6824, frame_0_enc_loss_bbox: 0.3172, frame_0_enc_loss_iou: 0.8394, frame_0_centers2d_losses: 0.2539, frame_0_centerness_losses: 0.7075, loss: 24.6304, grad_norm: 190.8427
+2026-11-01 20:19:41,366 - mmdet - INFO - Iter [280/283]	lr: 3.731e-08, eta: 0:00:01, time: 0.490, data_time: 0.219, memory: 2217, frame_0_loss_cls: 0.6606, frame_0_loss_bbox: 1.0888, frame_0_d0.loss_cls: 0.6597, frame_0_d0.loss_bbox: 1.0900, frame_0_d1.loss_cls: 0.6571, frame_0_d1.loss_bbox: 1.0869, frame_0_d2.loss_cls: 0.6512, frame_0_d2.loss_bbox: 1.0739, frame_0_d3.loss_cls: 0.6538, frame_0_d3.loss_bbox: 1.0902, frame_0_d4.loss_cls: 0.6685, frame_0_d4.loss_bbox: 1.0845, frame_0_dn_loss_cls: 0.5158, frame_0_dn_loss_bbox: 0.8537, frame_0_d0.dn_loss_cls: 0.5315, frame_0_d0.dn_loss_bbox: 0.9152, frame_0_d1.dn_loss_cls: 0.5238, frame_0_d1.dn_loss_bbox: 0.8830, frame_0_d2.dn_loss_cls: 0.5118, frame_0_d2.dn_loss_bbox: 0.8590, frame_0_d3.dn_loss_cls: 0.5206, frame_0_d3.dn_loss_bbox: 0.8597, frame_0_d4.dn_loss_cls: 0.5228, frame_0_d4.dn_loss_bbox: 0.8599, frame_0_enc_loss_cls: 0.7323, frame_0_enc_loss_bbox: 0.2618, frame_0_enc_loss_iou: 0.8174, frame_0_centers2d_losses: 0.2305, frame_0_centerness_losses: 0.6455, loss: 21.5095, grad_norm: 150.0578
+2026-11-01 20:19:42,839 - mmdet - INFO - Saving checkpoint at 283 iterations
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/tools/train.py", line 263, in <module>
+    main()
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/tools/train.py", line 251, in main
+    custom_train_model(
+  File "/home/user/gzx/physcond-training-harm-202610ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 16596) of binary: /srv/table2/envs/streampetr_torch111_cu113/bin/python
+Traceback (most recent call last):
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/distributed/run.py", line 728, in <module>
+    main()
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 345, in wrapper
+    return f(*args, **kwargs)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/distributed/run.py", line 724, in main
+    run(args)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/distributed/run.py", line 715, in run
+    elastic_launch(
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 131, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/distributed/launcher/api.py", line 245, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+tools/train.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-01_20:19:45
+  host      : gpuserver
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 16596)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

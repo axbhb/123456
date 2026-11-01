@@ -1,0 +1,174 @@
+{
+  "method": "PIL-ROI-transfer-v1",
+  "status": "completed",
+  "pretrain_epochs": 30,
+  "attack_steps": 30,
+  "epsilon": 0.03137254901960784,
+  "alpha": 0.003137254901960784,
+  "lambda": 0.9,
+  "classifier": "official LinearModel, two linear factors, no nonlinear activation",
+  "source": "https://github.com/jinlinll/pil",
+  "test_data_used": false,
+  "completed_epochs": 30,
+  "training": [
+    {
+      "epoch": 1,
+      "loss": 1.8271644093398718,
+      "train_accuracy": 0.44975578509088
+    },
+    {
+      "epoch": 2,
+      "loss": 1.5956862080573502,
+      "train_accuracy": 0.4967571462887341
+    },
+    {
+      "epoch": 3,
+      "loss": 1.569700180620387,
+      "train_accuracy": 0.519817439346625
+    },
+    {
+      "epoch": 4,
+      "loss": 1.5848740992453303,
+      "train_accuracy": 0.4781807991032108
+    },
+    {
+      "epoch": 5,
+      "loss": 1.514656636224124,
+      "train_accuracy": 0.43278084714548803
+    },
+    {
+      "epoch": 6,
+      "loss": 1.4707526241256368,
+      "train_accuracy": 0.46288734085995675
+    },
+    {
+      "epoch": 7,
+      "loss": 1.4499826171360173,
+      "train_accuracy": 0.4498358555528865
+    },
+    {
+      "epoch": 8,
+      "loss": 1.4263223395144093,
+      "train_accuracy": 0.45055648971094564
+    },
+    {
+      "epoch": 9,
+      "loss": 1.4204354933831793,
+      "train_accuracy": 0.4478340940027224
+    },
+    {
+      "epoch": 10,
+      "loss": 1.421441280648061,
+      "train_accuracy": 0.44911522139482746
+    },
+    {
+      "epoch": 11,
+      "loss": 1.426513376748727,
+      "train_accuracy": 0.4543998718872608
+    },
+    {
+      "epoch": 12,
+      "loss": 1.426732506102181,
+      "train_accuracy": 0.4545600128112739
+    },
+    {
+      "epoch": 13,
+      "loss": 1.4102333055618088,
+      "train_accuracy": 0.4557610697413724
+    },
+    {
+      "epoch": 14,
+      "loss": 1.3860592559184015,
+      "train_accuracy": 0.47017375290255425
+    },
+    {
+      "epoch": 15,
+      "loss": 1.3702536012891753,
+      "train_accuracy": 0.4782608695652174
+    },
+    {
+      "epoch": 16,
+      "loss": 1.3612086732351845,
+      "train_accuracy": 0.48114340619745377
+    },
+    {
+      "epoch": 17,
+      "loss": 1.3518433301593336,
+      "train_accuracy": 0.48450636560172955
+    },
+    {
+      "epoch": 18,
+      "loss": 1.3429049819967975,
+      "train_accuracy": 0.4889903114740972
+    },
+    {
+      "epoch": 19,
+      "loss": 1.334672347263584,
+      "train_accuracy": 0.4933941868844583
+    },
+    {
+      "epoch": 20,
+      "loss": 1.3271052942368398,
+      "train_accuracy": 0.4969973576747538
+    },
+    {
+      "epoch": 21,
+      "loss": 1.3202623515755632,
+      "train_accuracy": 0.5006805989270559
+    },
+    {
+      "epoch": 22,
+      "loss": 1.3141517797895883,
+      "train_accuracy": 0.5050844743374169
+    },
+    {
+      "epoch": 23,
+      "loss": 1.3087801377665806,
+      "train_accuracy": 0.5086075746657058
+    },
+    {
+      "epoch": 24,
+      "loss": 1.3041415071170528,
+      "train_accuracy": 0.5118103931459684
+    },
+    {
+      "epoch": 25,
+      "loss": 1.3002205194546115,
+      "train_accuracy": 0.5132516614620867
+    },
+    {
+      "epoch": 26,
+      "loss": 1.2969936263199489,
+      "train_accuracy": 0.5154936343982705
+    },
+    {
+      "epoch": 27,
+      "loss": 1.2944309884127934,
+      "train_accuracy": 0.5162943390183361
+    },
+    {
+      "epoch": 28,
+      "loss": 1.2924992146756595,
+      "train_accuracy": 0.5181359596444871
+    },
+    {
+      "epoch": 29,
+      "loss": 1.291162874177665,
+      "train_accuracy": 0.5188565938025462
+    },
+    {
+      "epoch": 30,
+      "loss": 1.2903856717515998,
+      "train_accuracy": 0.518696452878533
+    }
+  ],
+  "seconds": 10.435098648071289,
+  "completed_crops": 49,
+  "total_crops": 49,
+  "selected_frames": 1,
+  "changed_frames": 1,
+  "changed_cameras": 6,
+  "max_uint8_delta": 8,
+  "overlap_policy": "far-to-near overwrite, then final Linf projection; deterministic crop mapping",
+  "peak_memory_gib": 0.007380008697509766
+}

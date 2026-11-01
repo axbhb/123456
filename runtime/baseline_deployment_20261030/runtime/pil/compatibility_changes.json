@@ -1,0 +1,5 @@
+{
+  "change": "Expand uniform KL target to batch shape explicitly for PyTorch1.11 backward compatibility",
+  "original": "/srv/table2/baseline_deployment_20261030/upstream/pil/attacks.py",
+  "loss_definition_changed": false
+}

@@ -1,0 +1,30 @@
+{
+  "torch": {
+    "version": "1.11.0+cu113",
+    "module_file": "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/__init__.py"
+  },
+  "torchvision": {
+    "version": "0.12.0+cu113",
+    "module_file": "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torchvision/__init__.py"
+  },
+  "numpy": {
+    "version": "1.23.1",
+    "module_file": "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/numpy/__init__.py"
+  },
+  "mmcv": {
+    "version": "1.7.0",
+    "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py"
+  },
+  "mmdet": {
+    "version": "2.28.2",
+    "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmdet/__init__.py"
+  },
+  "mmdet3d": {
+    "version": "1.0.0rc6",
+    "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmdet3d/__init__.py"
+  },
+  "nuscenes": {
+    "version": null,
+    "module_file": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/nuscenes/__init__.py"
+  }
+}

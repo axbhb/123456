@@ -1,0 +1,33 @@
+{
+  "method": "apgd",
+  "generator": "dd2",
+  "selected_frames": 14,
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 130.40452122688293,
+      "including_wait_seconds": 130.40452361106873,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/attack.log"
+    },
+    "train": {
+      "seconds": 161.90511107444763,
+      "including_wait_seconds": 161.90511441230774,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/train.log"
+    },
+    "audit": {
+      "seconds": 1.3256759643554688,
+      "including_wait_seconds": 1.325678825378418,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/audit.log"
+    },
+    "evaluate": {
+      "seconds": 62.15897607803345,
+      "including_wait_seconds": 62.1589789390564,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/evaluate.log"
+    }
+  },
+  "started": 1793515112.9969885,
+  "elapsed_seconds": 355.81037187576294,
+  "finished": 1793515468.807357
+}

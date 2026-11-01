@@ -1,0 +1,34 @@
+{
+  "method": "bait",
+  "generator": "dd2",
+  "selected_frames": 14,
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 64.32877469062805,
+      "including_wait_seconds": 345.59120774269104,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/attack.log"
+    },
+    "train": {
+      "seconds": 157.0304045677185,
+      "including_wait_seconds": 157.0304079055786,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/train.log"
+    },
+    "audit": {
+      "seconds": 1.3566474914550781,
+      "including_wait_seconds": 1.3566510677337646,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/audit.log"
+    },
+    "evaluate": {
+      "seconds": 62.38761234283447,
+      "including_wait_seconds": 62.387615442276,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/evaluate.log"
+    }
+  },
+  "started": 1793515203.8660927,
+  "elapsed_seconds": 566.3963134288788,
+  "pending_stage": "attack",
+  "finished": 1793515770.2624006
+}

@@ -1,0 +1,124 @@
+{
+  "status": "completed",
+  "method": "BAIT-ROI-transfer-v1",
+  "generator": "panacea_plus",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "test_frames": 121,
+  "validation_scope": "runability validation: one replaced six-camera keyframe; 283 scheduled training iterations; 121 real test keyframes; not a 5-percent efficacy result",
+  "native_metrics": {
+    "pts_bbox_NuScenes/mAP": 0.6440631899424393,
+    "pts_bbox_NuScenes/NDS": 0.7155189987527248,
+    "pts_bbox_NuScenes/car_AP_dist_0.5": 0.21370489320917896,
+    "pts_bbox_NuScenes/car_AP_dist_1.0": 0.6206017148026585,
+    "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8123932809524756,
+    "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9107479140945989,
+    "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.15760549523493503,
+    "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.5093248099357863,
+    "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.7867707092644677,
+    "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.9161091555998829,
+    "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.31260177051725113,
+    "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.9005106085538492,
+    "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9651718093820232,
+    "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9704565299354262,
+    "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.3593935267010436,
+    "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.5552040601735001,
+    "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.7182211709715816,
+    "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.734910702172607,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.557823042045258,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.7039346832045631,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.9001571391612667,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9443158553561194,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.19641814364218255,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.49724695584577416,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6834288735428478,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7606701762655605,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4554298048722827,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.5504920204966228,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7569480835045317,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.9004345885908736,
+    "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.06348320228217263,
+    "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.16640443715358547,
+    "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.2719594646609513,
+    "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.3308578983254552,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.687129198509443,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8285211513257407,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8936395693581285,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9209059370433585,
+    "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.5552069778196451,
+    "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8264629268519621,
+    "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9184631137064847,
+    "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9484662026314963,
+    "pts_bbox_NuScenes/trans_err": 0.458373277067329,
+    "pts_bbox_NuScenes/scale_err": 0.2051469907505866,
+    "pts_bbox_NuScenes/orient_err": 0.13751365785668784,
+    "pts_bbox_NuScenes/vel_err": 0.09098302570147468,
+    "pts_bbox_NuScenes/attr_err": 0.1731090108088701
+  },
+  "training_audit": {
+    "checkpoint_iteration": 282,
+    "optimizer_step_counts": {
+      "276": 240
+    },
+    "representative_parameter_max_changes": {
+      "img_backbone.conv1.weight": 0.0003055557608604431,
+      "pts_bbox_head.reference_points.weight": 0.001119762659072876
+    },
+    "all_model_weights_finite": true,
+    "checkpoint_bytes": 452697450,
+    "amp_state": {
+      "loss_scaler": {
+        "scale": 512.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 173
+      }
+    },
+    "gpu_used": false
+  },
+  "stage_timings": {
+    "roi_prepare": {
+      "seconds": 9.981576204299927,
+      "including_wait_seconds": 9.981595277786255,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/roi_prepare.log"
+    },
+    "attack": {
+      "seconds": 119.72820901870728,
+      "including_wait_seconds": 119.72824597358704,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/attack.log"
+    },
+    "train": {
+      "seconds": 167.02198934555054,
+      "including_wait_seconds": 167.02201414108276,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/train.log"
+    },
+    "audit": {
+      "seconds": 2.1265616416931152,
+      "including_wait_seconds": 2.126624584197998,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/audit.log"
+    },
+    "evaluate": {
+      "seconds": 81.21286964416504,
+      "including_wait_seconds": 81.21291732788086,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/evaluate.log"
+    }
+  },
+  "attack_seconds": 57.489383935928345,
+  "checkpoint": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/train/iter_283.pth",
+  "paired_clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/panacea_plus/seed0/after/result.json",
+  "metrics": {
+    "mAP": {
+      "clean_percent": 65.36001976811649,
+      "adapted_percent": 64.40631899424393,
+      "ASR_percent": 1.459150069501333
+    },
+    "NDS": {
+      "clean_percent": 71.67084148613917,
+      "adapted_percent": 71.55189987527248,
+      "ASR_percent": 0.16595537097145427
+    }
+  },
+  "adapted": true
+}

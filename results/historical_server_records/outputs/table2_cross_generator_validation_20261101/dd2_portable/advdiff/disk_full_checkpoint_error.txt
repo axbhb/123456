@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/serialization.py", line 705, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/serialization.py", line 243, in __init__
+    super(_open_zipfile_reader, self).__init__(torch._C.PyTorchFileReader(name_or_buffer))
+RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory

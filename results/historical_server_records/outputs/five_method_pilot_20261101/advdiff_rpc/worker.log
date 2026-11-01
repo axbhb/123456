@@ -1,0 +1,88 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+load checkpoint from local path: /srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth
+Traceback (most recent call last):
+  File "/srv/table2/five_method_pilot_20261101/detector_rpc.py", line 85, in <module>
+    candidate=torch.from_numpy(np.load(req['array'])).float().cuda().reshape_as(x).requires_grad_(True);score=oracle(candidate);gradient=torch.autograd.grad(score.sum(),candidate)[0]/128
+  File "/srv/table2/five_method_pilot_20261101/detector_rpc.py", line 71, in oracle
+    with torch.cuda.amp.autocast():losses=model(return_loss=True,**current)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/runner/fp16_utils.py", line 236, in new_func
+    output = old_func(*new_args, **new_kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/detectors/petr3d.py", line 217, in forward
+    return self.forward_train(**data)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/detectors/petr3d.py", line 273, in forward_train
+    losses = self.obtain_history_memory(gt_bboxes_3d,
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/detectors/petr3d.py", line 130, in obtain_history_memory
+    loss = self.forward_pts_train(gt_bboxes_3d[i],
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/detectors/petr3d.py", line 189, in forward_pts_train
+    outs = self.pts_bbox_head(location, img_metas, topk_indexes, **data)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/dense_heads/streampetr_head.py", line 606, in forward
+    outs_dec, _ = self.transformer(memory, tgt, query_pos, pos_embed, attn_mask, temp_memory, temp_pos)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 495, in forward
+    out_dec = self.decoder(
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 412, in forward
+    query = layer(query, *args, **kwargs)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 785, in forward
+    x = self._forward(
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 732, in _forward
+    query = self.attentions[attn_index](
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/utils/misc.py", line 340, in new_func
+    output = old_func(*args, **kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 327, in forward
+    out = self.attn(
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 190, in forward
+    return self.forward_fp16(*args, **kwargs)
+  File "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/runner/fp16_utils.py", line 149, in new_func
+    output = old_func(*new_args, **new_kwargs)
+  File "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/projects/mmdet3d_plugin/models/utils/petr_transformer.py", line 183, in forward_fp16
+    return super(MultiheadAttentionWrapper, self).forward(*args, **kwargs)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/activation.py", line 1038, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/functional.py", line 5366, in multi_head_attention_forward
+    attn_output_weights = attn_output_weights.sum(dim=1) / num_heads
+RuntimeError: CUDA out of memory. Tried to allocate 18.00 MiB (GPU 0; 31.74 GiB total capacity; 2.79 GiB already allocated; 15.12 MiB free; 2.80 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+load checkpoint from local path: /srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth

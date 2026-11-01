@@ -1,0 +1,16 @@
+[
+  {
+    "generator": "frozendrive",
+    "method": "clean",
+    "training_seed": 0,
+    "replacement_count": 0,
+    "returncode": 0
+  },
+  {
+    "generator": "frozendrive",
+    "method": "apgd",
+    "training_seed": 0,
+    "replacement_count": 1,
+    "returncode": 0
+  }
+]

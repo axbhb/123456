@@ -1,0 +1,29 @@
+{
+  "method": "advdiff",
+  "generator": "dd2",
+  "selected_frames": 14,
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "status": "completed",
+  "stages": {
+    "train": {
+      "seconds": 162.00184559822083,
+      "including_wait_seconds": 162.00185084342957,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/train.log"
+    },
+    "audit": {
+      "seconds": 1.3669791221618652,
+      "including_wait_seconds": 1.36698579788208,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/audit.log"
+    },
+    "evaluate": {
+      "seconds": 61.832900047302246,
+      "including_wait_seconds": 61.8329062461853,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/evaluate.log"
+    }
+  },
+  "reused_stage_timings": [],
+  "started": 1793525936.2937238,
+  "elapsed_seconds": 225.21598148345947,
+  "finished": 1793526161.5096996
+}

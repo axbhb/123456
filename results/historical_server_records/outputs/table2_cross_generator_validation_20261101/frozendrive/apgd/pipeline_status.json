@@ -1,0 +1,38 @@
+{
+  "method": "apgd",
+  "generator": "frozendrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "prepare": {
+      "seconds": 11.332789182662964,
+      "including_wait_seconds": 11.332804679870605,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/prepare.log"
+    },
+    "attack": {
+      "seconds": 20.98166561126709,
+      "including_wait_seconds": 20.981707096099854,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/attack.log"
+    },
+    "train": {
+      "seconds": 177.14426112174988,
+      "including_wait_seconds": 177.144300699234,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/train.log"
+    },
+    "audit": {
+      "seconds": 1.3746824264526367,
+      "including_wait_seconds": 1.3747334480285645,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/audit.log"
+    },
+    "evaluate": {
+      "seconds": 62.58776617050171,
+      "including_wait_seconds": 62.58781599998474,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/evaluate.log"
+    }
+  },
+  "started": 1793528498.3427699,
+  "elapsed_seconds": 273.4401228427887,
+  "finished": 1793528771.782889
+}

@@ -1,0 +1,122 @@
+{
+  "method": "AdvDiff-inspired-native-panacea_plus-v1",
+  "generator": "panacea_plus",
+  "status": "completed",
+  "guidance_strength": 0.025,
+  "guided_steps": 10,
+  "gradient": "frozen native denoiser prediction; predicted-clean VAE adjoint; StreamPETR native forward with BPDA preprocessing",
+  "scope": "independent original-condition native clip regeneration per selected keyframe; only selected six camera images replace paired Clean",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png"
+      },
+      "paired_seed": 20261064,
+      "changed_cameras": 6,
+      "guidance_logs": [
+        {
+          "step": 15,
+          "sigma": 1.1605783700942993,
+          "detector_loss": 28.36642074584961,
+          "image_gradient_l2": 37.87739944458008,
+          "predicted_clean_gradient_rms": 0.06483214348554611,
+          "predicted_clean_shift_rms": 0.03367355465888977,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 16,
+          "sigma": 1.0171462297439575,
+          "detector_loss": 28.058231353759766,
+          "image_gradient_l2": 40.92534255981445,
+          "predicted_clean_gradient_rms": 0.07003515958786011,
+          "predicted_clean_shift_rms": 0.02586466073989868,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 17,
+          "sigma": 0.8890852332115173,
+          "detector_loss": 28.152280807495117,
+          "image_gradient_l2": 26.424083709716797,
+          "predicted_clean_gradient_rms": 0.047161489725112915,
+          "predicted_clean_shift_rms": 0.019761813804507256,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 18,
+          "sigma": 0.773391842842102,
+          "detector_loss": 28.029945373535156,
+          "image_gradient_l2": 29.631139755249023,
+          "predicted_clean_gradient_rms": 0.0537283755838871,
+          "predicted_clean_shift_rms": 0.014953374862670898,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 19,
+          "sigma": 0.6675384640693665,
+          "detector_loss": 28.153345108032227,
+          "image_gradient_l2": 22.133703231811523,
+          "predicted_clean_gradient_rms": 0.042144183069467545,
+          "predicted_clean_shift_rms": 0.011140190064907074,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 20,
+          "sigma": 0.5692849159240723,
+          "detector_loss": 28.34536361694336,
+          "image_gradient_l2": 28.02762794494629,
+          "predicted_clean_gradient_rms": 0.05171642452478409,
+          "predicted_clean_shift_rms": 0.008102132938802242,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 0.47645437717437744,
+          "detector_loss": 27.932323455810547,
+          "image_gradient_l2": 26.93650245666504,
+          "predicted_clean_gradient_rms": 0.05762245133519173,
+          "predicted_clean_shift_rms": 0.005675219465047121,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.3865651786327362,
+          "detector_loss": 28.4091739654541,
+          "image_gradient_l2": 25.811830520629883,
+          "predicted_clean_gradient_rms": 0.050390616059303284,
+          "predicted_clean_shift_rms": 0.003735815640538931,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.29594171047210693,
+          "detector_loss": 28.555301666259766,
+          "image_gradient_l2": 25.96527862548828,
+          "predicted_clean_gradient_rms": 0.04808933660387993,
+          "predicted_clean_shift_rms": 0.0021895375102758408,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.19630272686481476,
+          "detector_loss": 28.47218132019043,
+          "image_gradient_l2": 22.65529441833496,
+          "predicted_clean_gradient_rms": 0.04113610088825226,
+          "predicted_clean_shift_rms": 0.0009633690351620317,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "seconds": 220.29771375656128,
+      "native_condition_cache_removed_after_export": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/native/796b1988dd254f74bf2fb19ba9c5b8c6/panacea_real_8frame_batch.pt"
+    }
+  ],
+  "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+  "seconds": 222.95451736450195,
+  "frames": 1,
+  "changed_cameras": 6
+}

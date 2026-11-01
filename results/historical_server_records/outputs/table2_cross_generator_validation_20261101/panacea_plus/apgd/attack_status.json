@@ -1,0 +1,77 @@
+{
+  "method": "APGD-DetLoss-v1",
+  "status": "completed",
+  "steps": 20,
+  "restarts": 1,
+  "epsilon": 0.03137254901960784,
+  "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+  "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 28.124736785888672,
+      "stored_final_loss": 78.67528533935547,
+      "best_continuous_loss": 78.67528533935547,
+      "loss_trace": [
+        28.124736785888672,
+        28.124736785888672,
+        34.606266021728516,
+        38.98185348510742,
+        39.0553092956543,
+        40.864376068115234,
+        42.84603500366211,
+        38.26253128051758,
+        42.4114990234375,
+        49.666847229003906,
+        48.952884674072266,
+        55.269527435302734,
+        55.09514236450195,
+        60.10432434082031,
+        61.429786682128906,
+        66.72533416748047,
+        66.10623931884766,
+        70.43898010253906,
+        74.05998992919922,
+        74.42304992675781,
+        75.75326538085938,
+        78.67528533935547,
+        78.67528533935547
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 9.447829008102417,
+      "augmentation": {
+        "resize": 0.47456570170288714,
+        "dims": [
+          759,
+          427
+        ],
+        "crop": [
+          38,
+          171,
+          742,
+          427
+        ],
+        "flip": false
+      },
+      "previous_context_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69"
+    }
+  ],
+  "seconds": 15.614564657211304,
+  "frame": 1,
+  "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+  "objective_calls": 23,
+  "last_loss": 78.67528533935547,
+  "frames": 1,
+  "changed_cameras": 6,
+  "peak_memory_gib": 4.556257247924805
+}

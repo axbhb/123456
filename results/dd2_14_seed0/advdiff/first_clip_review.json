@@ -1,0 +1,10 @@
+{
+  "first_token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+  "review": "All six paired Clean/adapted views inspected with original projected 2D boxes; no obvious object position displacement observed in this first frame.",
+  "scope": "qualitative first-frame review, not proof of semantic alignment for the entire generated set",
+  "gradient_result": "finite nonzero image and latent derivatives observed",
+  "native_steps": 30,
+  "guided_steps": 10,
+  "guidance_strength": 0.025,
+  "first_probe_seconds": 438.84021162986755
+}

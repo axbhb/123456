@@ -1,0 +1,6 @@
+{
+  "scope": "All six cameras of one native AdvDiff validation keyframe for each of FrozenDrive, MagicDrive and Panacea+ inspected side by side with paired Clean and original 2D annotation overlays; DD2 review retained in its original report.",
+  "inspected_new_views": 18,
+  "finding": "No obvious added object-position displacement or blank/corrupt views relative to paired Clean observed.",
+  "limits": "Qualitative comparison of these validation views; not proof of full-data semantic or temporal consistency."
+}

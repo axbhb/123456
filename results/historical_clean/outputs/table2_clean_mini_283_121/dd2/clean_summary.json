@@ -1,0 +1,106 @@
+{
+  "status": "completed",
+  "generator": "dd2",
+  "train_frames": 283,
+  "test_frames": 121,
+  "seeds": [
+    {
+      "seed": 0,
+      "mAP": 63.18401583527032,
+      "NDS": 70.69412857495475,
+      "training_audit": {
+        "checkpoint_iteration": 282,
+        "optimizer_step_counts": {
+          "274": 240
+        },
+        "representative_parameter_max_changes": {
+          "img_backbone.conv1.weight": 0.00021101534366607666,
+          "pts_bbox_head.reference_points.weight": 0.0014798939228057861
+        },
+        "all_model_weights_finite": true,
+        "checkpoint_bytes": 452697450,
+        "amp_state": {
+          "loss_scaler": {
+            "scale": 128.0,
+            "growth_factor": 2.0,
+            "backoff_factor": 0.5,
+            "growth_interval": 2000,
+            "_growth_tracker": 127
+          }
+        },
+        "gpu_used": false
+      }
+    },
+    {
+      "seed": 1,
+      "mAP": 60.73594657307091,
+      "NDS": 68.99609607251675,
+      "training_audit": {
+        "checkpoint_iteration": 282,
+        "optimizer_step_counts": {
+          "275": 240
+        },
+        "representative_parameter_max_changes": {
+          "img_backbone.conv1.weight": 0.0003499239683151245,
+          "pts_bbox_head.reference_points.weight": 0.000966489315032959
+        },
+        "all_model_weights_finite": true,
+        "checkpoint_bytes": 452697450,
+        "amp_state": {
+          "loss_scaler": {
+            "scale": 256.0,
+            "growth_factor": 2.0,
+            "backoff_factor": 0.5,
+            "growth_interval": 2000,
+            "_growth_tracker": 67
+          }
+        },
+        "gpu_used": false
+      }
+    },
+    {
+      "seed": 2,
+      "mAP": 61.03502112703193,
+      "NDS": 69.80452718409975,
+      "training_audit": {
+        "checkpoint_iteration": 282,
+        "optimizer_step_counts": {
+          "275": 240
+        },
+        "representative_parameter_max_changes": {
+          "img_backbone.conv1.weight": 0.00025111809372901917,
+          "pts_bbox_head.reference_points.weight": 0.0013791918754577637
+        },
+        "all_model_weights_finite": true,
+        "checkpoint_bytes": 452697450,
+        "amp_state": {
+          "loss_scaler": {
+            "scale": 256.0,
+            "growth_factor": 2.0,
+            "backoff_factor": 0.5,
+            "growth_interval": 2000,
+            "_growth_tracker": 200
+          }
+        },
+        "gpu_used": false
+      }
+    }
+  ],
+  "metrics": {
+    "mAP": {
+      "mean": 61.65166117845772,
+      "std": 1.335456660808651
+    },
+    "NDS": {
+      "mean": 69.83158394385708,
+      "std": 0.8493395351803573
+    }
+  },
+  "ASR_mAP": 0.0,
+  "ASR_NDS": 0.0,
+  "protocol": "mini pilot; 7 training scenes / 3 real test scenes; normal synthetic data only; 283 scheduled finetuning iterations per seed",
+  "limitations": [
+    "Pretrained checkpoint may have seen these mini scenes.",
+    "Small custom split; not the 100-synthetic-scene paper-scale experiment."
+  ]
+}

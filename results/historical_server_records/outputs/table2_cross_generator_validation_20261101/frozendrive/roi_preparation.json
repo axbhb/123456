@@ -1,0 +1,25 @@
+{
+  "crops": 12514,
+  "selected_crops": 49,
+  "class_counts": {
+    "7": 3955,
+    "0": 6113,
+    "1": 415,
+    "8": 179,
+    "6": 459,
+    "5": 197,
+    "9": 720,
+    "3": 381,
+    "2": 41,
+    "4": 54
+  },
+  "frames": 283,
+  "test_frames_used": 0,
+  "seconds": 21.23664951324463,
+  "source": "frozendrive generated train images with native 2D GT boxes mapped into generator pixels",
+  "crop_size": [
+    32,
+    32
+  ],
+  "minimum_box_pixels": 2
+}

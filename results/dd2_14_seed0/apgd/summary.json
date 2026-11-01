@@ -1,0 +1,164 @@
+{
+  "status": "completed",
+  "method": "APGD-DetLoss-v1",
+  "adapted": true,
+  "generator": "dd2",
+  "selection": {
+    "generator": "dd2",
+    "selected_tokens": [
+      "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "27749aa3de2545219186c61d4d415e1c",
+      "ac8b4d49731d43289579f014cb7c97ef",
+      "9ee4020153674b9e9943d395ff8cfdf3",
+      "de9432d4fc7a4e5a985e2bc628eb614c",
+      "ebce5a3b3484446580028d6538e69a81",
+      "dcbe451d383e450786aaad04ab9d3790",
+      "b1303058fa624645b753d7283d70de45",
+      "e63b83b436a0479db7362338cdfab118",
+      "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "61d47d1198184bfdaa6777e9448d825d",
+      "55c258972acb4300a3a6077a531ab050",
+      "acf9fcbeb1e346b98640f694f15460e8",
+      "e3bcde4a06124931a097ef2a211aaaef"
+    ],
+    "selection_seed": 0,
+    "training_seed": 0,
+    "evaluation_seed": 0,
+    "replacement_unit": "six-camera keyframe",
+    "selected_frames": 14,
+    "train_frames": 283,
+    "test_frames": 121,
+    "actual_percentage": 4.946996466431095,
+    "scene_counts": {
+      "scene-0103": 2,
+      "scene-0553": 1,
+      "scene-0757": 2,
+      "scene-0796": 2,
+      "scene-0916": 5,
+      "scene-1094": 2
+    },
+    "adaptations_authorized": true,
+    "methods": [
+      "APGD-DetLoss-v1",
+      "BAIT-ROI-transfer-v1",
+      "PIL-ROI-transfer-v1",
+      "AdvDiff-inspired-DD2-v1",
+      "Asymmetry-inspired-physical-patch-v1"
+    ]
+  },
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "metrics": {
+    "mAP": {
+      "clean_percent": 63.18401583527032,
+      "adapted_percent": 62.602755058847315,
+      "ASR_percent": 0.91994908639305
+    },
+    "NDS": {
+      "clean_percent": 70.69412857495475,
+      "adapted_percent": 70.50767091691986,
+      "ASR_percent": 0.2637526790321525
+    }
+  },
+  "native_metrics": {
+    "pts_bbox_NuScenes/mAP": 0.6260275505884731,
+    "pts_bbox_NuScenes/NDS": 0.7050767091691986,
+    "pts_bbox_NuScenes/car_AP_dist_0.5": 0.40524408068137596,
+    "pts_bbox_NuScenes/car_AP_dist_1.0": 0.7263251450008782,
+    "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8764128852439977,
+    "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9038659635711216,
+    "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.2836493005648835,
+    "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.6988531243553266,
+    "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8065411216264298,
+    "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.8337049280374929,
+    "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.08764712851960217,
+    "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.9067738017209194,
+    "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9571095306402765,
+    "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9651151390484627,
+    "pts_bbox_NuScenes/trailer_AP_dist_0.5": 8.06907124989909e-05,
+    "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.32435447753405966,
+    "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.571863291248634,
+    "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.7183405280036486,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.531134130920616,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.6634866334911316,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.9042361396929016,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9425100550515492,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.1253485254368014,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4591410689850935,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6785462402640513,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7482994978168905,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4598150107729126,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.582802397097454,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7559086750833471,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.8497940361166241,
+    "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.050401053667263045,
+    "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.13850967908507358,
+    "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.22567808594547215,
+    "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.2488604002173424,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6961723450738796,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8271798441980212,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8830020087942574,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9051201936310653,
+    "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.5961752152948964,
+    "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8339701293126109,
+    "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9220652076191234,
+    "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9470643134609427,
+    "pts_bbox_NuScenes/trans_err": 0.4724404939829479,
+    "pts_bbox_NuScenes/scale_err": 0.20315843314450704,
+    "pts_bbox_NuScenes/orient_err": 0.14493183715593735,
+    "pts_bbox_NuScenes/vel_err": 0.09974071040857493,
+    "pts_bbox_NuScenes/attr_err": 0.15909918655841243
+  },
+  "training_audit": {
+    "checkpoint_iteration": 282,
+    "optimizer_step_counts": {
+      "275": 240
+    },
+    "representative_parameter_max_changes": {
+      "img_backbone.conv1.weight": 0.0002676853910088539,
+      "pts_bbox_head.reference_points.weight": 0.0012028217315673828
+    },
+    "all_model_weights_finite": true,
+    "checkpoint_bytes": 452697962,
+    "amp_state": {
+      "loss_scaler": {
+        "scale": 256.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 151
+      }
+    },
+    "gpu_used": false
+  },
+  "attack_seconds": 126.00173044204712,
+  "stage_timings": {
+    "attack": {
+      "seconds": 130.40452122688293,
+      "including_wait_seconds": 130.40452361106873,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/attack.log"
+    },
+    "train": {
+      "seconds": 161.90511107444763,
+      "including_wait_seconds": 161.90511441230774,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/train.log"
+    },
+    "audit": {
+      "seconds": 1.3256759643554688,
+      "including_wait_seconds": 1.325678825378418,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/audit.log"
+    },
+    "evaluate": {
+      "seconds": 62.15897607803345,
+      "including_wait_seconds": 62.1589789390564,
+      "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/evaluate.log"
+    }
+  },
+  "wall_seconds": 355.80899262428284,
+  "clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/dd2/seed0/after/result.json",
+  "limitations": [
+    "single-seed mini experiment",
+    "adapted task and attack interface; not original-paper reproduction",
+    "negative ASR retained; attack efficacy not assumed"
+  ]
+}

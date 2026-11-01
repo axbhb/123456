@@ -1,0 +1,19 @@
+{
+  "generator": "panacea_plus",
+  "method": "bait",
+  "status": "passed",
+  "selected_frames": 1,
+  "train_frames": 283,
+  "test_frames": 121,
+  "annotations_and_calibration_unchanged": true,
+  "nonselected_paths_unchanged": true,
+  "effective_model_optimizer_and_augmentation_unchanged": true,
+  "changed_frames": 1,
+  "changed_cameras": 6,
+  "max_uint8_delta": 8,
+  "minimum_saved_view_pixel_std": 29.167957034003287,
+  "all_weights_finite": true,
+  "optimizer_step_counts": {
+    "276": 240
+  }
+}

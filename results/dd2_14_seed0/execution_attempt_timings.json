@@ -1,0 +1,662 @@
+{
+  "description": "Actual guarded wall-clock execution, including CPU work inside guarded jobs and all failed attempts; lock waiting is excluded. Not GPU kernel active time. Evaluation jobs are identified through this experiment own stage-log job IDs.",
+  "total_guarded_seconds": 9221.138400524855,
+  "failed_guarded_seconds": 722.7593766599894,
+  "methods": {
+    "apgd": {
+      "attack_execution_seconds_including_failed_attempts": 140.02594843506813,
+      "attack_failed_execution_seconds": 9.828852087259293,
+      "training_execution_seconds": 161.70374795794487,
+      "evaluation_execution_seconds": 62.00686866044998,
+      "attack_attempt_count": 2,
+      "failed_attack_attempt_count": 1
+    },
+    "bait": {
+      "attack_execution_seconds_including_failed_attempts": 64.13328284025192,
+      "attack_failed_execution_seconds": 0,
+      "training_execution_seconds": 156.82517750561237,
+      "evaluation_execution_seconds": 62.22822381556034,
+      "attack_attempt_count": 1,
+      "failed_attack_attempt_count": 0
+    },
+    "pil": {
+      "attack_execution_seconds_including_failed_attempts": 24.408092066645622,
+      "attack_failed_execution_seconds": 9.269554510712624,
+      "training_execution_seconds": 166.85011114180088,
+      "evaluation_execution_seconds": 73.35790598392487,
+      "attack_attempt_count": 2,
+      "failed_attack_attempt_count": 1
+    },
+    "asymmetry": {
+      "attack_execution_seconds_including_failed_attempts": 1034.809847176075,
+      "attack_failed_execution_seconds": 96.47120963037014,
+      "training_execution_seconds": 181.7943529188633,
+      "evaluation_execution_seconds": 64.34523180127144,
+      "attack_attempt_count": 3,
+      "failed_attack_attempt_count": 1
+    },
+    "advdiff": {
+      "attack_execution_seconds_including_failed_attempts": 6805.1829154491425,
+      "attack_failed_execution_seconds": 607.1897604316473,
+      "training_execution_seconds": 161.79115468263626,
+      "evaluation_execution_seconds": 61.67554008960724,
+      "attack_attempt_count": 16,
+      "failed_attack_attempt_count": 2
+    }
+  },
+  "jobs": [
+    {
+      "id": "0d264b08205e4ccc8113ffe8bc803a42",
+      "framework": "streampetr",
+      "started": 1793514952.62242,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_apgd.py",
+      "log": "/srv/table2/frameworks/0d264b08205e4ccc8113ffe8bc803a42.log",
+      "pid": 61380,
+      "returncode": 1,
+      "status": "failed_process",
+      "charged_seconds": 9.828852087259293,
+      "finished": 1793514962.5316954
+    },
+    {
+      "id": "b28a4f408a9245c69f4f038b4892d903",
+      "framework": "streampetr",
+      "started": 1793515113.1315808,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_apgd.py",
+      "log": "/srv/table2/frameworks/b28a4f408a9245c69f4f038b4892d903.log",
+      "pid": 63238,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 130.19709634780884,
+      "finished": 1793515243.3594673
+    },
+    {
+      "id": "44b1700066c84a95a6138206a0acb967",
+      "framework": "streampetr",
+      "started": 1793515243.5346959,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/run_train.py",
+      "log": "/srv/table2/frameworks/44b1700066c84a95a6138206a0acb967.log",
+      "pid": 64260,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 161.70374795794487,
+      "finished": 1793515405.26713
+    },
+    {
+      "id": "4bf1b33d286e42a09e736f9a2b1fe656",
+      "framework": "streampetr",
+      "started": 1793515406.7302632,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/table2_clean_generators_20261030/evaluate_clean.py",
+      "log": "/srv/table2/frameworks/4bf1b33d286e42a09e736f9a2b1fe656.log",
+      "pid": 65739,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 62.00686866044998,
+      "finished": 1793515468.7610433
+    },
+    {
+      "id": "04f9a2b144374fb9b71030c30f26a591",
+      "framework": "streampetr",
+      "started": 1793515472.7193944,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_pil.py",
+      "log": "/srv/table2/frameworks/04f9a2b144374fb9b71030c30f26a591.log",
+      "pid": 66255,
+      "returncode": 1,
+      "status": "failed_process",
+      "charged_seconds": 9.269554510712624,
+      "finished": 1793515482.0204954
+    },
+    {
+      "id": "fc638a6389754562be84e8b5f72dca55",
+      "framework": "streampetr",
+      "started": 1793515485.2518325,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_bait.py",
+      "log": "/srv/table2/frameworks/fc638a6389754562be84e8b5f72dca55.log",
+      "pid": 66503,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 64.13328284025192,
+      "finished": 1793515549.417305
+    },
+    {
+      "id": "ae1fb35785664170ad41a4d836990fae",
+      "framework": "streampetr",
+      "started": 1793515549.5932739,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/run_train.py",
+      "log": "/srv/table2/frameworks/ae1fb35785664170ad41a4d836990fae.log",
+      "pid": 67048,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 156.82517750561237,
+      "finished": 1793515706.4498832
+    },
+    {
+      "id": "9e3ab3ca4fae405fa6b149ab312545d5",
+      "framework": "streampetr",
+      "started": 1793515707.958913,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/table2_clean_generators_20261030/evaluate_clean.py",
+      "log": "/srv/table2/frameworks/9e3ab3ca4fae405fa6b149ab312545d5.log",
+      "pid": 68565,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 62.22822381556034,
+      "finished": 1793515770.2172058
+    },
+    {
+      "id": "5bfd1f3c6aaa4f2fbd31caa8ef8f521d",
+      "framework": "streampetr",
+      "started": 1793515770.8196263,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_pil.py",
+      "log": "/srv/table2/frameworks/5bfd1f3c6aaa4f2fbd31caa8ef8f521d.log",
+      "pid": 69705,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 15.138537555932999,
+      "finished": 1793515785.9907448
+    },
+    {
+      "id": "14cfd5ab256a46d6b6090f02ad84eec5",
+      "framework": "streampetr",
+      "started": 1793515786.1682796,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/run_train.py",
+      "log": "/srv/table2/frameworks/14cfd5ab256a46d6b6090f02ad84eec5.log",
+      "pid": 69816,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 166.85011114180088,
+      "finished": 1793515953.0505
+    },
+    {
+      "id": "ff38b2eb73614886af4612a90c2fb483",
+      "framework": "streampetr",
+      "started": 1793515954.820347,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 28635
+      },
+      "script": "/srv/table2/table2_clean_generators_20261030/evaluate_clean.py",
+      "log": "/srv/table2/frameworks/ff38b2eb73614886af4612a90c2fb483.log",
+      "pid": 73763,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 73.35790598392487,
+      "finished": 1793516028.2035015
+    },
+    {
+      "id": "cc7df7e9626347e4bd76753160ea3520",
+      "framework": "drivedreamer2",
+      "started": 1793516427.3732145,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-837bb383-adf1-8444-a8d2-31075996841d",
+        "total_mib": 32768,
+        "free_mib": 18971
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/cc7df7e9626347e4bd76753160ea3520.log",
+      "pid": 80087,
+      "returncode": 1,
+      "status": "failed_process",
+      "charged_seconds": 288.57096368074417,
+      "finished": 1793516715.9955134
+    },
+    {
+      "id": "28caf86684f040489e9314777d267f94",
+      "framework": "streampetr",
+      "started": 1793516992.5004396,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 20773
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_asymmetry.py",
+      "log": "/srv/table2/frameworks/28caf86684f040489e9314777d267f94.log",
+      "pid": 15453,
+      "returncode": 1,
+      "status": "failed_process",
+      "charged_seconds": 96.47120963037014,
+      "finished": 1793517088.9996364
+    },
+    {
+      "id": "bf0980aeb1214e52a7d917066410400f",
+      "framework": "streampetr",
+      "started": 1793517535.1565166,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-837bb383-adf1-8444-a8d2-31075996841d",
+        "total_mib": 32768,
+        "free_mib": 18971
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_asymmetry.py",
+      "log": "/srv/table2/frameworks/bf0980aeb1214e52a7d917066410400f.log",
+      "pid": 20568,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 923.5528769046068,
+      "finished": 1793518458.7411234
+    },
+    {
+      "id": "f597805f7ca24d2e8b42f371512ff6bf",
+      "framework": "streampetr",
+      "started": 1793518458.8939428,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 24747
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/run_train.py",
+      "log": "/srv/table2/frameworks/f597805f7ca24d2e8b42f371512ff6bf.log",
+      "pid": 30589,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 181.7943529188633,
+      "finished": 1793518640.7167559
+    },
+    {
+      "id": "c94a6bd080294cd2ad28bf4aedafa770",
+      "framework": "streampetr",
+      "started": 1793518642.2062979,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 24067
+      },
+      "script": "/srv/table2/table2_clean_generators_20261030/evaluate_clean.py",
+      "log": "/srv/table2/frameworks/c94a6bd080294cd2ad28bf4aedafa770.log",
+      "pid": 33083,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 64.34523180127144,
+      "finished": 1793518706.5820482
+    },
+    {
+      "id": "3f228e6cb2614ab7b7989f600a759b9a",
+      "framework": "drivedreamer2",
+      "started": 1793518708.3574378,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 24675
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/3f228e6cb2614ab7b7989f600a759b9a.log",
+      "pid": 33630,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 441.7190120369196,
+      "finished": 1793519150.1078324
+    },
+    {
+      "id": "0a62d0e6a6234cf8aed31875e4e129f5",
+      "framework": "streampetr",
+      "started": 1793519158.4535773,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26927
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_asymmetry.py",
+      "log": "/srv/table2/frameworks/0a62d0e6a6234cf8aed31875e4e129f5.log",
+      "pid": 38034,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 14.785760641098022,
+      "finished": 1793519173.2681687
+    },
+    {
+      "id": "6f9f6f8308484d1ab432b378a41c6968",
+      "framework": "drivedreamer2",
+      "started": 1793519641.4966404,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 22823
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/6f9f6f8308484d1ab432b378a41c6968.log",
+      "pid": 41904,
+      "returncode": 1,
+      "status": "failed_process",
+      "charged_seconds": 318.61879675090313,
+      "finished": 1793519960.1441145
+    },
+    {
+      "id": "1a186c70ec6948b98bf0217d211e8e35",
+      "framework": "drivedreamer2",
+      "started": 1793520177.4125993,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26255
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/1a186c70ec6948b98bf0217d211e8e35.log",
+      "pid": 46990,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 444.2891654968262,
+      "finished": 1793520621.7338135
+    },
+    {
+      "id": "19a5886fd63b4f34825161758281fcf1",
+      "framework": "drivedreamer2",
+      "started": 1793520621.9051607,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 25701
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/19a5886fd63b4f34825161758281fcf1.log",
+      "pid": 50841,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 471.6826524287462,
+      "finished": 1793521093.6191127
+    },
+    {
+      "id": "6f78f9fc4b03433092e8d21a737b7682",
+      "framework": "drivedreamer2",
+      "started": 1793521093.789662,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26301
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/6f78f9fc4b03433092e8d21a737b7682.log",
+      "pid": 54933,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 479.80120822787285,
+      "finished": 1793521573.6219316
+    },
+    {
+      "id": "e5de6986d2374cef9775d8359f28f36b",
+      "framework": "drivedreamer2",
+      "started": 1793521573.7934573,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 25763
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/e5de6986d2374cef9775d8359f28f36b.log",
+      "pid": 58784,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 469.07288713753223,
+      "finished": 1793522042.8955855
+    },
+    {
+      "id": "f6f7866ea5594738a8e6d7ff2f427dc2",
+      "framework": "drivedreamer2",
+      "started": 1793522043.068727,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26277
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/f6f7866ea5594738a8e6d7ff2f427dc2.log",
+      "pid": 62584,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 474.8231969475746,
+      "finished": 1793522517.9238117
+    },
+    {
+      "id": "2b19c4d5c5dd418c96cbe31d1d8ea5b6",
+      "framework": "drivedreamer2",
+      "started": 1793522518.0976503,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26279
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/2b19c4d5c5dd418c96cbe31d1d8ea5b6.log",
+      "pid": 66703,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 476.8484645932913,
+      "finished": 1793522994.9773312
+    },
+    {
+      "id": "b991877d344c4bd7b81fa6effc4a7f63",
+      "framework": "drivedreamer2",
+      "started": 1793522995.1481898,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26895
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/b991877d344c4bd7b81fa6effc4a7f63.log",
+      "pid": 70939,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 472.0794251859188,
+      "finished": 1793523467.2593858
+    },
+    {
+      "id": "0486c02f954344cc821dd8523cebfd98",
+      "framework": "drivedreamer2",
+      "started": 1793523467.441738,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27199
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/0486c02f954344cc821dd8523cebfd98.log",
+      "pid": 75112,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 471.12472754716873,
+      "finished": 1793523938.5981627
+    },
+    {
+      "id": "fc7837ea71e642a3a4407e3947e647bb",
+      "framework": "drivedreamer2",
+      "started": 1793523938.7698026,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 26887
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/fc7837ea71e642a3a4407e3947e647bb.log",
+      "pid": 78844,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 415.89126332104206,
+      "finished": 1793524354.692586
+    },
+    {
+      "id": "bc49a5cd35c4457583d496493abc4d65",
+      "framework": "drivedreamer2",
+      "started": 1793524354.8722725,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27491
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/bc49a5cd35c4457583d496493abc4d65.log",
+      "pid": 81253,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 392.88653115928173,
+      "finished": 1793524747.7918508
+    },
+    {
+      "id": "858890090fd24f9dac12619f52dcaee0",
+      "framework": "drivedreamer2",
+      "started": 1793524747.9715865,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27491
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/858890090fd24f9dac12619f52dcaee0.log",
+      "pid": 2235,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 394.93649841845036,
+      "finished": 1793525142.9413173
+    },
+    {
+      "id": "ffd444f174d943eb8c074b41095b333a",
+      "framework": "drivedreamer2",
+      "started": 1793525143.1159518,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27491
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/ffd444f174d943eb8c074b41095b333a.log",
+      "pid": 14655,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 393.1883911192417,
+      "finished": 1793525536.3354003
+    },
+    {
+      "id": "cb53889ad28b42969cf0b9a27ad3075a",
+      "framework": "drivedreamer2",
+      "started": 1793525536.5159464,
+      "allowed_seconds": 1200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27491
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/attack_advdiff.py",
+      "log": "/srv/table2/frameworks/cb53889ad28b42969cf0b9a27ad3075a.log",
+      "pid": 16773,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 399.6497313976288,
+      "finished": 1793525936.1965334
+    },
+    {
+      "id": "398e5d2d654847668f5041b70c7cc89d",
+      "framework": "streampetr",
+      "started": 1793525936.4320848,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27491
+      },
+      "script": "/srv/table2/five_method_pilot_20261101/run_train.py",
+      "log": "/srv/table2/frameworks/398e5d2d654847668f5041b70c7cc89d.log",
+      "pid": 19228,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 161.79115468263626,
+      "finished": 1793526098.253984
+    },
+    {
+      "id": "f0d8107fb2ab48238d6a48f007014020",
+      "framework": "streampetr",
+      "started": 1793526099.761826,
+      "allowed_seconds": 7200,
+      "gpu": {
+        "uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e",
+        "total_mib": 32768,
+        "free_mib": 27491
+      },
+      "script": "/srv/table2/table2_clean_generators_20261030/evaluate_clean.py",
+      "log": "/srv/table2/frameworks/f0d8107fb2ab48238d6a48f007014020.log",
+      "pid": 20308,
+      "returncode": 0,
+      "status": "passed_process",
+      "charged_seconds": 61.67554008960724,
+      "finished": 1793526161.4624536
+    }
+  ],
+  "active": null
+}

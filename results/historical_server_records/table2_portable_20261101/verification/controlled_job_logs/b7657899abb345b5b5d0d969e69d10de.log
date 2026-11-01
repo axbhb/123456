@@ -1,0 +1,156 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+load checkpoint from local path: /srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive_final/advdiff/train/iter_283.pth
+{"status": "inference", "frames": 10, "total": 121, "seconds": 3.631075859069824}
+{"status": "inference", "frames": 20, "total": 121, "seconds": 7.257810592651367}
+{"status": "inference", "frames": 30, "total": 121, "seconds": 10.82108449935913}
+{"status": "inference", "frames": 40, "total": 121, "seconds": 14.336005449295044}
+{"status": "inference", "frames": 50, "total": 121, "seconds": 17.831589698791504}
+{"status": "inference", "frames": 60, "total": 121, "seconds": 21.32952308654785}
+{"status": "inference", "frames": 70, "total": 121, "seconds": 24.85078263282776}
+{"status": "inference", "frames": 80, "total": 121, "seconds": 28.39126181602478}
+{"status": "inference", "frames": 90, "total": 121, "seconds": 32.01413941383362}
+{"status": "inference", "frames": 100, "total": 121, "seconds": 35.6346116065979}
+{"status": "inference", "frames": 110, "total": 121, "seconds": 39.248005867004395}
+{"status": "inference", "frames": 120, "total": 121, "seconds": 42.85521674156189}
+{"status": "inference", "frames": 121, "total": 121, "seconds": 43.2135648727417}
+
+Formating bboxes of pts_bbox
+Start to convert detection format...
+[                                                  ] 0/121, elapsed: 0s, ETA:
+[                                ] 1/121, 30.2 task/s, elapsed: 0s, ETA:     4s
+[                                ] 2/121, 30.5 task/s, elapsed: 0s, ETA:     4s
+[                                ] 3/121, 30.9 task/s, elapsed: 0s, ETA:     4s
+[>                               ] 4/121, 31.1 task/s, elapsed: 0s, ETA:     4s
+[>                               ] 5/121, 14.7 task/s, elapsed: 0s, ETA:     8s
+[>                               ] 6/121, 16.2 task/s, elapsed: 0s, ETA:     7s
+[>                               ] 7/121, 17.4 task/s, elapsed: 0s, ETA:     7s
+[>>                              ] 8/121, 18.5 task/s, elapsed: 0s, ETA:     6s
+[>>                              ] 9/121, 19.3 task/s, elapsed: 0s, ETA:     6s
+[>>                             ] 10/121, 20.1 task/s, elapsed: 0s, ETA:     6s
+[>>                             ] 11/121, 20.8 task/s, elapsed: 1s, ETA:     5s
+[>>>                            ] 12/121, 21.3 task/s, elapsed: 1s, ETA:     5s
+[>>>                            ] 13/121, 21.9 task/s, elapsed: 1s, ETA:     5s
+[>>>                            ] 14/121, 22.3 task/s, elapsed: 1s, ETA:     5s
+[>>>                            ] 15/121, 22.7 task/s, elapsed: 1s, ETA:     5s
+[>>>>                           ] 16/121, 23.1 task/s, elapsed: 1s, ETA:     5s
+[>>>>                           ] 17/121, 23.4 task/s, elapsed: 1s, ETA:     4s
+[>>>>                           ] 18/121, 23.8 task/s, elapsed: 1s, ETA:     4s
+[>>>>                           ] 19/121, 24.1 task/s, elapsed: 1s, ETA:     4s
+[>>>>>                          ] 20/121, 24.4 task/s, elapsed: 1s, ETA:     4s
+[>>>>>                          ] 21/121, 24.6 task/s, elapsed: 1s, ETA:     4s
+[>>>>>                          ] 22/121, 24.9 task/s, elapsed: 1s, ETA:     4s
+[>>>>>                          ] 23/121, 25.2 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>                         ] 24/121, 25.4 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>                         ] 25/121, 25.6 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>                         ] 26/121, 25.8 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>                         ] 27/121, 25.9 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>>                        ] 28/121, 26.1 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>>                        ] 29/121, 26.2 task/s, elapsed: 1s, ETA:     4s
+[>>>>>>>                        ] 30/121, 26.4 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>                        ] 31/121, 26.5 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>                       ] 32/121, 26.6 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>                       ] 33/121, 26.8 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>                       ] 34/121, 26.9 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>                       ] 35/121, 27.0 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>                      ] 36/121, 27.1 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>                      ] 37/121, 27.2 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>                      ] 38/121, 27.3 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>                      ] 39/121, 27.4 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>>                     ] 40/121, 27.4 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>>                     ] 41/121, 27.5 task/s, elapsed: 1s, ETA:     3s
+[>>>>>>>>>>                     ] 42/121, 27.5 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>                    ] 43/121, 27.5 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>                    ] 44/121, 27.6 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>                    ] 45/121, 27.6 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>                    ] 46/121, 27.6 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>>                   ] 47/121, 27.6 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>>                   ] 48/121, 27.7 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>>                   ] 49/121, 27.7 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>>                   ] 50/121, 27.7 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>>>                  ] 51/121, 27.7 task/s, elapsed: 2s, ETA:     3s
+[>>>>>>>>>>>>>                  ] 52/121, 27.8 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>                  ] 53/121, 27.8 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>                  ] 54/121, 27.8 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>                 ] 55/121, 27.8 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>                 ] 56/121, 27.9 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>                 ] 57/121, 27.9 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>                 ] 58/121, 27.9 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>                ] 59/121, 27.9 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>                ] 60/121, 28.0 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>                ] 61/121, 28.0 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>                ] 62/121, 28.0 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>               ] 63/121, 28.0 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>               ] 64/121, 28.1 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>               ] 65/121, 28.1 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>               ] 66/121, 28.1 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>>              ] 67/121, 28.1 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>>              ] 68/121, 28.2 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>>              ] 69/121, 28.2 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>>              ] 70/121, 28.2 task/s, elapsed: 2s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>             ] 71/121, 28.2 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>             ] 72/121, 28.2 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>             ] 73/121, 28.2 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>             ] 74/121, 28.2 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>            ] 75/121, 28.2 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>            ] 76/121, 28.2 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>            ] 77/121, 28.3 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>            ] 78/121, 28.3 task/s, elapsed: 3s, ETA:     2s
+[>>>>>>>>>>>>>>>>>>>>           ] 79/121, 28.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>           ] 80/121, 28.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>           ] 81/121, 28.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>          ] 82/121, 28.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>          ] 83/121, 28.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>          ] 84/121, 28.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>          ] 85/121, 28.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>         ] 86/121, 27.2 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>         ] 87/121, 27.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>         ] 88/121, 27.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>         ] 89/121, 27.3 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>        ] 90/121, 27.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>        ] 91/121, 27.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>        ] 92/121, 27.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>        ] 93/121, 27.4 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>       ] 94/121, 27.5 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>       ] 95/121, 27.5 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>       ] 96/121, 27.5 task/s, elapsed: 3s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>       ] 97/121, 27.5 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>      ] 98/121, 27.6 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>      ] 99/121, 27.6 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>      ] 100/121, 27.6 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>     ] 101/121, 27.6 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>     ] 102/121, 27.7 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>     ] 103/121, 27.7 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>     ] 104/121, 27.7 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 105/121, 27.7 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 106/121, 27.8 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 107/121, 27.8 task/s, elapsed: 4s, ETA:     1s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>    ] 108/121, 27.8 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 109/121, 27.8 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 110/121, 27.9 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 111/121, 27.9 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>   ] 112/121, 27.9 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 113/121, 27.9 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 114/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 115/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>  ] 116/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 117/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 118/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 119/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ] 120/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 121/121, 28.0 task/s, elapsed: 4s, ETA:     0s
+Results writes to /srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive_final/advdiff/after/predictions/pts_bbox/results_nusc.json
+Evaluating bboxes of pts_bbox
+
+  0%|          | 0/323 [00:00<?, ?it/s]
+  7%|▋         | 22/323 [00:00<00:01, 217.59it/s]
+ 17%|█▋        | 54/323 [00:00<00:00, 277.33it/s]
+ 25%|██▌       | 82/323 [00:00<00:01, 187.18it/s]
+ 46%|████▌     | 148/323 [00:00<00:00, 330.39it/s]
+ 79%|███████▉  | 255/323 [00:00<00:00, 553.49it/s]
+                                                  
+
+  0%|          | 0/81 [00:00<?, ?it/s]
+ 63%|██████▎   | 51/81 [00:00<00:00, 503.92it/s]
+                                                
+{"status": "completed", "checkpoint": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive_final/advdiff/train/iter_283.pth", "frames": 121, "scenes": ["scene-0061", "scene-0655", "scene-1077"], "metrics": {"pts_bbox_NuScenes/mAP": 0.6317011231072145, "pts_bbox_NuScenes/NDS": 0.699135586998176, "pts_bbox_NuScenes/car_AP_dist_0.5": 0.2954891419821616, "pts_bbox_NuScenes/car_AP_dist_1.0": 0.6400186252125655, "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8496051912660857, "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9138048123624064, "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.15555834047517433, "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.41747386624955224, "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.7219272096244111, "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.9165094600390062, "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.10961291900544663, "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.7476853055813425, "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.8837816233652601, "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9611911730360196, "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.1278880070546737, "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.6771290266660637, "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.8565281446545063, "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.8565281446545063, "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.5030699773052758, "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.6518391763357493, "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.8194289022594337, "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9548027260799672, "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.1801364782772149, "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4952154600650546, "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.7141350932828464, "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.8144939834123903, "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.18611719807551094, "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.6968184829003681, "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7771568194651324, "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.8625195871155864, "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.016340001415830755, "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.11870228887557496, "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.3673585281857211, "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.4380195766113636, "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6263467754646092, "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8153509731002123, "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8913469730276079, "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9172595537938961, "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.6096650996038133, "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8180253921440163, "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9199098972698619, "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9432549889923542, "pts_bbox_NuScenes/trans_err": 0.5256078641161117, "pts_bbox_NuScenes/scale_err": 0.21890595897535428, "pts_bbox_NuScenes/orient_err": 0.13147291555896345, "pts_bbox_NuScenes/vel_err": 0.10742042354633205, "pts_bbox_NuScenes/attr_err": 0.18374258335755123}, "seconds": 54.30854916572571, "inference_seconds": 6.873079776763916, "peak_allocated_gib": 0.4266180992126465, "peak_reserved_gib": 0.677734375, "precision": "AMP fp16 with native force_fp32 decorators", "seed": 0}

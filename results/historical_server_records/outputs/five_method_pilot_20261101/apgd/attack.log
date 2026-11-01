@@ -1,0 +1,114 @@
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+Traceback (most recent call last):
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 75, in <module>
+    if __name__=='__main__':main()
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 41, in main
+    left=remaining(state,limit)
+  File "/srv/table2/frameworks/20261028-v1/run_gpu_smoke.py", line 8, in remaining
+    if ledger.get('active'):raise RuntimeError('An unfinished GPU job requires reconciliation before another launch')
+RuntimeError: An unfinished GPU job requires reconciliation before another launch
+{"id": "0d264b08205e4ccc8113ffe8bc803a42", "framework": "streampetr", "started": 1793514952.62242, "allowed_seconds": 7200, "gpu": {"uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e", "total_mib": 32768, "free_mib": 28635}, "script": "/srv/table2/five_method_pilot_20261101/attack_apgd.py", "log": "/srv/table2/frameworks/0d264b08205e4ccc8113ffe8bc803a42.log", "pid": 61380, "returncode": 1, "status": "failed_process", "charged_seconds": 9.828852087259293, "finished": 1793514962.5316954}
+{"id": "b28a4f408a9245c69f4f038b4892d903", "framework": "streampetr", "started": 1793515113.1315808, "allowed_seconds": 7200, "gpu": {"uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e", "total_mib": 32768, "free_mib": 28635}, "script": "/srv/table2/five_method_pilot_20261101/attack_apgd.py", "log": "/srv/table2/frameworks/b28a4f408a9245c69f4f038b4892d903.log", "pid": 63238, "returncode": 0, "status": "passed_process", "charged_seconds": 130.19709634780884, "finished": 1793515243.3594673}

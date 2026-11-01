@@ -1,0 +1,1 @@
+{"static_world_patch_policy": "one 1m x 1m world patch anchored per selected keyframe, projected consistently into all selected views/frames of that scene; nonselected training images stay Clean", "depth_source": "FrozenDrive measured/reconstructed training occupancy, not test data", "seconds": 0.3403944969177246, "physically_editable_frames": 1}

@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/srv/table2/table2_portable_20261101/run_pipeline.py", line 25, in <module>
+    if method!='clean' and (not attack.exists() or json.loads(attack.read_text()).get('status')!='completed'):stage('attack',W/('attack_'+method+'.py'),python=R/'envs/dd2_gpu/bin/python' if method=='advdiff' else P)
+  File "/srv/table2/table2_portable_20261101/run_pipeline.py", line 15, in stage
+    raise RuntimeError(name+' failed: '+tail)
+RuntimeError: attack failed: {"id": "139f2c5d86b246d691a8cacfb72564b2", "framework": "streampetr", "started": 1793530912.695298, "allowed_seconds": 7200, "gpu": {"uuid": "GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e", "total_mib": 32768, "free_mib": 27491}, "script": "/srv/table2/table2_portable_20261101/attack_asymmetry.py", "log": "/srv/table2/frameworks/139f2c5d86b246d691a8cacfb72564b2.log", "pid": 58551, "returncode": 1, "status": "failed_process", "charged_seconds": 8.571184650063515, "finished": 1793530921.3004758}
+

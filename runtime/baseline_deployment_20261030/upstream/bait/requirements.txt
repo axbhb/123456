@@ -1,0 +1,12 @@
+higher==0.2.1
+matplotlib
+mlconfig==0.1.8
+numpy
+pandas
+Pillow
+scikit-learn
+scipy
+torch==2.7.1
+torchvision
+tqdm
+

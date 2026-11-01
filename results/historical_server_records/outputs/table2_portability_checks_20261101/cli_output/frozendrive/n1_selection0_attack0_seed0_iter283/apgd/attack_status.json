@@ -1,0 +1,77 @@
+{
+  "method": "APGD-DetLoss-v1",
+  "status": "completed",
+  "steps": 20,
+  "restarts": 1,
+  "epsilon": 0.03137254901960784,
+  "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+  "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png",
+        "CAM_BACK": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png"
+      },
+      "initial_loss": 22.511301040649414,
+      "stored_final_loss": 70.04595947265625,
+      "best_continuous_loss": 70.04595947265625,
+      "loss_trace": [
+        22.511301040649414,
+        22.511301040649414,
+        29.052751541137695,
+        33.38847351074219,
+        31.712732315063477,
+        35.85108947753906,
+        40.10495376586914,
+        40.15846252441406,
+        43.41868209838867,
+        42.23393249511719,
+        43.55097961425781,
+        50.20802688598633,
+        52.63227462768555,
+        54.46625518798828,
+        54.4441032409668,
+        59.35552215576172,
+        62.07244873046875,
+        65.05619812011719,
+        65.9067611694336,
+        68.75401306152344,
+        69.93194580078125,
+        70.04595947265625,
+        70.04595947265625
+      ],
+      "changed_cameras": 6,
+      "max_uint8_delta": 8,
+      "native_preprocess_max_error": 0.0,
+      "seconds": 10.211777687072754,
+      "augmentation": {
+        "resize": 0.47456570170288714,
+        "dims": [
+          759,
+          427
+        ],
+        "crop": [
+          38,
+          171,
+          742,
+          427
+        ],
+        "flip": false
+      },
+      "previous_context_token": "b6b0d9f2f2e14a3aaa2c8aedeb1edb69"
+    }
+  ],
+  "seconds": 16.408158779144287,
+  "frame": 1,
+  "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+  "objective_calls": 23,
+  "last_loss": 70.04595947265625,
+  "frames": 1,
+  "changed_cameras": 6,
+  "peak_memory_gib": 5.0033979415893555
+}

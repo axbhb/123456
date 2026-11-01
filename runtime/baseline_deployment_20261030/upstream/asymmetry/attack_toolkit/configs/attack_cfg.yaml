@@ -1,0 +1,23 @@
+blind:
+  total_locs: 400
+  sample_interval: 0.5
+  locs_height_num: 4
+  
+  sample: True
+  samples_per_loc: 2
+  sample_range: 1.0  # Size of search grid in meters
+
+
+patch:
+  total_locs: 400
+  sample_interval: 0.5
+  step_per_loc: 20  # pso
+  
+  sample: True
+  samples_per_loc: 2
+  sample_range: 1.0
+
+  type: 'vertical'
+  width: 3
+  height: 2
+  heading: 0

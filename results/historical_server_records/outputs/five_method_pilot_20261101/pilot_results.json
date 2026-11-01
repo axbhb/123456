@@ -1,0 +1,1291 @@
+{
+  "generator": "dd2",
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "selected_frames": 14,
+  "planned_iterations": 283,
+  "test_frames": 121,
+  "checked_at_utc": "2026-11-01T09:45:25Z",
+  "methods": {
+    "apgd": {
+      "pipeline": {
+        "method": "apgd",
+        "generator": "dd2",
+        "selected_frames": 14,
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "status": "completed",
+        "stages": {
+          "attack": {
+            "seconds": 130.40452122688293,
+            "including_wait_seconds": 130.40452361106873,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/attack.log"
+          },
+          "train": {
+            "seconds": 161.90511107444763,
+            "including_wait_seconds": 161.90511441230774,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/train.log"
+          },
+          "audit": {
+            "seconds": 1.3256759643554688,
+            "including_wait_seconds": 1.325678825378418,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/audit.log"
+          },
+          "evaluate": {
+            "seconds": 62.15897607803345,
+            "including_wait_seconds": 62.1589789390564,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/evaluate.log"
+          }
+        },
+        "started": 1793515112.9969885,
+        "elapsed_seconds": 355.81037187576294,
+        "finished": 1793515468.807357
+      },
+      "attack": {
+        "method": "APGD-DetLoss-v1",
+        "status": "completed",
+        "steps": 20,
+        "restarts": 1,
+        "epsilon": 0.03137254901960784,
+        "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+        "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+        "seconds": 126.00173044204712,
+        "frame": 14,
+        "token": "e3bcde4a06124931a097ef2a211aaaef",
+        "objective_calls": 23,
+        "last_loss": 191.07118225097656,
+        "frames": 14,
+        "changed_cameras": 84,
+        "peak_memory_gib": 5.097573280334473
+      },
+      "summary": {
+        "status": "completed",
+        "method": "APGD-DetLoss-v1",
+        "adapted": true,
+        "generator": "dd2",
+        "selection": {
+          "generator": "dd2",
+          "selected_tokens": [
+            "796b1988dd254f74bf2fb19ba9c5b8c6",
+            "27749aa3de2545219186c61d4d415e1c",
+            "ac8b4d49731d43289579f014cb7c97ef",
+            "9ee4020153674b9e9943d395ff8cfdf3",
+            "de9432d4fc7a4e5a985e2bc628eb614c",
+            "ebce5a3b3484446580028d6538e69a81",
+            "dcbe451d383e450786aaad04ab9d3790",
+            "b1303058fa624645b753d7283d70de45",
+            "e63b83b436a0479db7362338cdfab118",
+            "ae5004bf4ebb4db0a84cb3c27bd398d1",
+            "61d47d1198184bfdaa6777e9448d825d",
+            "55c258972acb4300a3a6077a531ab050",
+            "acf9fcbeb1e346b98640f694f15460e8",
+            "e3bcde4a06124931a097ef2a211aaaef"
+          ],
+          "selection_seed": 0,
+          "training_seed": 0,
+          "evaluation_seed": 0,
+          "replacement_unit": "six-camera keyframe",
+          "selected_frames": 14,
+          "train_frames": 283,
+          "test_frames": 121,
+          "actual_percentage": 4.946996466431095,
+          "scene_counts": {
+            "scene-0103": 2,
+            "scene-0553": 1,
+            "scene-0757": 2,
+            "scene-0796": 2,
+            "scene-0916": 5,
+            "scene-1094": 2
+          },
+          "adaptations_authorized": true,
+          "methods": [
+            "APGD-DetLoss-v1",
+            "BAIT-ROI-transfer-v1",
+            "PIL-ROI-transfer-v1",
+            "AdvDiff-inspired-DD2-v1",
+            "Asymmetry-inspired-physical-patch-v1"
+          ]
+        },
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "metrics": {
+          "mAP": {
+            "clean_percent": 63.18401583527032,
+            "adapted_percent": 62.602755058847315,
+            "ASR_percent": 0.91994908639305
+          },
+          "NDS": {
+            "clean_percent": 70.69412857495475,
+            "adapted_percent": 70.50767091691986,
+            "ASR_percent": 0.2637526790321525
+          }
+        },
+        "native_metrics": {
+          "pts_bbox_NuScenes/mAP": 0.6260275505884731,
+          "pts_bbox_NuScenes/NDS": 0.7050767091691986,
+          "pts_bbox_NuScenes/car_AP_dist_0.5": 0.40524408068137596,
+          "pts_bbox_NuScenes/car_AP_dist_1.0": 0.7263251450008782,
+          "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8764128852439977,
+          "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9038659635711216,
+          "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.2836493005648835,
+          "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.6988531243553266,
+          "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8065411216264298,
+          "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.8337049280374929,
+          "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.08764712851960217,
+          "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.9067738017209194,
+          "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9571095306402765,
+          "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9651151390484627,
+          "pts_bbox_NuScenes/trailer_AP_dist_0.5": 8.06907124989909e-05,
+          "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.32435447753405966,
+          "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.571863291248634,
+          "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.7183405280036486,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.531134130920616,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.6634866334911316,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.9042361396929016,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9425100550515492,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.1253485254368014,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4591410689850935,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6785462402640513,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7482994978168905,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4598150107729126,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.582802397097454,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7559086750833471,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.8497940361166241,
+          "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.050401053667263045,
+          "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.13850967908507358,
+          "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.22567808594547215,
+          "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.2488604002173424,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6961723450738796,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8271798441980212,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8830020087942574,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9051201936310653,
+          "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.5961752152948964,
+          "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8339701293126109,
+          "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9220652076191234,
+          "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9470643134609427,
+          "pts_bbox_NuScenes/trans_err": 0.4724404939829479,
+          "pts_bbox_NuScenes/scale_err": 0.20315843314450704,
+          "pts_bbox_NuScenes/orient_err": 0.14493183715593735,
+          "pts_bbox_NuScenes/vel_err": 0.09974071040857493,
+          "pts_bbox_NuScenes/attr_err": 0.15909918655841243
+        },
+        "training_audit": {
+          "checkpoint_iteration": 282,
+          "optimizer_step_counts": {
+            "275": 240
+          },
+          "representative_parameter_max_changes": {
+            "img_backbone.conv1.weight": 0.0002676853910088539,
+            "pts_bbox_head.reference_points.weight": 0.0012028217315673828
+          },
+          "all_model_weights_finite": true,
+          "checkpoint_bytes": 452697962,
+          "amp_state": {
+            "loss_scaler": {
+              "scale": 256.0,
+              "growth_factor": 2.0,
+              "backoff_factor": 0.5,
+              "growth_interval": 2000,
+              "_growth_tracker": 151
+            }
+          },
+          "gpu_used": false
+        },
+        "attack_seconds": 126.00173044204712,
+        "stage_timings": {
+          "attack": {
+            "seconds": 130.40452122688293,
+            "including_wait_seconds": 130.40452361106873,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/attack.log"
+          },
+          "train": {
+            "seconds": 161.90511107444763,
+            "including_wait_seconds": 161.90511441230774,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/train.log"
+          },
+          "audit": {
+            "seconds": 1.3256759643554688,
+            "including_wait_seconds": 1.325678825378418,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/audit.log"
+          },
+          "evaluate": {
+            "seconds": 62.15897607803345,
+            "including_wait_seconds": 62.1589789390564,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/apgd/evaluate.log"
+          }
+        },
+        "wall_seconds": 355.80899262428284,
+        "clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/dd2/seed0/after/result.json",
+        "limitations": [
+          "single-seed mini experiment",
+          "adapted task and attack interface; not original-paper reproduction",
+          "negative ASR retained; attack efficacy not assumed"
+        ]
+      },
+      "measurement_audit": {
+        "same_effective_training_configuration": true,
+        "equivalent_constructor_injection_normalized": "pts_bbox_head.train_cfg equals model.train_cfg.pts; absent test_cfg equals None",
+        "metadata_and_labels_unchanged": true,
+        "nonselected_training_camera_paths_unchanged": true,
+        "selected_token_count": 14,
+        "actual_optimizer_update_counts": [
+          275
+        ],
+        "AMP_skipped_updates": 8,
+        "saved_image_distortion": {
+          "scope": "all six saved camera images of the 14 selected training keyframes",
+          "changed_frames": 14,
+          "changed_cameras": 84,
+          "RGB_uint8_Linf": 8.0,
+          "RGB_uint8_MAE": 2.1839673654292446,
+          "RGB_uint8_MSE": 12.88758991959414,
+          "PSNR_dB": 37.02908652396138,
+          "changed_channel_value_fraction": 0.45658753410218256,
+          "interpretation": "pixel distortion only; not a semantic or temporal consistency score"
+        }
+      }
+    },
+    "bait": {
+      "pipeline": {
+        "method": "bait",
+        "generator": "dd2",
+        "selected_frames": 14,
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "status": "completed",
+        "stages": {
+          "attack": {
+            "seconds": 64.32877469062805,
+            "including_wait_seconds": 345.59120774269104,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/attack.log"
+          },
+          "train": {
+            "seconds": 157.0304045677185,
+            "including_wait_seconds": 157.0304079055786,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/train.log"
+          },
+          "audit": {
+            "seconds": 1.3566474914550781,
+            "including_wait_seconds": 1.3566510677337646,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/audit.log"
+          },
+          "evaluate": {
+            "seconds": 62.38761234283447,
+            "including_wait_seconds": 62.387615442276,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/evaluate.log"
+          }
+        },
+        "started": 1793515203.8660927,
+        "elapsed_seconds": 566.3963134288788,
+        "pending_stage": "attack",
+        "finished": 1793515770.2624006
+      },
+      "attack": {
+        "method": "BAIT-ROI-transfer-v1",
+        "status": "completed",
+        "epsilon": 0.03137254901960784,
+        "source": "https://github.com/zhli-cs/BAIT",
+        "surrogate_pretraining_epochs": 3,
+        "outer_rounds": 3,
+        "stages": [
+          "hard_negative",
+          "random_incorrect",
+          "most_dissimilar"
+        ],
+        "pilot_note": "one outer round per stage; shortened attack optimization, full downstream finetuning retained",
+        "test_data_used": false,
+        "surrogate": "ImageNet pretrained ResNet18, nuScenes10 head",
+        "class_balancing": "each outer batch contains every nuScenes class; 130 crops (13 per class), deterministic resampling",
+        "class_space": "nuScenes10; CIFAR10 flag only selects ten-class branch in official toolbox",
+        "completed_epochs": 3,
+        "last_loss": 0.3605530318677941,
+        "seconds": 62.62693500518799,
+        "stage": "most_dissimilar",
+        "completed_outer_batches": 97,
+        "total_outer_batches": 97,
+        "last_outer_loss": 7.154786109924316,
+        "rounds": [
+          {
+            "stage": "hard_negative",
+            "inner_loss": 2.0682740211486816,
+            "last_outer_loss": 2.3668978214263916,
+            "class_counts": [
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0
+            ]
+          },
+          {
+            "stage": "random_incorrect",
+            "inner_loss": 2.2717621326446533,
+            "last_outer_loss": 2.4620211124420166,
+            "class_counts": [
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0
+            ]
+          },
+          {
+            "stage": "most_dissimilar",
+            "inner_loss": 1.945701241493225,
+            "last_outer_loss": 2.147470474243164,
+            "class_counts": [
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0,
+              1261.0
+            ]
+          }
+        ],
+        "selected_frames": 14,
+        "changed_frames": 14,
+        "changed_cameras": 75,
+        "max_uint8_delta": 8,
+        "overlap_policy": "far-to-near overwrite, then final Linf projection; deterministic crop mapping",
+        "peak_memory_gib": 2.5421128273010254,
+        "metadata_correction": "Batch size label corrected from 128 to actual 13*10=130; no numerical results changed"
+      },
+      "summary": {
+        "status": "completed",
+        "method": "BAIT-ROI-transfer-v1",
+        "adapted": true,
+        "generator": "dd2",
+        "selection": {
+          "generator": "dd2",
+          "selected_tokens": [
+            "796b1988dd254f74bf2fb19ba9c5b8c6",
+            "27749aa3de2545219186c61d4d415e1c",
+            "ac8b4d49731d43289579f014cb7c97ef",
+            "9ee4020153674b9e9943d395ff8cfdf3",
+            "de9432d4fc7a4e5a985e2bc628eb614c",
+            "ebce5a3b3484446580028d6538e69a81",
+            "dcbe451d383e450786aaad04ab9d3790",
+            "b1303058fa624645b753d7283d70de45",
+            "e63b83b436a0479db7362338cdfab118",
+            "ae5004bf4ebb4db0a84cb3c27bd398d1",
+            "61d47d1198184bfdaa6777e9448d825d",
+            "55c258972acb4300a3a6077a531ab050",
+            "acf9fcbeb1e346b98640f694f15460e8",
+            "e3bcde4a06124931a097ef2a211aaaef"
+          ],
+          "selection_seed": 0,
+          "training_seed": 0,
+          "evaluation_seed": 0,
+          "replacement_unit": "six-camera keyframe",
+          "selected_frames": 14,
+          "train_frames": 283,
+          "test_frames": 121,
+          "actual_percentage": 4.946996466431095,
+          "scene_counts": {
+            "scene-0103": 2,
+            "scene-0553": 1,
+            "scene-0757": 2,
+            "scene-0796": 2,
+            "scene-0916": 5,
+            "scene-1094": 2
+          },
+          "adaptations_authorized": true,
+          "methods": [
+            "APGD-DetLoss-v1",
+            "BAIT-ROI-transfer-v1",
+            "PIL-ROI-transfer-v1",
+            "AdvDiff-inspired-DD2-v1",
+            "Asymmetry-inspired-physical-patch-v1"
+          ]
+        },
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "metrics": {
+          "mAP": {
+            "clean_percent": 63.18401583527032,
+            "adapted_percent": 63.34475211767151,
+            "ASR_percent": -0.25439390054004835
+          },
+          "NDS": {
+            "clean_percent": 70.69412857495475,
+            "adapted_percent": 70.8180076710893,
+            "ASR_percent": -0.1752325102971109
+          }
+        },
+        "native_metrics": {
+          "pts_bbox_NuScenes/mAP": 0.6334475211767151,
+          "pts_bbox_NuScenes/NDS": 0.708180076710893,
+          "pts_bbox_NuScenes/car_AP_dist_0.5": 0.43836429125323606,
+          "pts_bbox_NuScenes/car_AP_dist_1.0": 0.7509394733808662,
+          "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8747120373743353,
+          "pts_bbox_NuScenes/car_AP_dist_4.0": 0.903323944511629,
+          "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.44275283641173774,
+          "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.7249315648373661,
+          "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8367579827787669,
+          "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.8488409755454593,
+          "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.18009228541856628,
+          "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.8642699440475156,
+          "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9576806486959379,
+          "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9660905303389642,
+          "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.0,
+          "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.27240360844497624,
+          "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.5056063308514289,
+          "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.6658255096987176,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.5313428027514363,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.6562876994079155,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.8902661979576185,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9192896134847595,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.18190882075853243,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4731839277894215,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.690811777555434,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7623914292301807,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4736416387008621,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.5342351372037011,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7316237248252871,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.8514855204908505,
+          "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.05883358144990307,
+          "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.1654961613090831,
+          "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.26595493681691185,
+          "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.2914157984908677,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6694020783857424,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8451166626803978,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8880711481151546,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9069814525820624,
+          "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.617969696315487,
+          "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8365285448397948,
+          "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9168713439759977,
+          "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9461991883616949,
+          "pts_bbox_NuScenes/trans_err": 0.48348234845403376,
+          "pts_bbox_NuScenes/scale_err": 0.20514900956862697,
+          "pts_bbox_NuScenes/orient_err": 0.13985253250560026,
+          "pts_bbox_NuScenes/vel_err": 0.0985438257236861,
+          "pts_bbox_NuScenes/attr_err": 0.15840912252269806
+        },
+        "training_audit": {
+          "checkpoint_iteration": 282,
+          "optimizer_step_counts": {
+            "275": 240
+          },
+          "representative_parameter_max_changes": {
+            "img_backbone.conv1.weight": 0.00022686459124088287,
+            "pts_bbox_head.reference_points.weight": 0.001091599464416504
+          },
+          "all_model_weights_finite": true,
+          "checkpoint_bytes": 452697450,
+          "amp_state": {
+            "loss_scaler": {
+              "scale": 256.0,
+              "growth_factor": 2.0,
+              "backoff_factor": 0.5,
+              "growth_interval": 2000,
+              "_growth_tracker": 163
+            }
+          },
+          "gpu_used": false
+        },
+        "attack_seconds": 62.62693500518799,
+        "stage_timings": {
+          "attack": {
+            "seconds": 64.32877469062805,
+            "including_wait_seconds": 345.59120774269104,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/attack.log"
+          },
+          "train": {
+            "seconds": 157.0304045677185,
+            "including_wait_seconds": 157.0304079055786,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/train.log"
+          },
+          "audit": {
+            "seconds": 1.3566474914550781,
+            "including_wait_seconds": 1.3566510677337646,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/audit.log"
+          },
+          "evaluate": {
+            "seconds": 62.38761234283447,
+            "including_wait_seconds": 62.387615442276,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/bait/evaluate.log"
+          }
+        },
+        "wall_seconds": 566.3952236175537,
+        "clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/dd2/seed0/after/result.json",
+        "limitations": [
+          "single-seed mini experiment",
+          "adapted task and attack interface; not original-paper reproduction",
+          "negative ASR retained; attack efficacy not assumed"
+        ]
+      },
+      "measurement_audit": {
+        "same_effective_training_configuration": true,
+        "equivalent_constructor_injection_normalized": "pts_bbox_head.train_cfg equals model.train_cfg.pts; absent test_cfg equals None",
+        "metadata_and_labels_unchanged": true,
+        "nonselected_training_camera_paths_unchanged": true,
+        "selected_token_count": 14,
+        "actual_optimizer_update_counts": [
+          275
+        ],
+        "AMP_skipped_updates": 8,
+        "saved_image_distortion": {
+          "scope": "all six saved camera images of the 14 selected training keyframes",
+          "changed_frames": 14,
+          "changed_cameras": 75,
+          "RGB_uint8_Linf": 8.0,
+          "RGB_uint8_MAE": 0.5846593947637648,
+          "RGB_uint8_MSE": 2.912239645614105,
+          "PSNR_dB": 43.48853251049195,
+          "changed_channel_value_fraction": 0.14800402582908162,
+          "interpretation": "pixel distortion only; not a semantic or temporal consistency score"
+        }
+      }
+    },
+    "pil": {
+      "pipeline": {
+        "method": "pil",
+        "generator": "dd2",
+        "selected_frames": 14,
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "status": "completed",
+        "stages": {
+          "attack": {
+            "seconds": 15.352319478988647,
+            "including_wait_seconds": 196.16421031951904,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/attack.log"
+          },
+          "train": {
+            "seconds": 167.06599020957947,
+            "including_wait_seconds": 167.06599187850952,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/train.log"
+          },
+          "audit": {
+            "seconds": 1.6313953399658203,
+            "including_wait_seconds": 1.6313972473144531,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/audit.log"
+          },
+          "evaluate": {
+            "seconds": 73.50269103050232,
+            "including_wait_seconds": 73.50269341468811,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/evaluate.log"
+          }
+        },
+        "started": 1793515589.8709514,
+        "elapsed_seconds": 438.3724329471588,
+        "pending_stage": "attack",
+        "finished": 1793516028.2433794
+      },
+      "attack": {
+        "method": "PIL-ROI-transfer-v1",
+        "status": "completed",
+        "pretrain_epochs": 30,
+        "attack_steps": 30,
+        "epsilon": 0.03137254901960784,
+        "alpha": 0.003137254901960784,
+        "lambda": 0.9,
+        "classifier": "official LinearModel, two linear factors, no nonlinear activation",
+        "source": "https://github.com/jinlinll/pil",
+        "test_data_used": false,
+        "completed_epochs": 30,
+        "seconds": 13.933019876480103,
+        "completed_crops": 684,
+        "total_crops": 684,
+        "selected_frames": 14,
+        "changed_frames": 14,
+        "changed_cameras": 75,
+        "max_uint8_delta": 8,
+        "overlap_policy": "far-to-near overwrite, then final Linf projection; deterministic crop mapping",
+        "peak_memory_gib": 0.01612377166748047
+      },
+      "summary": {
+        "status": "completed",
+        "method": "PIL-ROI-transfer-v1",
+        "adapted": true,
+        "generator": "dd2",
+        "selection": {
+          "generator": "dd2",
+          "selected_tokens": [
+            "796b1988dd254f74bf2fb19ba9c5b8c6",
+            "27749aa3de2545219186c61d4d415e1c",
+            "ac8b4d49731d43289579f014cb7c97ef",
+            "9ee4020153674b9e9943d395ff8cfdf3",
+            "de9432d4fc7a4e5a985e2bc628eb614c",
+            "ebce5a3b3484446580028d6538e69a81",
+            "dcbe451d383e450786aaad04ab9d3790",
+            "b1303058fa624645b753d7283d70de45",
+            "e63b83b436a0479db7362338cdfab118",
+            "ae5004bf4ebb4db0a84cb3c27bd398d1",
+            "61d47d1198184bfdaa6777e9448d825d",
+            "55c258972acb4300a3a6077a531ab050",
+            "acf9fcbeb1e346b98640f694f15460e8",
+            "e3bcde4a06124931a097ef2a211aaaef"
+          ],
+          "selection_seed": 0,
+          "training_seed": 0,
+          "evaluation_seed": 0,
+          "replacement_unit": "six-camera keyframe",
+          "selected_frames": 14,
+          "train_frames": 283,
+          "test_frames": 121,
+          "actual_percentage": 4.946996466431095,
+          "scene_counts": {
+            "scene-0103": 2,
+            "scene-0553": 1,
+            "scene-0757": 2,
+            "scene-0796": 2,
+            "scene-0916": 5,
+            "scene-1094": 2
+          },
+          "adaptations_authorized": true,
+          "methods": [
+            "APGD-DetLoss-v1",
+            "BAIT-ROI-transfer-v1",
+            "PIL-ROI-transfer-v1",
+            "AdvDiff-inspired-DD2-v1",
+            "Asymmetry-inspired-physical-patch-v1"
+          ]
+        },
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "metrics": {
+          "mAP": {
+            "clean_percent": 63.18401583527032,
+            "adapted_percent": 62.94192898565337,
+            "ASR_percent": 0.38314571560013877
+          },
+          "NDS": {
+            "clean_percent": 70.69412857495475,
+            "adapted_percent": 70.48359656806461,
+            "ASR_percent": 0.29780691994372505
+          }
+        },
+        "native_metrics": {
+          "pts_bbox_NuScenes/mAP": 0.6294192898565337,
+          "pts_bbox_NuScenes/NDS": 0.7048359656806461,
+          "pts_bbox_NuScenes/car_AP_dist_0.5": 0.4165303382517452,
+          "pts_bbox_NuScenes/car_AP_dist_1.0": 0.7381118333490619,
+          "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8772889331187199,
+          "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9074082696168015,
+          "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.4000009909228627,
+          "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.7400331508283653,
+          "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8273780583157535,
+          "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.8432707508726484,
+          "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.1859607576008651,
+          "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.8801925054864834,
+          "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9579664188335292,
+          "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9669435221985435,
+          "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.0,
+          "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.14419385332736906,
+          "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.4884746275097152,
+          "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.6621319311276879,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.5537625078716174,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.7305367298759,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.9249266031547535,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9445881061687571,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.1723639282848582,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4971580873564666,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6879871063202674,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7621938211249264,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4482684016777369,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.5033246587734262,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.6950267325480232,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.835556575490695,
+          "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.08334737213755616,
+          "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.17347726390725685,
+          "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.25870972601595016,
+          "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.27602842996354043,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6648248241780366,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8269177537842154,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8831472183096372,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9061141334441486,
+          "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.5991473196022511,
+          "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8340549970057937,
+          "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9290173646698875,
+          "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.950405991235499,
+          "pts_bbox_NuScenes/trans_err": 0.4879180660495702,
+          "pts_bbox_NuScenes/scale_err": 0.20198024164717637,
+          "pts_bbox_NuScenes/orient_err": 0.1447605763978413,
+          "pts_bbox_NuScenes/vel_err": 0.10341013272893357,
+          "pts_bbox_NuScenes/attr_err": 0.16066777565268614
+        },
+        "training_audit": {
+          "checkpoint_iteration": 282,
+          "optimizer_step_counts": {
+            "276": 240
+          },
+          "representative_parameter_max_changes": {
+            "img_backbone.conv1.weight": 0.00026656966656446457,
+            "pts_bbox_head.reference_points.weight": 0.0009641349315643311
+          },
+          "all_model_weights_finite": true,
+          "checkpoint_bytes": 452697450,
+          "amp_state": {
+            "loss_scaler": {
+              "scale": 512.0,
+              "growth_factor": 2.0,
+              "backoff_factor": 0.5,
+              "growth_interval": 2000,
+              "_growth_tracker": 227
+            }
+          },
+          "gpu_used": false
+        },
+        "attack_seconds": 13.933019876480103,
+        "stage_timings": {
+          "attack": {
+            "seconds": 15.352319478988647,
+            "including_wait_seconds": 196.16421031951904,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/attack.log"
+          },
+          "train": {
+            "seconds": 167.06599020957947,
+            "including_wait_seconds": 167.06599187850952,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/train.log"
+          },
+          "audit": {
+            "seconds": 1.6313953399658203,
+            "including_wait_seconds": 1.6313972473144531,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/audit.log"
+          },
+          "evaluate": {
+            "seconds": 73.50269103050232,
+            "including_wait_seconds": 73.50269341468811,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/pil/evaluate.log"
+          }
+        },
+        "wall_seconds": 438.3715100288391,
+        "clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/dd2/seed0/after/result.json",
+        "limitations": [
+          "single-seed mini experiment",
+          "adapted task and attack interface; not original-paper reproduction",
+          "negative ASR retained; attack efficacy not assumed"
+        ]
+      },
+      "measurement_audit": {
+        "same_effective_training_configuration": true,
+        "equivalent_constructor_injection_normalized": "pts_bbox_head.train_cfg equals model.train_cfg.pts; absent test_cfg equals None",
+        "metadata_and_labels_unchanged": true,
+        "nonselected_training_camera_paths_unchanged": true,
+        "selected_token_count": 14,
+        "actual_optimizer_update_counts": [
+          276
+        ],
+        "AMP_skipped_updates": 7,
+        "saved_image_distortion": {
+          "scope": "all six saved camera images of the 14 selected training keyframes",
+          "changed_frames": 14,
+          "changed_cameras": 75,
+          "RGB_uint8_Linf": 8.0,
+          "RGB_uint8_MAE": 0.9303419325086806,
+          "RGB_uint8_MSE": 6.547457256014385,
+          "PSNR_dB": 39.97007688980672,
+          "changed_channel_value_fraction": 0.15276815885859552,
+          "interpretation": "pixel distortion only; not a semantic or temporal consistency score"
+        }
+      }
+    },
+    "asymmetry": {
+      "pipeline": {
+        "method": "asymmetry",
+        "generator": "dd2",
+        "selected_frames": 14,
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "status": "completed",
+        "stages": {
+          "attack": {
+            "seconds": 14.985064029693604,
+            "including_wait_seconds": 3125.2053368091583,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/attack.log"
+          },
+          "audit": {
+            "seconds": 1.3559916019439697,
+            "including_wait_seconds": 1.355994701385498,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/audit.log"
+          }
+        },
+        "started": 1793516048.1042697,
+        "elapsed_seconds": 3126.571932554245,
+        "pending_stage": "attack",
+        "finished": 1793519174.6761963
+      },
+      "attack": {
+        "method": "Asymmetry-inspired-physical-patch-v1",
+        "status": "completed",
+        "steps": 200,
+        "optimizer": "Adam",
+        "learning_rate": 0.01,
+        "patch_side_meters": 1.0,
+        "texture_size": [
+          64,
+          64
+        ],
+        "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+        "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+        "active_attempt_seconds": 10.554564714431763,
+        "seconds": 1005.7488327026367,
+        "static_world_patch_policy": "one 1m x 1m world patch anchored per selected keyframe, projected consistently into all selected views/frames of that scene; nonselected training images stay Clean",
+        "geometry_source": "FrozenDrive measured/reconstructed training occupancy, not test data",
+        "reused_frame_seconds": 995.194267988205,
+        "frames": 14,
+        "changed_cameras": 17,
+        "peak_memory_gib": 0.1422119140625
+      },
+      "summary": {
+        "status": "completed",
+        "method": "Asymmetry-inspired-physical-patch-v1",
+        "adapted": true,
+        "generator": "dd2",
+        "selection": {
+          "generator": "dd2",
+          "selected_tokens": [
+            "796b1988dd254f74bf2fb19ba9c5b8c6",
+            "27749aa3de2545219186c61d4d415e1c",
+            "ac8b4d49731d43289579f014cb7c97ef",
+            "9ee4020153674b9e9943d395ff8cfdf3",
+            "de9432d4fc7a4e5a985e2bc628eb614c",
+            "ebce5a3b3484446580028d6538e69a81",
+            "dcbe451d383e450786aaad04ab9d3790",
+            "b1303058fa624645b753d7283d70de45",
+            "e63b83b436a0479db7362338cdfab118",
+            "ae5004bf4ebb4db0a84cb3c27bd398d1",
+            "61d47d1198184bfdaa6777e9448d825d",
+            "55c258972acb4300a3a6077a531ab050",
+            "acf9fcbeb1e346b98640f694f15460e8",
+            "e3bcde4a06124931a097ef2a211aaaef"
+          ],
+          "selection_seed": 0,
+          "training_seed": 0,
+          "evaluation_seed": 0,
+          "replacement_unit": "six-camera keyframe",
+          "selected_frames": 14,
+          "train_frames": 283,
+          "test_frames": 121,
+          "actual_percentage": 4.946996466431095,
+          "scene_counts": {
+            "scene-0103": 2,
+            "scene-0553": 1,
+            "scene-0757": 2,
+            "scene-0796": 2,
+            "scene-0916": 5,
+            "scene-1094": 2
+          },
+          "adaptations_authorized": true,
+          "methods": [
+            "APGD-DetLoss-v1",
+            "BAIT-ROI-transfer-v1",
+            "PIL-ROI-transfer-v1",
+            "AdvDiff-inspired-DD2-v1",
+            "Asymmetry-inspired-physical-patch-v1"
+          ]
+        },
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "metrics": {
+          "mAP": {
+            "clean_percent": 63.18401583527032,
+            "adapted_percent": 63.40572778264541,
+            "ASR_percent": -0.35089879053131895
+          },
+          "NDS": {
+            "clean_percent": 70.69412857495475,
+            "adapted_percent": 71.12376234223733,
+            "ASR_percent": -0.6077361386908701
+          }
+        },
+        "native_metrics": {
+          "pts_bbox_NuScenes/mAP": 0.634057277826454,
+          "pts_bbox_NuScenes/NDS": 0.7112376234223733,
+          "pts_bbox_NuScenes/car_AP_dist_0.5": 0.4391506343937853,
+          "pts_bbox_NuScenes/car_AP_dist_1.0": 0.7448790087590897,
+          "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8794309721071857,
+          "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9094088868992287,
+          "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.43447112871799554,
+          "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.6529997182975779,
+          "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8108811027480173,
+          "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.825202590479648,
+          "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.09168060879630321,
+          "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.9542872779459882,
+          "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9615598468594527,
+          "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9708028397233484,
+          "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.0,
+          "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.3064188152103717,
+          "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.5168639281694273,
+          "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.6798292356934332,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.5590244425926918,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.7351295809947842,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.9220094083963035,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9342541944919229,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.13570063761938517,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4789256646498177,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6746526578184245,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7480261984482507,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4220184464088568,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.559697970927086,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7603421304098332,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.8457626707795257,
+          "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.03839592577975718,
+          "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.14481189270907863,
+          "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.26485938976124057,
+          "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.30157031508004917,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6827226499079229,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.83882462730885,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8806008428766966,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9017170462759474,
+          "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.6365942302434339,
+          "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8386791922483916,
+          "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9282934335094556,
+          "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9518109690196048,
+          "pts_bbox_NuScenes/trans_err": 0.465719231482369,
+          "pts_bbox_NuScenes/scale_err": 0.20019709776903166,
+          "pts_bbox_NuScenes/orient_err": 0.13996613072524117,
+          "pts_bbox_NuScenes/vel_err": 0.09744389466515169,
+          "pts_bbox_NuScenes/attr_err": 0.15458380026674348
+        },
+        "training_audit": {
+          "checkpoint_iteration": 282,
+          "optimizer_step_counts": {
+            "275": 240
+          },
+          "representative_parameter_max_changes": {
+            "img_backbone.conv1.weight": 0.00021478533744812012,
+            "pts_bbox_head.reference_points.weight": 0.0011049509048461914
+          },
+          "all_model_weights_finite": true,
+          "checkpoint_bytes": 452697962,
+          "amp_state": {
+            "loss_scaler": {
+              "scale": 256.0,
+              "growth_factor": 2.0,
+              "backoff_factor": 0.5,
+              "growth_interval": 2000,
+              "_growth_tracker": 167
+            }
+          },
+          "gpu_used": false
+        },
+        "attack_seconds": 1005.7488327026367,
+        "stage_timings": {
+          "attack": {
+            "seconds": 14.985064029693604,
+            "including_wait_seconds": 3125.2053368091583,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/attack.log"
+          },
+          "audit": {
+            "seconds": 1.3559916019439697,
+            "including_wait_seconds": 1.355994701385498,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/audit.log"
+          },
+          "train": {
+            "seconds": 181.7943529188633,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/train.log",
+            "timing_basis": "original execution recovered by this experiment own job IDs from the canonical GPU ledger; checkpoint/evaluation reused on controller resume"
+          },
+          "evaluate": {
+            "seconds": 64.34523180127144,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/evaluate.log",
+            "timing_basis": "original execution recovered by this experiment own job IDs from the canonical GPU ledger; checkpoint/evaluation reused on controller resume"
+          }
+        },
+        "wall_seconds": 3126.5706572532654,
+        "clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/dd2/seed0/after/result.json",
+        "limitations": [
+          "single-seed mini experiment",
+          "adapted task and attack interface; not original-paper reproduction",
+          "negative ASR retained; attack efficacy not assumed"
+        ],
+        "supervisor_attempt_stage_timings": {
+          "attack": {
+            "seconds": 14.985064029693604,
+            "including_wait_seconds": 3125.2053368091583,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/attack.log"
+          },
+          "audit": {
+            "seconds": 1.3559916019439697,
+            "including_wait_seconds": 1.355994701385498,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/asymmetry/audit.log"
+          }
+        },
+        "resume_note": "A completed image export was rerendered once from the same saved static textures without another optimization. The existing training checkpoint and evaluation were reused. Original train/evaluation execution times have been recovered; all generation attempts remain in execution_attempt_timings.json."
+      },
+      "measurement_audit": {
+        "same_effective_training_configuration": true,
+        "equivalent_constructor_injection_normalized": "pts_bbox_head.train_cfg equals model.train_cfg.pts; absent test_cfg equals None",
+        "metadata_and_labels_unchanged": true,
+        "nonselected_training_camera_paths_unchanged": true,
+        "selected_token_count": 14,
+        "actual_optimizer_update_counts": [
+          275
+        ],
+        "AMP_skipped_updates": 8,
+        "saved_image_distortion": {
+          "scope": "all six saved camera images of the 14 selected training keyframes",
+          "changed_frames": 14,
+          "changed_cameras": 17,
+          "RGB_uint8_Linf": 212.0,
+          "RGB_uint8_MAE": 0.028043612871580925,
+          "RGB_uint8_MSE": 1.5672176646537521,
+          "PSNR_dB": 46.1795104276994,
+          "changed_channel_value_fraction": 0.0008248050196641157,
+          "interpretation": "pixel distortion only; not a semantic or temporal consistency score"
+        }
+      }
+    },
+    "advdiff": {
+      "pipeline": {
+        "method": "advdiff",
+        "generator": "dd2",
+        "selected_frames": 14,
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "status": "completed",
+        "stages": {
+          "train": {
+            "seconds": 162.00184559822083,
+            "including_wait_seconds": 162.00185084342957,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/train.log"
+          },
+          "audit": {
+            "seconds": 1.3669791221618652,
+            "including_wait_seconds": 1.36698579788208,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/audit.log"
+          },
+          "evaluate": {
+            "seconds": 61.832900047302246,
+            "including_wait_seconds": 61.8329062461853,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/evaluate.log"
+          }
+        },
+        "reused_stage_timings": [],
+        "started": 1793525936.2937238,
+        "elapsed_seconds": 225.21598148345947,
+        "finished": 1793526161.5096996
+      },
+      "attack": {
+        "method": "AdvDiff-inspired-DD2-v1",
+        "status": "completed",
+        "native_steps": 30,
+        "guided_steps": 10,
+        "guidance_strength": 0.025,
+        "inner_steps_per_sampling_step": 1,
+        "initial_noise": "paired with original DD2 clip seed",
+        "gradient": "detached UNet prediction, differentiable predicted-clean VAE decode, native StreamPETR loss gradient via BPDA preprocessing",
+        "guidance_rule": "Euler predicted-clean sample shifted by strength*sigma^2*RMS-normalized d(detloss)/d(latent); converted back to native prediction parameterization",
+        "scope": "independent original-condition clip regeneration for each selected keyframe",
+        "memory_policy": "frozen UNet CPU-offloaded; two-pass VAE decode and detector CPU-offload prevent simultaneous graphs; original resolution and conditions retained",
+        "active_attempt_seconds": 397.0459806919098,
+        "seconds": 5815.283398866653,
+        "reused_frame_seconds": 5418.237418174744,
+        "token": "e3bcde4a06124931a097ef2a211aaaef",
+        "clip_index": 8,
+        "frame": 14,
+        "completed_steps": 30,
+        "last_guidance": {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 35.00503921508789,
+          "image_gradient_l2": 48.51309585571289,
+          "latent_gradient_rms": 0.027750909328460693,
+          "predicted_clean_shift_rms": 1.0007311601611946e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        "frames": 14,
+        "changed_cameras": 84,
+        "peak_memory_gib": 13.558493614196777
+      },
+      "summary": {
+        "status": "completed",
+        "method": "AdvDiff-inspired-DD2-v1",
+        "adapted": true,
+        "generator": "dd2",
+        "selection": {
+          "generator": "dd2",
+          "selected_tokens": [
+            "796b1988dd254f74bf2fb19ba9c5b8c6",
+            "27749aa3de2545219186c61d4d415e1c",
+            "ac8b4d49731d43289579f014cb7c97ef",
+            "9ee4020153674b9e9943d395ff8cfdf3",
+            "de9432d4fc7a4e5a985e2bc628eb614c",
+            "ebce5a3b3484446580028d6538e69a81",
+            "dcbe451d383e450786aaad04ab9d3790",
+            "b1303058fa624645b753d7283d70de45",
+            "e63b83b436a0479db7362338cdfab118",
+            "ae5004bf4ebb4db0a84cb3c27bd398d1",
+            "61d47d1198184bfdaa6777e9448d825d",
+            "55c258972acb4300a3a6077a531ab050",
+            "acf9fcbeb1e346b98640f694f15460e8",
+            "e3bcde4a06124931a097ef2a211aaaef"
+          ],
+          "selection_seed": 0,
+          "training_seed": 0,
+          "evaluation_seed": 0,
+          "replacement_unit": "six-camera keyframe",
+          "selected_frames": 14,
+          "train_frames": 283,
+          "test_frames": 121,
+          "actual_percentage": 4.946996466431095,
+          "scene_counts": {
+            "scene-0103": 2,
+            "scene-0553": 1,
+            "scene-0757": 2,
+            "scene-0796": 2,
+            "scene-0916": 5,
+            "scene-1094": 2
+          },
+          "adaptations_authorized": true,
+          "methods": [
+            "APGD-DetLoss-v1",
+            "BAIT-ROI-transfer-v1",
+            "PIL-ROI-transfer-v1",
+            "AdvDiff-inspired-DD2-v1",
+            "Asymmetry-inspired-physical-patch-v1"
+          ]
+        },
+        "training_seed": 0,
+        "evaluation_seed": 0,
+        "metrics": {
+          "mAP": {
+            "clean_percent": 63.18401583527032,
+            "adapted_percent": 63.61063080791658,
+            "ASR_percent": -0.6751944570261267
+          },
+          "NDS": {
+            "clean_percent": 70.69412857495475,
+            "adapted_percent": 71.23674231264363,
+            "ASR_percent": -0.7675513492093966
+          }
+        },
+        "native_metrics": {
+          "pts_bbox_NuScenes/mAP": 0.6361063080791658,
+          "pts_bbox_NuScenes/NDS": 0.7123674231264363,
+          "pts_bbox_NuScenes/car_AP_dist_0.5": 0.4293273332642144,
+          "pts_bbox_NuScenes/car_AP_dist_1.0": 0.742189092499045,
+          "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8771764189175707,
+          "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9087886178500809,
+          "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.47974787307202577,
+          "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.6958495480304253,
+          "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8265809615824714,
+          "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.8348793523718613,
+          "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.07881516403315864,
+          "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.953665369945381,
+          "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9613847041306317,
+          "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.9675895947228508,
+          "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.0,
+          "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.26289432339234264,
+          "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.5163657421266974,
+          "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.7153856370134261,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.5057436733278993,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.6518634091613741,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.909123430550164,
+          "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9412163905498162,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.14673305934790684,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.4819352238199225,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6911328789776707,
+          "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7577950621483575,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4180120570335698,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.6251549573309978,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.773665758272939,
+          "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.8608410608969042,
+          "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.08539724289033367,
+          "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.17233397206945195,
+          "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.25542781904245504,
+          "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.2891976693582922,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6765890489073231,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8367464205594506,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8784453037511355,
+          "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9041021901754699,
+          "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.6320293742675916,
+          "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8358780395965965,
+          "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9190234748594789,
+          "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9452250733193468,
+          "pts_bbox_NuScenes/trans_err": 0.4519040879209803,
+          "pts_bbox_NuScenes/scale_err": 0.20336115586234532,
+          "pts_bbox_NuScenes/orient_err": 0.14281256915700394,
+          "pts_bbox_NuScenes/vel_err": 0.09741544637273347,
+          "pts_bbox_NuScenes/attr_err": 0.16136404981840297
+        },
+        "training_audit": {
+          "checkpoint_iteration": 282,
+          "optimizer_step_counts": {
+            "276": 240
+          },
+          "representative_parameter_max_changes": {
+            "img_backbone.conv1.weight": 0.00026440341025590897,
+            "pts_bbox_head.reference_points.weight": 0.0012041926383972168
+          },
+          "all_model_weights_finite": true,
+          "checkpoint_bytes": 452697450,
+          "amp_state": {
+            "loss_scaler": {
+              "scale": 512.0,
+              "growth_factor": 2.0,
+              "backoff_factor": 0.5,
+              "growth_interval": 2000,
+              "_growth_tracker": 174
+            }
+          },
+          "gpu_used": false
+        },
+        "attack_seconds": 5815.283398866653,
+        "stage_timings": {
+          "train": {
+            "seconds": 162.00184559822083,
+            "including_wait_seconds": 162.00185084342957,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/train.log"
+          },
+          "audit": {
+            "seconds": 1.3669791221618652,
+            "including_wait_seconds": 1.36698579788208,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/audit.log"
+          },
+          "evaluate": {
+            "seconds": 61.832900047302246,
+            "including_wait_seconds": 61.8329062461853,
+            "log": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/evaluate.log"
+          }
+        },
+        "wall_seconds": 225.21489119529724,
+        "clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/dd2/seed0/after/result.json",
+        "limitations": [
+          "single-seed mini experiment",
+          "adapted task and attack interface; not original-paper reproduction",
+          "negative ASR retained; attack efficacy not assumed"
+        ]
+      },
+      "measurement_audit": {
+        "same_effective_training_configuration": true,
+        "equivalent_constructor_injection_normalized": "pts_bbox_head.train_cfg equals model.train_cfg.pts; absent test_cfg equals None",
+        "metadata_and_labels_unchanged": true,
+        "nonselected_training_camera_paths_unchanged": true,
+        "selected_token_count": 14,
+        "actual_optimizer_update_counts": [
+          276
+        ],
+        "AMP_skipped_updates": 7,
+        "saved_image_distortion": {
+          "scope": "all six saved camera images of the 14 selected training keyframes",
+          "changed_frames": 14,
+          "changed_cameras": 84,
+          "RGB_uint8_Linf": 195.0,
+          "RGB_uint8_MAE": 0.38983476080862034,
+          "RGB_uint8_MSE": 2.6013519563912806,
+          "PSNR_dB": 43.97881245743225,
+          "changed_channel_value_fraction": 0.21420291545980372,
+          "interpretation": "pixel distortion only; not a semantic or temporal consistency score"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/apgd/train/iter_283.pth",
+    "bytes": 452697962,
+    "reason": "temporary cross-generator validation checkpoint; native evaluation and finite-weight/update audit completed"
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/bait/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "temporary cross-generator validation checkpoint; native evaluation and finite-weight/update audit completed"
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/pil/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "temporary cross-generator validation checkpoint; native evaluation and finite-weight/update audit completed"
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/advdiff/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "temporary cross-generator validation checkpoint; native evaluation and finite-weight/update audit completed"
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/train/iter_283.pth",
+    "bytes": 452697962,
+    "reason": "temporary cross-generator validation checkpoint; native evaluation and finite-weight/update audit completed"
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/advdiff/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "temporary cross-generator validation checkpoint; native evaluation and finite-weight/update audit completed"
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/apgd/train/iter_283.pth",
+    "bytes": 452697962,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.5657802
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/bait/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.612186
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/train/iter_283.pth",
+    "bytes": 452697962,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.6559887
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/pil/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.7012355
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.749726
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/asymmetry/train/iter_283.pth",
+    "bytes": 452697962,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.7992508
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive_final/advdiff/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.855172
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/bait/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.9003744
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/asymmetry/train/iter_283.pth",
+    "bytes": 452697962,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.947462
+  },
+  {
+    "path": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/pil/train/iter_283.pth",
+    "bytes": 452697450,
+    "reason": "completed temporary runability validation checkpoint; audits and native evaluation retained",
+    "removed_at": 1793536438.9952266
+  }
+]

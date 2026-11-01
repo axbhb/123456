@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "repaired_bytes": 35299762411,
+  "preserved_members": 58667,
+  "replaced_cache_members": 566,
+  "reason": "Original SSH stream tail truncated; final cache replaced from stored gzip-tested archive; preceding tar members preserved"
+}

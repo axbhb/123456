@@ -1,0 +1,14 @@
+{
+  "source_commit": "95f64702306ccdb7a78889578b2a55b5deb35b2a",
+  "runtime": "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr",
+  "config": "/srv/table2/frameworks/20261028-v1/runtime_sources/streampetr/smoke_v100.py",
+  "original_attention_sha256": "2d1e63c36ee9922108e487470e9ba96b2d28a2f66419c492cc94da9a50af0760",
+  "runtime_attention_sha256": "f64f96eecb424e45b6b8ee50c1cb67eb10ad15cce413e6c11d39e68c5f6e841f",
+  "changes": [
+    "optional FlashAttention import; fail if unavailable Flash layer is selected",
+    "official PETRMultiheadAttention with fp16=True",
+    "one GPU, one batch, zero data workers, complete-scene grouping",
+    "no auxiliary backbone download; strict full checkpoint required"
+  ],
+  "model_run": false
+}

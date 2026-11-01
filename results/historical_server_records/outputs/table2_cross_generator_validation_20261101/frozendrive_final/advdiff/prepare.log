@@ -1,0 +1,16 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+{
+  "generator": "frozendrive",
+  "selected_tokens": [
+    "796b1988dd254f74bf2fb19ba9c5b8c6"
+  ],
+  "selection_seed": 0,
+  "training_seed": 0,
+  "evaluation_seed": 0,
+  "replacement_unit": "six-camera keyframe",
+  "selected_frames": 1,
+  "train_frames": 283,
+  "actual_percentage": 0.35335689045936397,
+  "validation_scope": "final portable-entry implementation verification; one replaced keyframe; full 283 scheduled iterations and 121 real test frames"
+}

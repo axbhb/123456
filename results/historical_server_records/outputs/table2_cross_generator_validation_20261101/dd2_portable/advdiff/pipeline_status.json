@@ -1,0 +1,28 @@
+{
+  "method": "advdiff",
+  "generator": "dd2",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "train": {
+      "seconds": 167.05939149856567,
+      "including_wait_seconds": 167.05940198898315,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/train.log"
+    },
+    "audit": {
+      "seconds": 2.201871156692505,
+      "including_wait_seconds": 2.2019338607788086,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/audit.log"
+    },
+    "evaluate": {
+      "seconds": 66.18158602714539,
+      "including_wait_seconds": 66.18160915374756,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/dd2_portable/advdiff/evaluate.log"
+    }
+  },
+  "started": 1793537107.8054829,
+  "elapsed_seconds": 237.99705410003662,
+  "finished": 1793537345.8025331
+}

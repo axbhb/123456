@@ -1,0 +1,25 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/srv/table2/table2_portable_20261101/run_pipeline.py", line 29, in <module>
+    if not ckpt.exists():stage('train',W/'run_train.py',['seed%d'%SEED if method=='clean' else method]);trained_now=True
+  File "/srv/table2/table2_portable_20261101/run_pipeline.py", line 15, in stage
+    raise RuntimeError(name+' failed: '+tail)
+RuntimeError: train failed: 
+
+During handling of the above exception, another exception occurred:
+
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/srv/table2/table2_portable_20261101/run_pipeline.py", line 41, in <module>
+    except Exception as e:save(status='failed',error=str(e),traceback=traceback.format_exc());raise
+  File "/srv/table2/table2_portable_20261101/run_pipeline.py", line 4, in save
+    def save(**kw):state.update(kw);state['elapsed_seconds']=time.time()-state['started'];atomic(out/'pipeline_status.json',state)
+  File "/srv/table2/table2_portable_20261101/common.py", line 16, in atomic
+    p=Path(p);p.parent.mkdir(parents=True,exist_ok=True);q=p.with_suffix('.tmp');q.write_text(json.dumps(d,indent=2,allow_nan=False));q.replace(p)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/pathlib.py", line 1286, in write_text
+    return f.write(data)
+OSError: [Errno 28] No space left on device

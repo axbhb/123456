@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/srv/table2/table2_portable_20261101/attack_advdiff.py", line 3, in <module>
+    runpy.run_path(str(W/('attack_advdiff_dd2.py' if G=='dd2' else 'attack_advdiff_native.py')),run_name='__main__')
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/srv/table2/table2_portable_20261101/attack_advdiff_native.py", line 18, in <module>
+    meta=json.loads((native/(kind+'_input_status.json')).read_text());order=meta['camera_order'];slot=clip['tokens'].index(token)*(6 if magic else 1);context.update(camera_order=order,slot=slot);env['TABLE2_GUIDANCE_CONTEXT']=json.dumps(context);save(status='native_sampling',token=token);run([genpython,W/('generate_'+kind+'_guided.py'),'--gpu',os.environ.get('CUDA_VISIBLE_DEVICES','0'),'--input',batch,'--output',native,'--seed',clip['seed']],native/'generate.log',env);paths={cam:native/('view%d_frame%03d.png'%(v,slot) if magic else 'view%d_frame%02d.png'%(v,slot)) for v,cam in enumerate(order)};seed=clip['seed']
+  File "/srv/table2/table2_portable_20261101/attack_advdiff_native.py", line 7, in run
+    with log.open('a') as f:subprocess.run(list(map(str,cmd)),stdout=f,stderr=subprocess.STDOUT,env=env,check=True)
+  File "/home/user/anaconda3/envs/torch200/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/srv/table2/envs/panacea_plus/bin/python', '/srv/table2/table2_portable_20261101/generate_panacea_guided.py', '--gpu', 'GPU-9569b9ba-647e-7536-aee4-7d07bcd36d2e', '--input', '/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/native/796b1988dd254f74bf2fb19ba9c5b8c6/panacea_real_8frame_batch.pt', '--output', '/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/advdiff/native/796b1988dd254f74bf2fb19ba9c5b8c6', '--seed', '20261064']' returned non-zero exit status 1.

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "bait",
+    "repo": "zhli-cs/BAIT",
+    "revision": "e81c9c4731a22c05db14cab5c4f32c663814da51",
+    "bytes": 435333
+  },
+  {
+    "name": "apgd",
+    "repo": "fra31/auto-attack",
+    "revision": "a39220048b3c9f2cca9a4d3a54604793c68eca7e",
+    "bytes": 42443834
+  },
+  {
+    "name": "advdiff",
+    "repo": "EricDai0/advdiff",
+    "revision": "86dccf065f65d97c44ec6e65759722de01caadd5",
+    "bytes": 10562489
+  },
+  {
+    "name": "asymmetry",
+    "repo": "kyrie-louy/physical-online-map-attack",
+    "revision": "d0684021dd3197a939d59b303e271194664600c9",
+    "bytes": 8653654
+  }
+]

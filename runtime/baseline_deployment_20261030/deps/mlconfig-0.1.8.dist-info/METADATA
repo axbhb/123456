@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mlconfig
+Version: 0.1.8
+Summary: 
+License: MIT
+Author: なるみ
+Author-email: weaper@gamil.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: PyYAML (>=6.0,<7.0)
+Requires-Dist: oyaml (>=1.0,<2.0)

@@ -1,0 +1,90 @@
+{
+  "root_relative": true,
+  "description": "Weights are excluded from GitHub. Acquire from original sources and restore paths under ROOT. Aliases may share one model.",
+  "files": [
+    {
+      "path": "assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth",
+      "bytes": 154852451
+    },
+    {
+      "path": "assets/dd2_base/svd/vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 195531910
+    },
+    {
+      "path": "assets/dd2_merged_fp16/dd2_wo_img_merged.fp16.safetensors",
+      "bytes": 3049657492
+    },
+    {
+      "path": "assets/generators/panacea_plus/panaceaplus_40k_deepspeed.ckpt",
+      "bytes": 9825857798
+    },
+    {
+      "path": "assets/generators/sd15_base/text_encoder/model.fp16.safetensors",
+      "bytes": 246144864
+    },
+    {
+      "path": "assets/generators/sd15_base/vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 167335342
+    },
+    {
+      "path": "assets/generators/frozendrive/CLIP-ViT-B-32-laion2B-s34B-b79K/open_clip_pytorch_model.bin",
+      "bytes": 605219813
+    },
+    {
+      "path": "assets/generators/frozendrive/SDv1.5_mv_single_ref_nus/weight-E5-S200000/unet/diffusion_pytorch_model.bin",
+      "bytes": 1719325157
+    },
+    {
+      "path": "assets/generators/frozendrive/SDv1.5_mv_single_ref_nus/weight-E5-S200000/controlnet/diffusion_pytorch_model.bin",
+      "bytes": 1462217839
+    },
+    {
+      "path": "assets/generators/frozendrive/SDv1.5_mv_single_ref_nus/weight-E5-S200000/image_proj/image_proj_model.bin",
+      "bytes": 1182183
+    },
+    {
+      "path": "assets/generators/magicdrive_t_60f/unet/diffusion_pytorch_model.bin",
+      "bytes": 3887934021
+    },
+    {
+      "path": "assets/generators/magicdrive_t_60f/controlnet/diffusion_pytorch_model.bin",
+      "bytes": 1452320765
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/dreamer-log/SDv1.5_mv_single_ref_nus/weight-E5-S200000/unet/diffusion_pytorch_model.bin",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/dreamer-log/SDv1.5_mv_single_ref_nus/weight-E5-S200000/controlnet/diffusion_pytorch_model.bin",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/dreamer-log/SDv1.5_mv_single_ref_nus/weight-E5-S200000/image_proj/image_proj_model.bin",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/pretrained/CLIP-ViT-B-32-laion2B-s34B-b79K/open_clip_pytorch_model.bin",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/pretrained/stable-diffusion-v1-5/text_encoder/model.safetensors",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/pretrained/stable-diffusion-v1-5/text_encoder/model.fp16.safetensors",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/pretrained/stable-diffusion-v1-5/vae/diffusion_pytorch_model.fp16.safetensors",
+      "bytes": 0
+    },
+    {
+      "path": "frozendrive_deployment_20261029/source/WorldDreamer/pretrained/stable-diffusion-v1-5/vae/diffusion_pytorch_model.safetensors",
+      "bytes": 0
+    },
+    {
+      "path": "table2_portable_20261101/resnet18-f37072fd.pth",
+      "bytes": 46830571
+    }
+  ]
+}

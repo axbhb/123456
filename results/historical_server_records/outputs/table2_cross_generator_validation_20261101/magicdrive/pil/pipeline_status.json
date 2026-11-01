@@ -1,0 +1,33 @@
+{
+  "method": "pil",
+  "generator": "magicdrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 136.29195475578308,
+      "including_wait_seconds": 136.29196906089783,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/pil/attack.log"
+    },
+    "train": {
+      "seconds": 161.99786043167114,
+      "including_wait_seconds": 161.99787831306458,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/pil/train.log"
+    },
+    "audit": {
+      "seconds": 1.9839468002319336,
+      "including_wait_seconds": 1.9840099811553955,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/pil/audit.log"
+    },
+    "evaluate": {
+      "seconds": 61.88655233383179,
+      "including_wait_seconds": 61.88658881187439,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/pil/evaluate.log"
+    }
+  },
+  "started": 1793532475.8681912,
+  "elapsed_seconds": 364.3204700946808,
+  "finished": 1793532840.1886575
+}

@@ -1,0 +1,18 @@
+{
+  "method": "apgd",
+  "generator": "frozendrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "audit": {
+      "seconds": 1.8903765678405762,
+      "including_wait_seconds": 1.8903968334197998,
+      "log": "/srv/table2/outputs/table2_portability_checks_20261101/cli_output/frozendrive/n1_selection0_attack0_seed0_iter283/apgd/audit.log"
+    }
+  },
+  "started": 1793537594.6408145,
+  "elapsed_seconds": 4.211362600326538,
+  "finished": 1793537598.8521748
+}

@@ -1,0 +1,25 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+load checkpoint from local path: /srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth
+Traceback (most recent call last):
+  File "/srv/table2/table2_portable_20261101/detector_rpc.py", line 20, in <module>
+    model.requires_grad_(False);wrap_fp16_model(model);model=model.cuda().train()
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 688, in cuda
+    return self._apply(lambda t: t.cuda(device))
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 578, in _apply
+    module._apply(fn)
+  [Previous line repeated 1 more time]
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 601, in _apply
+    param_applied = fn(param)
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/nn/modules/module.py", line 688, in <lambda>
+    return self._apply(lambda t: t.cuda(device))
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/site-packages/torch/cuda/__init__.py", line 216, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Unrecognized CachingAllocator option: expandable_segments
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+load checkpoint from local path: /srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth

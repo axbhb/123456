@@ -1,0 +1,101 @@
+{
+  "_class_name": "UNet2DConditionModelMultiview",
+  "_diffusers_version": "0.17.1",
+  "_name_or_path": "/mnt/ssd3/42dot/DriveArena_ssk/WorldDreamer/pretrained/stable-diffusion-v1-5",
+  "act_fn": "silu",
+  "addition_embed_type": null,
+  "addition_embed_type_num_heads": 64,
+  "attention_head_dim": 8,
+  "block_out_channels": [
+    320,
+    640,
+    1280,
+    1280
+  ],
+  "center_input_sample": false,
+  "class_embed_type": null,
+  "class_embeddings_concat": false,
+  "construct_with_bdmask": false,
+  "conv_in_kernel": 3,
+  "conv_out_kernel": 3,
+  "cross_attention_dim": 768,
+  "cross_attention_norm": null,
+  "crossview_attn_type": "basic",
+  "down_block_types": [
+    "CrossAttnDownBlock2D",
+    "CrossAttnDownBlock2D",
+    "CrossAttnDownBlock2D",
+    "DownBlock2D"
+  ],
+  "downsample_padding": 1,
+  "dual_cross_attention": false,
+  "encoder_hid_dim": null,
+  "encoder_hid_dim_type": null,
+  "epipolar_mask_type": "binary",
+  "flatten_ref_attn_alt": true,
+  "flatten_views": true,
+  "flip_sin_to_cos": true,
+  "freq_shift": 0,
+  "img_size": [
+    448,
+    800
+  ],
+  "in_channels": 4,
+  "layers_per_block": 2,
+  "mid_block_only_cross_attention": null,
+  "mid_block_scale_factor": 1,
+  "mid_block_type": "UNetMidBlock2DCrossAttn",
+  "neighboring_attn_type": "add",
+  "neighboring_view_pair": {
+    "0": [
+      5,
+      1
+    ],
+    "1": [
+      0,
+      2
+    ],
+    "2": [
+      1,
+      3
+    ],
+    "3": [
+      2,
+      4
+    ],
+    "4": [
+      3,
+      5
+    ],
+    "5": [
+      4,
+      0
+    ]
+  },
+  "norm_eps": 1e-05,
+  "norm_num_groups": 32,
+  "num_class_embeds": null,
+  "only_cross_attention": false,
+  "out_channels": 4,
+  "projection_class_embeddings_input_dim": null,
+  "resnet_out_scale_factor": 1.0,
+  "resnet_skip_time_act": false,
+  "resnet_time_scale_shift": "default",
+  "sample_size": 64,
+  "self_attn_only_neighboring_views": false,
+  "time_cond_proj_dim": null,
+  "time_embedding_act_fn": null,
+  "time_embedding_dim": null,
+  "time_embedding_type": "positional",
+  "timestep_post_act": null,
+  "trainable_state": "only_new",
+  "up_block_types": [
+    "UpBlock2D",
+    "CrossAttnUpBlock2D",
+    "CrossAttnUpBlock2D",
+    "CrossAttnUpBlock2D"
+  ],
+  "upcast_attention": false,
+  "use_linear_projection": false,
+  "zero_module_type": "zero_linear"
+}

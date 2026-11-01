@@ -1,0 +1,9 @@
+{
+  "status": "passed_strict_complete_loader",
+  "keys": 1440,
+  "parameters": 1524729614,
+  "all_parameters_frozen": true,
+  "cuda_initialized": false,
+  "model_forward_executed": false,
+  "seconds": 7.164610862731934
+}

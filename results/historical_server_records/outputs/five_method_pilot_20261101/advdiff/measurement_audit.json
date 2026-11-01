@@ -1,0 +1,22 @@
+{
+  "same_effective_training_configuration": true,
+  "equivalent_constructor_injection_normalized": "pts_bbox_head.train_cfg equals model.train_cfg.pts; absent test_cfg equals None",
+  "metadata_and_labels_unchanged": true,
+  "nonselected_training_camera_paths_unchanged": true,
+  "selected_token_count": 14,
+  "actual_optimizer_update_counts": [
+    276
+  ],
+  "AMP_skipped_updates": 7,
+  "saved_image_distortion": {
+    "scope": "all six saved camera images of the 14 selected training keyframes",
+    "changed_frames": 14,
+    "changed_cameras": 84,
+    "RGB_uint8_Linf": 195.0,
+    "RGB_uint8_MAE": 0.38983476080862034,
+    "RGB_uint8_MSE": 2.6013519563912806,
+    "PSNR_dB": 43.97881245743225,
+    "changed_channel_value_fraction": 0.21420291545980372,
+    "interpretation": "pixel distortion only; not a semantic or temporal consistency score"
+  }
+}

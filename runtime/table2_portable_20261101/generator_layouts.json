@@ -1,0 +1,83 @@
+{
+  "dd2": {
+    "camera_order": [
+      "CAM_FRONT_LEFT",
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK_RIGHT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT"
+    ],
+    "source_to_generated": [
+      [
+        0.28,
+        0,
+        0
+      ],
+      [
+        0,
+        0.28444444444444444,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "magicdrive": {
+    "camera_order": [
+      "CAM_FRONT_LEFT",
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK_RIGHT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT"
+    ],
+    "source_to_generated": [
+      [
+        0.25,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.25,
+        -1.0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "panacea_plus": {
+    "camera_order": [
+      "CAM_FRONT",
+      "CAM_FRONT_RIGHT",
+      "CAM_BACK_RIGHT",
+      "CAM_BACK",
+      "CAM_BACK_LEFT",
+      "CAM_FRONT_LEFT"
+    ],
+    "source_to_generated": [
+      [
+        0.32,
+        0,
+        0
+      ],
+      [
+        0,
+        0.32,
+        -32
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  }
+}

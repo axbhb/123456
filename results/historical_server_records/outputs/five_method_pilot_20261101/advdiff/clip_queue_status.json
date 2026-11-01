@@ -1,0 +1,24 @@
+{
+  "status": "completed",
+  "completed_clip_jobs": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "started": 1793520167.3368638,
+  "scope": "Only the approved DD2 / 14-keyframe / training seed0 pilot",
+  "resource_policy": "release the two existing coordination locks between regenerated keyframes; preserve original watchdog and accounting",
+  "target_completed_keyframes": 14,
+  "seconds": 5994.1855483055115,
+  "finished": 1793526161.5223942
+}

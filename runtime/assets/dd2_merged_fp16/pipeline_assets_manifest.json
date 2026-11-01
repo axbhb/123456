@@ -1,0 +1,22 @@
+[
+  {
+    "relative": "svd/feature_extractor/preprocessor_config.json",
+    "sha256": "4db495644e3e5bd8fcac52f70e7fc0b413c911086021acf73ac30e5911166e95",
+    "bytes": 518
+  },
+  {
+    "relative": "svd/scheduler/scheduler_config.json",
+    "sha256": "59aa43afc33395efd40fe94c7369c0477b81698f4b65b63e3ae06f26269876d5",
+    "bytes": 533
+  },
+  {
+    "relative": "svd/vae/config.json",
+    "sha256": "8f34272db69f7e2c615da6142ca3f9fdcd7b682bcfd903ceb15035fea79a8303",
+    "bytes": 607
+  },
+  {
+    "relative": "svd/vae/diffusion_pytorch_model.fp16.safetensors",
+    "sha256": "af602cd0eb4ad6086ec94fbf1438dfb1be5ec9ac03fd0215640854e90d6463a3",
+    "bytes": 195531910
+  }
+]

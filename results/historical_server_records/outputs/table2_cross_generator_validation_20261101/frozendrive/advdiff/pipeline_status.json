@@ -1,0 +1,33 @@
+{
+  "method": "advdiff",
+  "generator": "frozendrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 594.1946167945862,
+      "including_wait_seconds": 594.1946322917938,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/advdiff/attack.log"
+    },
+    "train": {
+      "seconds": 369.26860642433167,
+      "including_wait_seconds": 369.26864361763,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/advdiff/train.log"
+    },
+    "audit": {
+      "seconds": 1.391643762588501,
+      "including_wait_seconds": 1.3916897773742676,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/advdiff/audit.log"
+    },
+    "evaluate": {
+      "seconds": 125.64823532104492,
+      "including_wait_seconds": 125.64827561378479,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/advdiff/evaluate.log"
+    }
+  },
+  "started": 1793528832.6222153,
+  "elapsed_seconds": 1090.5169677734375,
+  "finished": 1793529923.1391795
+}

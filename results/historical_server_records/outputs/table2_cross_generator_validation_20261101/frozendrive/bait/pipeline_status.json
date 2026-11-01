@@ -1,0 +1,38 @@
+{
+  "method": "bait",
+  "generator": "frozendrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "roi_prepare": {
+      "seconds": 21.47003149986267,
+      "including_wait_seconds": 21.470048904418945,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/bait/roi_prepare.log"
+    },
+    "attack": {
+      "seconds": 420.10547137260437,
+      "including_wait_seconds": 420.1055257320404,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/bait/attack.log"
+    },
+    "train": {
+      "seconds": 395.3875780105591,
+      "including_wait_seconds": 395.38761472702026,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/bait/train.log"
+    },
+    "audit": {
+      "seconds": 1.5707333087921143,
+      "including_wait_seconds": 1.5707740783691406,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/bait/audit.log"
+    },
+    "evaluate": {
+      "seconds": 249.23197889328003,
+      "including_wait_seconds": 249.23200964927673,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/bait/evaluate.log"
+    }
+  },
+  "started": 1793528771.8509865,
+  "elapsed_seconds": 1087.784178495407,
+  "finished": 1793529859.6351616
+}

@@ -1,0 +1,1 @@
+python main.py --train_data_type PoisonCIFAR10 --test_data_type CIFAR10 --train_data_path datasets --test_data_path datasets --config_path configs/cifar10 --num_of_workers 6 --generator_filepath experiment/cifar10_generator.pth --use_generator --use_pretrained_model --pretrained_type imagenet --pretrained_version resnet18 --lr 0.001

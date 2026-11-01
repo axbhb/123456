@@ -1,0 +1,57 @@
+{
+  "status": "passed_exact_native_fp16_merge",
+  "started": 1793156207.6887877,
+  "gpu_used": false,
+  "model_forward_executed": false,
+  "uploaded": false,
+  "sources": {
+    "dd2": {
+      "path": "/srv/table2_repo\\evaluation\\framework_smoke_20261028\\assets\\drivedreamer2_wo_img\\pytorch_gligen_weights.bin",
+      "sha256": "022bcd1e5c9fc10472a185aa58d6f7b762a23d9b02ffa347dfa70b841cd1eb86",
+      "bytes": 3719771954
+    },
+    "svd_unet": {
+      "path": "/srv/table2_repo\\evaluation\\framework_smoke_20261028\\assets\\dd2_base\\svd\\unet\\diffusion_pytorch_model.fp16.safetensors",
+      "sha256": "fcc7032525a903a6c284ccb3e8cb6f9d87597b71130d8b9820925085e2215d17",
+      "bytes": 3049435836
+    }
+  },
+  "torch": "2.6.0+cu124",
+  "diffusers": "0.27.2",
+  "native_loader_sha256": "922dc2fd6aac3be373420a06351d584d6a4ae829cc3cb939b903a6b227f854ac",
+  "memory_before_reference": {
+    "rss_bytes": 526376960,
+    "available_bytes": 20195160064
+  },
+  "native_loader_seconds": 6.867431163787842,
+  "memory_after_reference": {
+    "rss_bytes": 10742939648,
+    "available_bytes": 10122534912
+  },
+  "verified_keys": 1440,
+  "dd2_override_keys": 1146,
+  "svd_fallback_keys": 294,
+  "reshaped_keys": [],
+  "missing_keys": 0,
+  "unused_dd2_keys": 0,
+  "all_values_equal_native": true,
+  "output": {
+    "path": "/srv/table2_repo\\evaluation\\dd2_task_audit_20261028\\merged_dd2_fp16\\dd2_wo_img_merged.fp16.safetensors",
+    "bytes": 3049657492,
+    "sha256": "0c8233e85b6907a00c6129221ba2f700dcc0e17d2925658fa65a7846ad79994c"
+  },
+  "source_weight_bytes": 6769207790,
+  "serialized_roundtrip_equal": true,
+  "cuda_initialized": false,
+  "limitations": [
+    "Weights-only equality, not a generation or attack test",
+    "VAE, scheduler, feature extractor and fixed prompt resources still needed",
+    "A dedicated strict loader must consume all merged keys; original partial-weight loader still needs SVD unless explicitly adapted"
+  ],
+  "memory_after_export": {
+    "rss_bytes": 5034967040,
+    "available_bytes": 15884816384
+  },
+  "finished": 1793156237.6861176,
+  "elapsed_seconds": 29.99732995033264
+}

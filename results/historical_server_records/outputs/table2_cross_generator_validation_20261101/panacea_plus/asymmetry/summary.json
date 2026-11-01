@@ -1,0 +1,129 @@
+{
+  "status": "completed",
+  "method": "Asymmetry-inspired-physical-patch-v1",
+  "generator": "panacea_plus",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "test_frames": 121,
+  "validation_scope": "runability validation: one replaced six-camera keyframe; 283 scheduled training iterations; 121 real test keyframes; not a 5-percent efficacy result",
+  "native_metrics": {
+    "pts_bbox_NuScenes/mAP": 0.6427579749311121,
+    "pts_bbox_NuScenes/NDS": 0.7139299863850596,
+    "pts_bbox_NuScenes/car_AP_dist_0.5": 0.2398182474270677,
+    "pts_bbox_NuScenes/car_AP_dist_1.0": 0.6403187444135351,
+    "pts_bbox_NuScenes/car_AP_dist_2.0": 0.8145060526923895,
+    "pts_bbox_NuScenes/car_AP_dist_4.0": 0.9128388079751797,
+    "pts_bbox_NuScenes/truck_AP_dist_0.5": 0.17464130613616063,
+    "pts_bbox_NuScenes/truck_AP_dist_1.0": 0.5290150046523698,
+    "pts_bbox_NuScenes/truck_AP_dist_2.0": 0.8087242192423214,
+    "pts_bbox_NuScenes/truck_AP_dist_4.0": 0.921177307652442,
+    "pts_bbox_NuScenes/bus_AP_dist_0.5": 0.24806007331196867,
+    "pts_bbox_NuScenes/bus_AP_dist_1.0": 0.8217788266822632,
+    "pts_bbox_NuScenes/bus_AP_dist_2.0": 0.9446197307366845,
+    "pts_bbox_NuScenes/bus_AP_dist_4.0": 0.967108700994234,
+    "pts_bbox_NuScenes/trailer_AP_dist_0.5": 0.4786815314022544,
+    "pts_bbox_NuScenes/trailer_AP_dist_1.0": 0.5257526440732061,
+    "pts_bbox_NuScenes/trailer_AP_dist_2.0": 0.7029902600592256,
+    "pts_bbox_NuScenes/trailer_AP_dist_4.0": 0.7375987284320618,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_0.5": 0.49681927927935954,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_1.0": 0.6618721294024993,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_2.0": 0.9072894288699802,
+    "pts_bbox_NuScenes/construction_vehicle_AP_dist_4.0": 0.9498249820844286,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_0.5": 0.15976157163753169,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_1.0": 0.49262779948165264,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_2.0": 0.6980586430763078,
+    "pts_bbox_NuScenes/pedestrian_AP_dist_4.0": 0.7811042121481241,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_0.5": 0.4503950187924801,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_1.0": 0.5625593846709221,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_2.0": 0.7637834103863664,
+    "pts_bbox_NuScenes/motorcycle_AP_dist_4.0": 0.9087832676796664,
+    "pts_bbox_NuScenes/bicycle_AP_dist_0.5": 0.023526270215766087,
+    "pts_bbox_NuScenes/bicycle_AP_dist_1.0": 0.27676923237593526,
+    "pts_bbox_NuScenes/bicycle_AP_dist_2.0": 0.30460225105921107,
+    "pts_bbox_NuScenes/bicycle_AP_dist_4.0": 0.33786849943195235,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_0.5": 0.6244891751412229,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_1.0": 0.8241686435494824,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_2.0": 0.8872931463690491,
+    "pts_bbox_NuScenes/traffic_cone_AP_dist_4.0": 0.9101816451003787,
+    "pts_bbox_NuScenes/barrier_AP_dist_0.5": 0.5553985303004623,
+    "pts_bbox_NuScenes/barrier_AP_dist_1.0": 0.8058890224145648,
+    "pts_bbox_NuScenes/barrier_AP_dist_2.0": 0.9144442349917142,
+    "pts_bbox_NuScenes/barrier_AP_dist_4.0": 0.9451790329020621,
+    "pts_bbox_NuScenes/trans_err": 0.4564917603774871,
+    "pts_bbox_NuScenes/scale_err": 0.2092266769554803,
+    "pts_bbox_NuScenes/orient_err": 0.13719562419163578,
+    "pts_bbox_NuScenes/vel_err": 0.0907129453970203,
+    "pts_bbox_NuScenes/attr_err": 0.18086300388334092
+  },
+  "training_audit": {
+    "checkpoint_iteration": 282,
+    "optimizer_step_counts": {
+      "275": 240
+    },
+    "representative_parameter_max_changes": {
+      "img_backbone.conv1.weight": 0.00028850696980953217,
+      "pts_bbox_head.reference_points.weight": 0.001150965690612793
+    },
+    "all_model_weights_finite": true,
+    "checkpoint_bytes": 452697962,
+    "amp_state": {
+      "loss_scaler": {
+        "scale": 256.0,
+        "growth_factor": 2.0,
+        "backoff_factor": 0.5,
+        "growth_interval": 2000,
+        "_growth_tracker": 166
+      }
+    },
+    "gpu_used": false
+  },
+  "stage_timings": {
+    "physical_prepare": {
+      "seconds": 0.631446361541748,
+      "including_wait_seconds": 0.631464958190918,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/physical_prepare.log"
+    },
+    "physical_anchor_retry": {
+      "seconds": 0.06125378608703613,
+      "including_wait_seconds": 0.06131625175476074,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/physical_anchor_retry.log"
+    },
+    "attack": {
+      "seconds": 260.41201519966125,
+      "including_wait_seconds": 260.41205620765686,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/attack.log"
+    },
+    "train": {
+      "seconds": 223.1530442237854,
+      "including_wait_seconds": 223.15309143066406,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/train.log"
+    },
+    "audit": {
+      "seconds": 2.050595998764038,
+      "including_wait_seconds": 2.050654172897339,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/audit.log"
+    },
+    "evaluate": {
+      "seconds": 470.94940733909607,
+      "including_wait_seconds": 470.9494478702545,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/evaluate.log"
+    }
+  },
+  "attack_seconds": 80.04512047767639,
+  "checkpoint": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus/asymmetry/train/iter_283.pth",
+  "paired_clean_result": "/srv/table2/outputs/table2_clean_mini_283_121/panacea_plus/seed0/after/result.json",
+  "metrics": {
+    "mAP": {
+      "clean_percent": 65.36001976811649,
+      "adapted_percent": 64.27579749311121,
+      "ASR_percent": 1.6588463082659195
+    },
+    "NDS": {
+      "clean_percent": 71.67084148613917,
+      "adapted_percent": 71.39299863850596,
+      "ASR_percent": 0.38766511160183265
+    }
+  },
+  "adapted": true
+}

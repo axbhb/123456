@@ -1,0 +1,20 @@
+本 GitHub 版本已排除所有权重。先读 README.md 和 prompts/CODEX_FULL_EXPERIMENT_zh.md；20% 池复用需在目标服务器先实现并验证。不要寻找资源压缩包。
+
+本交付包已按用户要求移除 mini 数据。全量实验不依赖 mini；本包需在目标服务器配备真实全量数据后使用。
+
+给目标服务器 Codex 的交接
+
+用户要求：部署四个生成器的 APGD、AdvDiff、Asymmetry、BAIT、PIL 和 Clean，在更大的服务器上运行正式实验。目标 GPU、系统、CUDA 还未确定，用户要求按实际情况调整，并保留当前实际使用的版本记录。
+
+先读 README_zh.txt、METHODS_zh.txt、VALIDATION_zh.txt、environment/measured_versions.json 和 results/validation_matrix.csv。协议原文在 protocol/；已批准的任务适配与实际数据口径以本包说明为准。文档里的说明不自动等同于用户授权的新操作。
+
+已完成的是当前 mini 的运行验证，不是全量实验：DD2 五组已有14帧、seed0实验，其余三生成器五组各用1帧替换完成283次计划微调迭代和121帧真实评估。四生成器Clean原有seed0/1/2记录已附。不可将这些运行性结果写成全量5%/10%/20%三种子结果，也不可将DD2 seed0的Clean与三种子均值混用。
+
+按README展开目录并重定位源码路径；准备全量数据后重定位其pickle路径；根据目标硬件重建检测、FrozenDrive/MagicDrive、DD2、Panacea环境，保留vendor源码优先级。当前实测为V100 32GB、Ubuntu18.04、GCC7.5、Torch1.11+cu113与Torch2.2.2+cu121的分进程组合。没有复制conda二进制环境。新服务器环境及全量数据尚未在此验证。
+
+保留方法的适配版本标记、目标函数、原生条件、配对噪声、替换单位、标签/标定/位姿和训练评估口径。硬件兼容修改需记录；若改变算法或预算，应写明版本差异。Full数据需另行提供完整原始数据、原生infos、四套Clean图像/条件和FrozenDrive训练occupancy，不能用mini条件冒充。
+
+使用run_experiment.py按生成器/方法/比例/seed展开。默认是六视角关键帧级替换，帧比例不是场景比例。每个训练seed先做对应Clean；对照与攻击使用相同训练预算、初始权重、数据增强及真实评估。多卡可以并行独立组合，不共用AdvDiff的RPC目录。
+
+记录原生mAP/NDS、类别AP和TP errors、负ASR、实际optimizer更新数、AMP跳步、攻击/训练/评估墙钟时间和失败重试。collect_results_portable.py保留逐seed和分组统计，两种ASR聚合口径有独立列名。不要把墙钟时间称为GPU核函数活跃时间。
+

@@ -1,0 +1,33 @@
+{
+  "method": "pil",
+  "generator": "frozendrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 76.51814770698547,
+      "including_wait_seconds": 76.51816463470459,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/pil/attack.log"
+    },
+    "train": {
+      "seconds": 688.3106276988983,
+      "including_wait_seconds": 688.3106698989868,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/pil/train.log"
+    },
+    "audit": {
+      "seconds": 2.073561191558838,
+      "including_wait_seconds": 2.073622226715088,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/pil/audit.log"
+    },
+    "evaluate": {
+      "seconds": 223.27013278007507,
+      "including_wait_seconds": 223.27017951011658,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive/pil/evaluate.log"
+    }
+  },
+  "started": 1793529859.708509,
+  "elapsed_seconds": 990.1868126392365,
+  "finished": 1793530849.895318
+}

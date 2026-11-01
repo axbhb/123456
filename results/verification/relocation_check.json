@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": 283,
+    "test": 121
+  },
+  "old_root_paths_remaining": 0,
+  "checked_gt_arrays_preserved": true,
+  "test_target_is_nested_under_old_root": true
+}

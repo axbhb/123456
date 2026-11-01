@@ -1,0 +1,33 @@
+{
+  "method": "apgd",
+  "generator": "magicdrive",
+  "selected_frames": 1,
+  "training_seed": 0,
+  "planned_iterations": 283,
+  "status": "completed",
+  "stages": {
+    "attack": {
+      "seconds": 19.36359691619873,
+      "including_wait_seconds": 19.363611698150635,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/attack.log"
+    },
+    "train": {
+      "seconds": 310.7322561740875,
+      "including_wait_seconds": 310.73227429389954,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/train.log"
+    },
+    "audit": {
+      "seconds": 1.9563148021697998,
+      "including_wait_seconds": 1.9563772678375244,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/audit.log"
+    },
+    "evaluate": {
+      "seconds": 62.77191519737244,
+      "including_wait_seconds": 62.771960496902466,
+      "log": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive/apgd/evaluate.log"
+    }
+  },
+  "started": 1793530921.4189894,
+  "elapsed_seconds": 397.26365661621094,
+  "finished": 1793531318.6826425
+}

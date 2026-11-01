@@ -1,0 +1,27 @@
+/srv/table2/table2_portable_20261101/prepare_roi.py:13: DeprecationWarning: BILINEAR is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BILINEAR instead.
+  images.append(np.asarray(image.crop((l,t,r,b)).resize((32,32),Image.BILINEAR)));labels.append(int(label));records.append({'token':row['token'],'camera':cam,'object_index':obj,'box':[int(l),int(t),int(r),int(b)],'depth':float(depth),'selected':row['token'] in selected})
+{
+  "crops": 12500,
+  "selected_crops": 49,
+  "class_counts": {
+    "7": 3949,
+    "0": 6107,
+    "1": 415,
+    "8": 178,
+    "6": 458,
+    "5": 197,
+    "9": 720,
+    "3": 381,
+    "2": 41,
+    "4": 54
+  },
+  "frames": 283,
+  "test_frames_used": 0,
+  "seconds": 9.733220100402832,
+  "source": "panacea_plus generated train images with native 2D GT boxes mapped into generator pixels",
+  "crop_size": [
+    32,
+    32
+  ],
+  "minimum_box_pixels": 2
+}

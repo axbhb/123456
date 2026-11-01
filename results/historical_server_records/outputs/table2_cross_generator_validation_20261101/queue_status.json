@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "completed": [
+    {
+      "generator": "frozendrive",
+      "method": "apgd",
+      "returncode": 0,
+      "wall_seconds": 273.5103647708893
+    },
+    {
+      "generator": "frozendrive",
+      "method": "bait",
+      "returncode": 0,
+      "wall_seconds": 1087.8512425422668
+    },
+    {
+      "generator": "frozendrive",
+      "method": "pil",
+      "returncode": 0,
+      "wall_seconds": 990.2582099437714
+    },
+    {
+      "generator": "frozendrive",
+      "method": "asymmetry",
+      "returncode": 1,
+      "wall_seconds": 71.44896173477173
+    },
+    {
+      "generator": "magicdrive",
+      "method": "apgd",
+      "returncode": 0,
+      "wall_seconds": 397.52996253967285
+    },
+    {
+      "generator": "magicdrive",
+      "method": "bait",
+      "returncode": 0,
+      "wall_seconds": 1156.9145822525024
+    },
+    {
+      "generator": "magicdrive",
+      "method": "pil",
+      "returncode": 0,
+      "wall_seconds": 364.65172147750854
+    },
+    {
+      "generator": "magicdrive",
+      "method": "asymmetry",
+      "returncode": 0,
+      "wall_seconds": 304.6274666786194
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "apgd",
+      "returncode": 0,
+      "wall_seconds": 248.81593418121338
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "bait",
+      "returncode": 0,
+      "wall_seconds": 382.61536383628845
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "pil",
+      "returncode": 0,
+      "wall_seconds": 692.8570716381073
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "asymmetry",
+      "returncode": 0,
+      "wall_seconds": 959.8831539154053
+    }
+  ]
+}

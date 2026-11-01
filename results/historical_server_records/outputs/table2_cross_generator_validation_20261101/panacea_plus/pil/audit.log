@@ -1,0 +1,4 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+No CUDA runtime is found, using CUDA_HOME='/usr/local/cuda'
+{"checkpoint_iteration": 282, "optimizer_step_counts": {"275": 240}, "representative_parameter_max_changes": {"img_backbone.conv1.weight": 0.0002877467777580023, "pts_bbox_head.reference_points.weight": 0.001041799783706665}, "all_model_weights_finite": true, "checkpoint_bytes": 452697450, "amp_state": {"loss_scaler": {"scale": 256.0, "growth_factor": 2.0, "backoff_factor": 0.5, "growth_interval": 2000, "_growth_tracker": 104}}, "gpu_used": false}

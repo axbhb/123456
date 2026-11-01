@@ -1,0 +1,14 @@
+/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 288, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 97, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "/home/user/anaconda3/envs/GNN_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/srv/table2/table2_portable_20261101/attack_asymmetry.py", line 30, in <module>
+    if geometry['physically_editable_frames']!=14:raise ValueError('Not all selected frames have valid measured road projections')
+ValueError: Not all selected frames have valid measured road projections
+load checkpoint from local path: /srv/table2/assets/checkpoints/stream_petr_r50_flash_704_bs2_seq_90e.pth

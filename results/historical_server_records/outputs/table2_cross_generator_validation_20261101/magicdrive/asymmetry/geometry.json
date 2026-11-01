@@ -1,0 +1,76 @@
+{
+  "patches": [
+    {
+      "id": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "scene_token": "fcbccedd61424f1b85dcbf8f897f9754",
+      "world_corners": [
+        [
+          644.8232140935955,
+          1615.9798039853913,
+          0.09417840800340542
+        ],
+        [
+          645.5942074340064,
+          1615.3430324022684,
+          0.08462749342791885
+        ],
+        [
+          646.2306467995717,
+          1616.1139841859795,
+          0.0605800163931732
+        ],
+        [
+          645.4596534591608,
+          1616.7507557691024,
+          0.07013093096865972
+        ]
+      ],
+      "surface": "measured drivable semantic point cloud least-squares plane",
+      "fit_points": 3164,
+      "trimmed_plane_rmse_m": 0.046993147735352396,
+      "side_meters": 1.0
+    }
+  ],
+  "frames": {
+    "796b1988dd254f74bf2fb19ba9c5b8c6": {
+      "visible_patches": [
+        {
+          "patch_id": "796b1988dd254f74bf2fb19ba9c5b8c6",
+          "views": [
+            {
+              "camera": "CAM_FRONT",
+              "homography": [
+                [
+                  0.551006622672385,
+                  -0.8166065723728401,
+                  133.46868896484375
+                ],
+                [
+                  0.30374601095449416,
+                  0.04132215162361256,
+                  185.10816955566406
+                ],
+                [
+                  0.0026273372040801794,
+                  2.6106262469645238e-05,
+                  1.0
+                ]
+              ],
+              "pixels": 408
+            },
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "visible_pixels": 408
+    }
+  },
+  "static_world_patch_policy": "one 1m x 1m world patch anchored per selected keyframe, projected consistently into all selected views/frames of that scene; nonselected training images stay Clean",
+  "depth_source": "FrozenDrive measured/reconstructed training occupancy, not test data",
+  "seconds": 0.3403944969177246,
+  "physically_editable_frames": 1
+}

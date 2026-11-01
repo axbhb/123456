@@ -1,0 +1,1536 @@
+{
+  "method": "AdvDiff-inspired-DD2-v1",
+  "status": "completed",
+  "native_steps": 30,
+  "guided_steps": 10,
+  "guidance_strength": 0.025,
+  "inner_steps_per_sampling_step": 1,
+  "initial_noise": "paired with original DD2 clip seed",
+  "gradient": "detached UNet prediction, differentiable predicted-clean VAE decode, native StreamPETR loss gradient via BPDA preprocessing",
+  "guidance_rule": "Euler predicted-clean sample shifted by strength*sigma^2*RMS-normalized d(detloss)/d(latent); converted back to native prediction parameterization",
+  "scope": "independent original-condition clip regeneration for each selected keyframe",
+  "memory_policy": "frozen UNet CPU-offloaded; two-pass VAE decode and detector CPU-offload prevent simultaneous graphs; original resolution and conditions retained",
+  "completed": [
+    {
+      "token": "796b1988dd254f74bf2fb19ba9c5b8c6",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/796b1988dd254f74bf2fb19ba9c5b8c6/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 65,
+      "paired_seed": 20261095,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 27.86180305480957,
+          "image_gradient_l2": 33.16083526611328,
+          "latent_gradient_rms": 0.006631405092775822,
+          "predicted_clean_shift_rms": 0.06884314864873886
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 27.49921989440918,
+          "image_gradient_l2": 43.51298522949219,
+          "latent_gradient_rms": 0.015097593888640404,
+          "predicted_clean_shift_rms": 0.025464629754424095
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 26.088972091674805,
+          "image_gradient_l2": 43.477779388427734,
+          "latent_gradient_rms": 0.021516256034374237,
+          "predicted_clean_shift_rms": 0.008729076944291592
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 27.014034271240234,
+          "image_gradient_l2": 33.110694885253906,
+          "latent_gradient_rms": 0.022224031388759613,
+          "predicted_clean_shift_rms": 0.0027382620610296726
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 27.490116119384766,
+          "image_gradient_l2": 44.77370834350586,
+          "latent_gradient_rms": 0.03119855746626854,
+          "predicted_clean_shift_rms": 0.000773556821513921
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 28.417125701904297,
+          "image_gradient_l2": 22.787321090698242,
+          "latent_gradient_rms": 0.014858469367027283,
+          "predicted_clean_shift_rms": 0.00019274195074103773
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 28.82326316833496,
+          "image_gradient_l2": 25.67961311340332,
+          "latent_gradient_rms": 0.019289426505565643,
+          "predicted_clean_shift_rms": 4.1199040424544364e-05
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 28.561391830444336,
+          "image_gradient_l2": 21.185270309448242,
+          "latent_gradient_rms": 0.015711888670921326,
+          "predicted_clean_shift_rms": 7.272675247804727e-06
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 28.496517181396484,
+          "image_gradient_l2": 25.019872665405273,
+          "latent_gradient_rms": 0.01903519034385681,
+          "predicted_clean_shift_rms": 1.0042620033345884e-06
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 28.708467483520508,
+          "image_gradient_l2": 23.11275863647461,
+          "latent_gradient_rms": 0.018354544416069984,
+          "predicted_clean_shift_rms": 1.0007677531120862e-07
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 412.38737082481384,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "27749aa3de2545219186c61d4d415e1c",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/27749aa3de2545219186c61d4d415e1c/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/27749aa3de2545219186c61d4d415e1c/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/27749aa3de2545219186c61d4d415e1c/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/27749aa3de2545219186c61d4d415e1c/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/27749aa3de2545219186c61d4d415e1c/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/27749aa3de2545219186c61d4d415e1c/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 51,
+      "paired_seed": 20261081,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 24.643054962158203,
+          "image_gradient_l2": 75.91146850585938,
+          "latent_gradient_rms": 0.011200292967259884,
+          "predicted_clean_shift_rms": 0.06884315609931946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 25.484966278076172,
+          "image_gradient_l2": 48.297454833984375,
+          "latent_gradient_rms": 0.011496898718178272,
+          "predicted_clean_shift_rms": 0.025464631617069244,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 26.038734436035156,
+          "image_gradient_l2": 42.0077018737793,
+          "latent_gradient_rms": 0.015477664768695831,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 27.48795509338379,
+          "image_gradient_l2": 36.27734375,
+          "latent_gradient_rms": 0.01651689223945141,
+          "predicted_clean_shift_rms": 0.0027382622938603163,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 28.736228942871094,
+          "image_gradient_l2": 36.75733184814453,
+          "latent_gradient_rms": 0.017935244366526604,
+          "predicted_clean_shift_rms": 0.000773556821513921,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 29.606870651245117,
+          "image_gradient_l2": 41.44510269165039,
+          "latent_gradient_rms": 0.01913856901228428,
+          "predicted_clean_shift_rms": 0.00019274202350061387,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 29.366649627685547,
+          "image_gradient_l2": 37.191558837890625,
+          "latent_gradient_rms": 0.02023066021502018,
+          "predicted_clean_shift_rms": 4.119899313081987e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 30.270832061767578,
+          "image_gradient_l2": 34.793148040771484,
+          "latent_gradient_rms": 0.016791515052318573,
+          "predicted_clean_shift_rms": 7.272631137311691e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 29.941181182861328,
+          "image_gradient_l2": 34.24205017089844,
+          "latent_gradient_rms": 0.016575152054429054,
+          "predicted_clean_shift_rms": 1.0041769655799726e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 29.6088924407959,
+          "image_gradient_l2": 32.443302154541016,
+          "latent_gradient_rms": 0.015923626720905304,
+          "predicted_clean_shift_rms": 1.0011887496830241e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 415.58331274986267,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "ac8b4d49731d43289579f014cb7c97ef",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ac8b4d49731d43289579f014cb7c97ef/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ac8b4d49731d43289579f014cb7c97ef/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ac8b4d49731d43289579f014cb7c97ef/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ac8b4d49731d43289579f014cb7c97ef/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ac8b4d49731d43289579f014cb7c97ef/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ac8b4d49731d43289579f014cb7c97ef/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 12,
+      "paired_seed": 20261042,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 24.677650451660156,
+          "image_gradient_l2": 65.87428283691406,
+          "latent_gradient_rms": 0.00821345578879118,
+          "predicted_clean_shift_rms": 0.06884314864873886,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 24.570819854736328,
+          "image_gradient_l2": 58.37227249145508,
+          "latent_gradient_rms": 0.01413325872272253,
+          "predicted_clean_shift_rms": 0.025464627891778946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 25.4872989654541,
+          "image_gradient_l2": 59.40668487548828,
+          "latent_gradient_rms": 0.023537319153547287,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 25.531841278076172,
+          "image_gradient_l2": 74.19983673095703,
+          "latent_gradient_rms": 0.036078788340091705,
+          "predicted_clean_shift_rms": 0.002738261828199029,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 25.95058822631836,
+          "image_gradient_l2": 59.011592864990234,
+          "latent_gradient_rms": 0.026365311816334724,
+          "predicted_clean_shift_rms": 0.0007735567633062601,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 26.879148483276367,
+          "image_gradient_l2": 64.54507446289062,
+          "latent_gradient_rms": 0.03061811439692974,
+          "predicted_clean_shift_rms": 0.0001927419943967834,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 27.01363182067871,
+          "image_gradient_l2": 58.7003288269043,
+          "latent_gradient_rms": 0.026960846036672592,
+          "predicted_clean_shift_rms": 4.1199025872629136e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 27.049951553344727,
+          "image_gradient_l2": 61.79807662963867,
+          "latent_gradient_rms": 0.028707323595881462,
+          "predicted_clean_shift_rms": 7.272680250025587e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 27.16802215576172,
+          "image_gradient_l2": 61.681602478027344,
+          "latent_gradient_rms": 0.027029847726225853,
+          "predicted_clean_shift_rms": 1.004245405056281e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 27.137699127197266,
+          "image_gradient_l2": 57.295387268066406,
+          "latent_gradient_rms": 0.026181960478425026,
+          "predicted_clean_shift_rms": 1.0009773632191354e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 442.40454053878784,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "9ee4020153674b9e9943d395ff8cfdf3",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/9ee4020153674b9e9943d395ff8cfdf3/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 67,
+      "paired_seed": 20261097,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 24.3757266998291,
+          "image_gradient_l2": 29.721303939819336,
+          "latent_gradient_rms": 0.004117316100746393,
+          "predicted_clean_shift_rms": 0.06884316354990005,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 22.409589767456055,
+          "image_gradient_l2": 27.12863540649414,
+          "latent_gradient_rms": 0.007530200760811567,
+          "predicted_clean_shift_rms": 0.025464627891778946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 22.551651000976562,
+          "image_gradient_l2": 29.007474899291992,
+          "latent_gradient_rms": 0.012310763821005821,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 24.492185592651367,
+          "image_gradient_l2": 33.91289520263672,
+          "latent_gradient_rms": 0.01950126141309738,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 24.812570571899414,
+          "image_gradient_l2": 28.44754409790039,
+          "latent_gradient_rms": 0.019627723842859268,
+          "predicted_clean_shift_rms": 0.0007735568797215819,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 25.094022750854492,
+          "image_gradient_l2": 24.737686157226562,
+          "latent_gradient_rms": 0.013908122666180134,
+          "predicted_clean_shift_rms": 0.0001927419943967834,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 25.772993087768555,
+          "image_gradient_l2": 28.826475143432617,
+          "latent_gradient_rms": 0.017851823940873146,
+          "predicted_clean_shift_rms": 4.119899676879868e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 25.831432342529297,
+          "image_gradient_l2": 28.34615707397461,
+          "latent_gradient_rms": 0.016634071245789528,
+          "predicted_clean_shift_rms": 7.272650236700429e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 26.02509880065918,
+          "image_gradient_l2": 22.53790855407715,
+          "latent_gradient_rms": 0.013263599015772343,
+          "predicted_clean_shift_rms": 1.0042347184935352e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 25.8204288482666,
+          "image_gradient_l2": 28.017980575561523,
+          "latent_gradient_rms": 0.016843056306242943,
+          "predicted_clean_shift_rms": 1.0001923556046677e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 450.54705786705017,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "de9432d4fc7a4e5a985e2bc628eb614c",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/de9432d4fc7a4e5a985e2bc628eb614c/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 42,
+      "paired_seed": 20261072,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 32.90119934082031,
+          "image_gradient_l2": 134.9004364013672,
+          "latent_gradient_rms": 0.018323738127946854,
+          "predicted_clean_shift_rms": 0.06884314864873886,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 30.81093406677246,
+          "image_gradient_l2": 101.31262969970703,
+          "latent_gradient_rms": 0.028291525319218636,
+          "predicted_clean_shift_rms": 0.025464627891778946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 30.676136016845703,
+          "image_gradient_l2": 116.78633880615234,
+          "latent_gradient_rms": 0.04750514030456543,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 35.52330017089844,
+          "image_gradient_l2": 108.39772033691406,
+          "latent_gradient_rms": 0.05171769857406616,
+          "predicted_clean_shift_rms": 0.0027382622938603163,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 38.17359161376953,
+          "image_gradient_l2": 73.41384887695312,
+          "latent_gradient_rms": 0.03811534866690636,
+          "predicted_clean_shift_rms": 0.000773556821513921,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 39.40952682495117,
+          "image_gradient_l2": 93.44373321533203,
+          "latent_gradient_rms": 0.04638492316007614,
+          "predicted_clean_shift_rms": 0.0001927419943967834,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 40.63764572143555,
+          "image_gradient_l2": 142.18653869628906,
+          "latent_gradient_rms": 0.07104229927062988,
+          "predicted_clean_shift_rms": 4.119897130294703e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 40.8360595703125,
+          "image_gradient_l2": 117.76805877685547,
+          "latent_gradient_rms": 0.057525042444467545,
+          "predicted_clean_shift_rms": 7.272624316101428e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 40.285560607910156,
+          "image_gradient_l2": 96.5853042602539,
+          "latent_gradient_rms": 0.04616376757621765,
+          "predicted_clean_shift_rms": 1.0043098654932692e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 40.84250259399414,
+          "image_gradient_l2": 81.0604019165039,
+          "latent_gradient_rms": 0.04306769371032715,
+          "predicted_clean_shift_rms": 1.000454403765616e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 440.1555140018463,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "ebce5a3b3484446580028d6538e69a81",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ebce5a3b3484446580028d6538e69a81/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ebce5a3b3484446580028d6538e69a81/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ebce5a3b3484446580028d6538e69a81/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ebce5a3b3484446580028d6538e69a81/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ebce5a3b3484446580028d6538e69a81/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ebce5a3b3484446580028d6538e69a81/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 1,
+      "paired_seed": 20261031,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 20.946929931640625,
+          "image_gradient_l2": 46.45750045776367,
+          "latent_gradient_rms": 0.005803009495139122,
+          "predicted_clean_shift_rms": 0.06884316354990005,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 20.334638595581055,
+          "image_gradient_l2": 58.31086349487305,
+          "latent_gradient_rms": 0.017179887741804123,
+          "predicted_clean_shift_rms": 0.025464627891778946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 22.1762752532959,
+          "image_gradient_l2": 42.183937072753906,
+          "latent_gradient_rms": 0.01672474481165409,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 22.735549926757812,
+          "image_gradient_l2": 44.52880096435547,
+          "latent_gradient_rms": 0.022164523601531982,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 22.93330955505371,
+          "image_gradient_l2": 49.2007942199707,
+          "latent_gradient_rms": 0.026215210556983948,
+          "predicted_clean_shift_rms": 0.000773556821513921,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 23.728700637817383,
+          "image_gradient_l2": 48.218048095703125,
+          "latent_gradient_rms": 0.025950856506824493,
+          "predicted_clean_shift_rms": 0.00019274202350061387,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 24.252704620361328,
+          "image_gradient_l2": 42.121089935302734,
+          "latent_gradient_rms": 0.0225194301456213,
+          "predicted_clean_shift_rms": 4.119897130294703e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 24.468402862548828,
+          "image_gradient_l2": 46.51850509643555,
+          "latent_gradient_rms": 0.024674544110894203,
+          "predicted_clean_shift_rms": 7.272652055689832e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 24.690723419189453,
+          "image_gradient_l2": 43.59449768066406,
+          "latent_gradient_rms": 0.02337256446480751,
+          "predicted_clean_shift_rms": 1.0041626410384197e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 24.70961570739746,
+          "image_gradient_l2": 40.94938659667969,
+          "latent_gradient_rms": 0.021403787657618523,
+          "predicted_clean_shift_rms": 1.0002766259731288e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 445.6469123363495,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "dcbe451d383e450786aaad04ab9d3790",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/dcbe451d383e450786aaad04ab9d3790/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/dcbe451d383e450786aaad04ab9d3790/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/dcbe451d383e450786aaad04ab9d3790/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/dcbe451d383e450786aaad04ab9d3790/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/dcbe451d383e450786aaad04ab9d3790/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/dcbe451d383e450786aaad04ab9d3790/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 32,
+      "paired_seed": 20261062,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 29.42152214050293,
+          "image_gradient_l2": 31.344030380249023,
+          "latent_gradient_rms": 0.004484618082642555,
+          "predicted_clean_shift_rms": 0.06884315609931946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 27.227121353149414,
+          "image_gradient_l2": 68.67255401611328,
+          "latent_gradient_rms": 0.01523732952773571,
+          "predicted_clean_shift_rms": 0.025464629754424095,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 26.056913375854492,
+          "image_gradient_l2": 52.63083267211914,
+          "latent_gradient_rms": 0.017721273005008698,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 26.531387329101562,
+          "image_gradient_l2": 69.74090576171875,
+          "latent_gradient_rms": 0.027540836483240128,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 26.432493209838867,
+          "image_gradient_l2": 69.16606140136719,
+          "latent_gradient_rms": 0.028617635369300842,
+          "predicted_clean_shift_rms": 0.0007735568797215819,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 26.945695877075195,
+          "image_gradient_l2": 55.502899169921875,
+          "latent_gradient_rms": 0.021864211186766624,
+          "predicted_clean_shift_rms": 0.0001927420380525291,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 26.924030303955078,
+          "image_gradient_l2": 56.958648681640625,
+          "latent_gradient_rms": 0.02375066839158535,
+          "predicted_clean_shift_rms": 4.119904770050198e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 27.41189193725586,
+          "image_gradient_l2": 51.91399002075195,
+          "latent_gradient_rms": 0.02148406021296978,
+          "predicted_clean_shift_rms": 7.2726666076050606e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 27.3548583984375,
+          "image_gradient_l2": 48.09370040893555,
+          "latent_gradient_rms": 0.019251924008131027,
+          "predicted_clean_shift_rms": 1.0042374469776405e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 27.33069610595703,
+          "image_gradient_l2": 67.40907287597656,
+          "latent_gradient_rms": 0.02629987709224224,
+          "predicted_clean_shift_rms": 1.0006507267235065e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 447.4522500038147,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "b1303058fa624645b753d7283d70de45",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/b1303058fa624645b753d7283d70de45/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/b1303058fa624645b753d7283d70de45/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/b1303058fa624645b753d7283d70de45/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/b1303058fa624645b753d7283d70de45/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/b1303058fa624645b753d7283d70de45/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/b1303058fa624645b753d7283d70de45/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 14,
+      "paired_seed": 20261044,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 27.822139739990234,
+          "image_gradient_l2": 18.976791381835938,
+          "latent_gradient_rms": 0.0029197069816291332,
+          "predicted_clean_shift_rms": 0.06884314864873886,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 27.62726402282715,
+          "image_gradient_l2": 20.177200317382812,
+          "latent_gradient_rms": 0.006339191924780607,
+          "predicted_clean_shift_rms": 0.025464631617069244,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 27.201736450195312,
+          "image_gradient_l2": 14.264439582824707,
+          "latent_gradient_rms": 0.0065695783123373985,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 28.037179946899414,
+          "image_gradient_l2": 12.777932167053223,
+          "latent_gradient_rms": 0.007563154213130474,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 28.48590660095215,
+          "image_gradient_l2": 16.4277400970459,
+          "latent_gradient_rms": 0.008573973551392555,
+          "predicted_clean_shift_rms": 0.0007735567633062601,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 28.727203369140625,
+          "image_gradient_l2": 21.540138244628906,
+          "latent_gradient_rms": 0.011471664533019066,
+          "predicted_clean_shift_rms": 0.00019274208170827478,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 28.827228546142578,
+          "image_gradient_l2": 16.94186019897461,
+          "latent_gradient_rms": 0.0094234524294734,
+          "predicted_clean_shift_rms": 4.1199000406777486e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 29.023601531982422,
+          "image_gradient_l2": 16.893760681152344,
+          "latent_gradient_rms": 0.0092382300645113,
+          "predicted_clean_shift_rms": 7.2727148108242545e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 28.807132720947266,
+          "image_gradient_l2": 17.018898010253906,
+          "latent_gradient_rms": 0.009218922816216946,
+          "predicted_clean_shift_rms": 1.0042334679383202e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 29.03104019165039,
+          "image_gradient_l2": 16.47573471069336,
+          "latent_gradient_rms": 0.00921953096985817,
+          "predicted_clean_shift_rms": 1.0015984486244633e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 442.84341192245483,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "e63b83b436a0479db7362338cdfab118",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e63b83b436a0479db7362338cdfab118/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e63b83b436a0479db7362338cdfab118/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e63b83b436a0479db7362338cdfab118/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e63b83b436a0479db7362338cdfab118/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e63b83b436a0479db7362338cdfab118/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e63b83b436a0479db7362338cdfab118/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 18,
+      "paired_seed": 20261048,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 19.53632926940918,
+          "image_gradient_l2": 13.098262786865234,
+          "latent_gradient_rms": 0.0024371175095438957,
+          "predicted_clean_shift_rms": 0.06884315609931946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 20.20639991760254,
+          "image_gradient_l2": 13.118104934692383,
+          "latent_gradient_rms": 0.004358517937362194,
+          "predicted_clean_shift_rms": 0.025464631617069244,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 20.638141632080078,
+          "image_gradient_l2": 18.672130584716797,
+          "latent_gradient_rms": 0.008947557769715786,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 20.797054290771484,
+          "image_gradient_l2": 15.628893852233887,
+          "latent_gradient_rms": 0.009578590281307697,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 21.171707153320312,
+          "image_gradient_l2": 15.54919719696045,
+          "latent_gradient_rms": 0.008405241183936596,
+          "predicted_clean_shift_rms": 0.000773556821513921,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 21.51561737060547,
+          "image_gradient_l2": 10.634393692016602,
+          "latent_gradient_rms": 0.0064336578361690044,
+          "predicted_clean_shift_rms": 0.0001927420380525291,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 21.789575576782227,
+          "image_gradient_l2": 12.79278564453125,
+          "latent_gradient_rms": 0.008498495444655418,
+          "predicted_clean_shift_rms": 4.1199000406777486e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 21.825733184814453,
+          "image_gradient_l2": 11.282612800598145,
+          "latent_gradient_rms": 0.007008860819041729,
+          "predicted_clean_shift_rms": 7.272604307217989e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 21.83930206298828,
+          "image_gradient_l2": 11.403658866882324,
+          "latent_gradient_rms": 0.007161489222198725,
+          "predicted_clean_shift_rms": 1.0042475651061977e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 21.77391815185547,
+          "image_gradient_l2": 11.18339729309082,
+          "latent_gradient_rms": 0.007643958553671837,
+          "predicted_clean_shift_rms": 1.0011778073248934e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 441.82118940353394,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "ae5004bf4ebb4db0a84cb3c27bd398d1",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/ae5004bf4ebb4db0a84cb3c27bd398d1/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 11,
+      "paired_seed": 20261041,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 23.13454818725586,
+          "image_gradient_l2": 33.676353454589844,
+          "latent_gradient_rms": 0.004131271503865719,
+          "predicted_clean_shift_rms": 0.06884315609931946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 22.71567726135254,
+          "image_gradient_l2": 32.91702651977539,
+          "latent_gradient_rms": 0.007882708683609962,
+          "predicted_clean_shift_rms": 0.025464627891778946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 22.357677459716797,
+          "image_gradient_l2": 25.3652400970459,
+          "latent_gradient_rms": 0.008690599352121353,
+          "predicted_clean_shift_rms": 0.008729076012969017,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 22.861404418945312,
+          "image_gradient_l2": 44.54959487915039,
+          "latent_gradient_rms": 0.017474181950092316,
+          "predicted_clean_shift_rms": 0.0027382622938603163,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 23.36241912841797,
+          "image_gradient_l2": 45.520267486572266,
+          "latent_gradient_rms": 0.019264791160821915,
+          "predicted_clean_shift_rms": 0.000773556821513921,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 23.716049194335938,
+          "image_gradient_l2": 39.77458953857422,
+          "latent_gradient_rms": 0.017857924103736877,
+          "predicted_clean_shift_rms": 0.00019274205260444432,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 23.588489532470703,
+          "image_gradient_l2": 43.67654037475586,
+          "latent_gradient_rms": 0.02012833021581173,
+          "predicted_clean_shift_rms": 4.119898221688345e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 23.735836029052734,
+          "image_gradient_l2": 37.15312576293945,
+          "latent_gradient_rms": 0.017793983221054077,
+          "predicted_clean_shift_rms": 7.272644324984867e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 23.7782039642334,
+          "image_gradient_l2": 31.000051498413086,
+          "latent_gradient_rms": 0.015139873139560223,
+          "predicted_clean_shift_rms": 1.004243358693202e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 23.866493225097656,
+          "image_gradient_l2": 31.70472526550293,
+          "latent_gradient_rms": 0.015552986413240433,
+          "predicted_clean_shift_rms": 1.0009539153088554e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 386.0438997745514,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "61d47d1198184bfdaa6777e9448d825d",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/61d47d1198184bfdaa6777e9448d825d/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/61d47d1198184bfdaa6777e9448d825d/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/61d47d1198184bfdaa6777e9448d825d/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/61d47d1198184bfdaa6777e9448d825d/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/61d47d1198184bfdaa6777e9448d825d/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/61d47d1198184bfdaa6777e9448d825d/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 38,
+      "paired_seed": 20261068,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 35.75881576538086,
+          "image_gradient_l2": 86.77200317382812,
+          "latent_gradient_rms": 0.01669345796108246,
+          "predicted_clean_shift_rms": 0.06884315609931946,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 33.24761199951172,
+          "image_gradient_l2": 79.17532348632812,
+          "latent_gradient_rms": 0.019938567653298378,
+          "predicted_clean_shift_rms": 0.025464626029133797,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 32.720272064208984,
+          "image_gradient_l2": 93.50031280517578,
+          "latent_gradient_rms": 0.03510725870728493,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 34.395381927490234,
+          "image_gradient_l2": 75.88887786865234,
+          "latent_gradient_rms": 0.03252388909459114,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 35.9044189453125,
+          "image_gradient_l2": 47.804691314697266,
+          "latent_gradient_rms": 0.022765260189771652,
+          "predicted_clean_shift_rms": 0.000773556821513921,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 36.6642951965332,
+          "image_gradient_l2": 73.10542297363281,
+          "latent_gradient_rms": 0.03588511794805527,
+          "predicted_clean_shift_rms": 0.0001927420380525291,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 37.010101318359375,
+          "image_gradient_l2": 54.27730941772461,
+          "latent_gradient_rms": 0.02496945858001709,
+          "predicted_clean_shift_rms": 4.1198927647201344e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 38.0045051574707,
+          "image_gradient_l2": 79.44298553466797,
+          "latent_gradient_rms": 0.03618001937866211,
+          "predicted_clean_shift_rms": 7.272672519320622e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 37.57265853881836,
+          "image_gradient_l2": 47.032684326171875,
+          "latent_gradient_rms": 0.02177654765546322,
+          "predicted_clean_shift_rms": 1.0042346048066975e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 37.2902946472168,
+          "image_gradient_l2": 51.25178146362305,
+          "latent_gradient_rms": 0.025211432948708534,
+          "predicted_clean_shift_rms": 1.0002066375136565e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 363.84032821655273,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "55c258972acb4300a3a6077a531ab050",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/55c258972acb4300a3a6077a531ab050/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/55c258972acb4300a3a6077a531ab050/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/55c258972acb4300a3a6077a531ab050/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/55c258972acb4300a3a6077a531ab050/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/55c258972acb4300a3a6077a531ab050/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/55c258972acb4300a3a6077a531ab050/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 17,
+      "paired_seed": 20261047,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 24.99933433532715,
+          "image_gradient_l2": 27.467557907104492,
+          "latent_gradient_rms": 0.004521094262599945,
+          "predicted_clean_shift_rms": 0.06884314864873886,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 24.68233871459961,
+          "image_gradient_l2": 21.656164169311523,
+          "latent_gradient_rms": 0.007478226907551289,
+          "predicted_clean_shift_rms": 0.025464629754424095,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 24.336593627929688,
+          "image_gradient_l2": 29.259204864501953,
+          "latent_gradient_rms": 0.012821748852729797,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 24.510751724243164,
+          "image_gradient_l2": 21.60182762145996,
+          "latent_gradient_rms": 0.010945625603199005,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 25.05937385559082,
+          "image_gradient_l2": 26.270803451538086,
+          "latent_gradient_rms": 0.014045792631804943,
+          "predicted_clean_shift_rms": 0.0007735567633062601,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 25.22797966003418,
+          "image_gradient_l2": 33.66942596435547,
+          "latent_gradient_rms": 0.018300894647836685,
+          "predicted_clean_shift_rms": 0.00019274200894869864,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 25.02394676208496,
+          "image_gradient_l2": 41.06391525268555,
+          "latent_gradient_rms": 0.018972091376781464,
+          "predicted_clean_shift_rms": 4.119899676879868e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 25.14675521850586,
+          "image_gradient_l2": 29.466510772705078,
+          "latent_gradient_rms": 0.01538021769374609,
+          "predicted_clean_shift_rms": 7.272641596500762e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 24.98483657836914,
+          "image_gradient_l2": 24.350122451782227,
+          "latent_gradient_rms": 0.014701850712299347,
+          "predicted_clean_shift_rms": 1.004199248200166e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 24.924625396728516,
+          "image_gradient_l2": 29.862796783447266,
+          "latent_gradient_rms": 0.017302529886364937,
+          "predicted_clean_shift_rms": 9.999905614677118e-08,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 365.92842864990234,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "acf9fcbeb1e346b98640f694f15460e8",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/acf9fcbeb1e346b98640f694f15460e8/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/acf9fcbeb1e346b98640f694f15460e8/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/acf9fcbeb1e346b98640f694f15460e8/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/acf9fcbeb1e346b98640f694f15460e8/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/acf9fcbeb1e346b98640f694f15460e8/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/acf9fcbeb1e346b98640f694f15460e8/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 47,
+      "paired_seed": 20261077,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 27.090913772583008,
+          "image_gradient_l2": 19.610523223876953,
+          "latent_gradient_rms": 0.003733693854883313,
+          "predicted_clean_shift_rms": 0.06884314864873886,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 25.744985580444336,
+          "image_gradient_l2": 30.6357421875,
+          "latent_gradient_rms": 0.012296294793486595,
+          "predicted_clean_shift_rms": 0.025464631617069244,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 25.661523818969727,
+          "image_gradient_l2": 19.195981979370117,
+          "latent_gradient_rms": 0.009376615285873413,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 25.69711685180664,
+          "image_gradient_l2": 16.390928268432617,
+          "latent_gradient_rms": 0.009610844776034355,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 26.343036651611328,
+          "image_gradient_l2": 18.630630493164062,
+          "latent_gradient_rms": 0.013124162331223488,
+          "predicted_clean_shift_rms": 0.0007735567050985992,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 26.70688247680664,
+          "image_gradient_l2": 16.165246963500977,
+          "latent_gradient_rms": 0.01082204096019268,
+          "predicted_clean_shift_rms": 0.00019274202350061387,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 26.998605728149414,
+          "image_gradient_l2": 15.774410247802734,
+          "latent_gradient_rms": 0.010135462507605553,
+          "predicted_clean_shift_rms": 4.1198978578904644e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 27.114322662353516,
+          "image_gradient_l2": 16.210491180419922,
+          "latent_gradient_rms": 0.011249884963035583,
+          "predicted_clean_shift_rms": 7.272680704772938e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 27.22014808654785,
+          "image_gradient_l2": 14.458427429199219,
+          "latent_gradient_rms": 0.010181039571762085,
+          "predicted_clean_shift_rms": 1.004257683234755e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 27.157560348510742,
+          "image_gradient_l2": 14.609086990356445,
+          "latent_gradient_rms": 0.010346314869821072,
+          "predicted_clean_shift_rms": 1.0011388695829737e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 363.5832018852234,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    },
+    {
+      "token": "e3bcde4a06124931a097ef2a211aaaef",
+      "paths": {
+        "CAM_FRONT_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e3bcde4a06124931a097ef2a211aaaef/CAM_FRONT_LEFT.png",
+        "CAM_FRONT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e3bcde4a06124931a097ef2a211aaaef/CAM_FRONT.png",
+        "CAM_FRONT_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e3bcde4a06124931a097ef2a211aaaef/CAM_FRONT_RIGHT.png",
+        "CAM_BACK_RIGHT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e3bcde4a06124931a097ef2a211aaaef/CAM_BACK_RIGHT.png",
+        "CAM_BACK": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e3bcde4a06124931a097ef2a211aaaef/CAM_BACK.png",
+        "CAM_BACK_LEFT": "/srv/table2/outputs/five_method_pilot_20261101/advdiff/images/e3bcde4a06124931a097ef2a211aaaef/CAM_BACK_LEFT.png"
+      },
+      "clip_index": 8,
+      "paired_seed": 20261038,
+      "guidance_logs": [
+        {
+          "step": 20,
+          "sigma": 1.659435510635376,
+          "detector_loss": 39.20282745361328,
+          "image_gradient_l2": 69.20091247558594,
+          "latent_gradient_rms": 0.011445843614637852,
+          "predicted_clean_shift_rms": 0.06884314864873886,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 21,
+          "sigma": 1.0092498064041138,
+          "detector_loss": 33.94477081298828,
+          "image_gradient_l2": 82.73583221435547,
+          "latent_gradient_rms": 0.02779386378824711,
+          "predicted_clean_shift_rms": 0.025464631617069244,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 22,
+          "sigma": 0.5909002423286438,
+          "detector_loss": 33.279502868652344,
+          "image_gradient_l2": 76.26597595214844,
+          "latent_gradient_rms": 0.02978249080479145,
+          "predicted_clean_shift_rms": 0.008729076944291592,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 23,
+          "sigma": 0.3309538960456848,
+          "detector_loss": 32.52935791015625,
+          "image_gradient_l2": 52.667640686035156,
+          "latent_gradient_rms": 0.024198979139328003,
+          "predicted_clean_shift_rms": 0.0027382620610296726,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 24,
+          "sigma": 0.17590415477752686,
+          "detector_loss": 33.054813385009766,
+          "image_gradient_l2": 65.54865264892578,
+          "latent_gradient_rms": 0.033269066363573074,
+          "predicted_clean_shift_rms": 0.0007735567050985992,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 25,
+          "sigma": 0.08780478686094284,
+          "detector_loss": 33.773380279541016,
+          "image_gradient_l2": 54.70038986206055,
+          "latent_gradient_rms": 0.02767230197787285,
+          "predicted_clean_shift_rms": 0.00019274208170827478,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 26,
+          "sigma": 0.04059506580233574,
+          "detector_loss": 34.78586196899414,
+          "image_gradient_l2": 57.492427825927734,
+          "latent_gradient_rms": 0.032638151198625565,
+          "predicted_clean_shift_rms": 4.119901859667152e-05,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 27,
+          "sigma": 0.017055965960025787,
+          "detector_loss": 34.52620315551758,
+          "image_gradient_l2": 50.446372985839844,
+          "latent_gradient_rms": 0.027172716334462166,
+          "predicted_clean_shift_rms": 7.272683888004394e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 28,
+          "sigma": 0.006337853614240885,
+          "detector_loss": 35.29231643676758,
+          "image_gradient_l2": 56.55406188964844,
+          "latent_gradient_rms": 0.03342903032898903,
+          "predicted_clean_shift_rms": 1.0042203939519823e-06,
+          "VAE_recompute_max_RGB_error": 0.0
+        },
+        {
+          "step": 29,
+          "sigma": 0.0020000000949949026,
+          "detector_loss": 35.00503921508789,
+          "image_gradient_l2": 48.51309585571289,
+          "latent_gradient_rms": 0.027750909328460693,
+          "predicted_clean_shift_rms": 1.0007311601611946e-07,
+          "VAE_recompute_max_RGB_error": 0.0
+        }
+      ],
+      "changed_cameras": 6,
+      "seconds": 368.08151388168335,
+      "geometry_statement": "Native HDMap/3D-box conditions and calibration retained; visual alignment audit pending. Not an exact guarantee of generated object-label correspondence."
+    }
+  ],
+  "active_attempt_seconds": 397.0459806919098,
+  "seconds": 5815.283398866653,
+  "reused_frame_seconds": 5418.237418174744,
+  "token": "e3bcde4a06124931a097ef2a211aaaef",
+  "clip_index": 8,
+  "frame": 14,
+  "completed_steps": 30,
+  "last_guidance": {
+    "step": 29,
+    "sigma": 0.0020000000949949026,
+    "detector_loss": 35.00503921508789,
+    "image_gradient_l2": 48.51309585571289,
+    "latent_gradient_rms": 0.027750909328460693,
+    "predicted_clean_shift_rms": 1.0007311601611946e-07,
+    "VAE_recompute_max_RGB_error": 0.0
+  },
+  "frames": 14,
+  "changed_cameras": 84,
+  "peak_memory_gib": 13.558493614196777
+}

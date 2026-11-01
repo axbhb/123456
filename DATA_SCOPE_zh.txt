@@ -1,0 +1,4 @@
+本 GitHub 仓库包含实验代码、原生运行源码、模型配置、部署说明、提示词及历史文本结果；不包含模型权重、mini 数据或完整 nuScenes 数据。
+权重需按 models/weights_required.json 另行准备；包括四生成器、StreamPETR 初始模型及 ROI 方法使用的 ResNet18。
+全量 nuScenes trainval、地图、相机/点云、原生 infos、四套全量 Clean 图像和条件须在目标服务器准备。
+历史结果仅证明此前 mini 的运行验证范围，不是全量实验结果。

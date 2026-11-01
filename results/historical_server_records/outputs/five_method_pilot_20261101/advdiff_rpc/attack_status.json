@@ -1,0 +1,15 @@
+{
+  "method": "StreamPETR-DetLoss-RPC-v1",
+  "status": "completed",
+  "steps": 20,
+  "restarts": 1,
+  "epsilon": 0.03137254901960784,
+  "gradient": "native forward; BPDA for uint8 quantization and PIL/cv2 resampling",
+  "temporal_context": "one immediately preceding Clean training frame, detached and restored for every candidate",
+  "completed": [],
+  "seconds": 364.9067449569702,
+  "token": "e3bcde4a06124931a097ef2a211aaaef",
+  "frame": 1,
+  "objective_calls": 10,
+  "last_loss": 35.00503921508789
+}

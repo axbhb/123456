@@ -1,0 +1,25 @@
+{
+  "status": "running",
+  "completed": [
+    {
+      "generator": "frozendrive",
+      "method": "advdiff",
+      "returncode": 0,
+      "wall_seconds": 1090.5868813991547
+    },
+    {
+      "generator": "magicdrive",
+      "method": "advdiff",
+      "returncode": 0,
+      "wall_seconds": 989.4690835475922
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "advdiff",
+      "returncode": 1,
+      "wall_seconds": 179.34714722633362
+    }
+  ],
+  "current_generator": "panacea_plus",
+  "current_method": "advdiff"
+}

@@ -1,0 +1,25 @@
+{
+  "crops": 12492,
+  "selected_crops": 684,
+  "class_counts": {
+    "7": 3944,
+    "0": 6104,
+    "1": 415,
+    "8": 178,
+    "6": 458,
+    "5": 197,
+    "9": 720,
+    "3": 381,
+    "2": 41,
+    "4": 54
+  },
+  "frames": 283,
+  "test_frames_used": 0,
+  "seconds": 9.770576238632202,
+  "source": "DD2 generated train images with native 2D GT boxes mapped into generator pixels",
+  "crop_size": [
+    32,
+    32
+  ],
+  "minimum_box_pixels": 2
+}

@@ -1,0 +1,133 @@
+{
+  "status": "completed",
+  "records": [
+    {
+      "generator": "frozendrive",
+      "method": "advdiff",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive",
+      "returncode": 0,
+      "seconds": 1.976625919342041,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"frozendrive\", \"method\": \"advdiff\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 50, \"minimum_saved_view_pixel_std\": 45.07120435473893, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}, \"guidance_evaluations\": 10, \"VAE_recompute_max_RGB_error\": 0.0}\n"
+    },
+    {
+      "generator": "frozendrive",
+      "method": "apgd",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive",
+      "returncode": 0,
+      "seconds": 1.867236852645874,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"frozendrive\", \"method\": \"apgd\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 45.16792250760503, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"274\": 240}}\n"
+    },
+    {
+      "generator": "frozendrive",
+      "method": "asymmetry",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive",
+      "returncode": 0,
+      "seconds": 1.7843410968780518,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"frozendrive\", \"method\": \"asymmetry\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 1, \"max_uint8_delta\": 144, \"minimum_saved_view_pixel_std\": 45.001618573265816, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "frozendrive",
+      "method": "bait",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive",
+      "returncode": 0,
+      "seconds": 1.889087438583374,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"frozendrive\", \"method\": \"bait\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 45.0900053197219, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"276\": 240}}\n"
+    },
+    {
+      "generator": "frozendrive",
+      "method": "pil",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive",
+      "returncode": 0,
+      "seconds": 2.0347063541412354,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"frozendrive\", \"method\": \"pil\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 45.012213630892326, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "frozendrive",
+      "method": "advdiff",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/frozendrive_final",
+      "returncode": 0,
+      "seconds": 2.033341884613037,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"frozendrive\", \"method\": \"advdiff\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 55, \"minimum_saved_view_pixel_std\": 45.07284887689784, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}, \"guidance_evaluations\": 10, \"VAE_recompute_max_RGB_error\": 0.0}\n"
+    },
+    {
+      "generator": "magicdrive",
+      "method": "advdiff",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive",
+      "returncode": 0,
+      "seconds": 1.7607226371765137,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"magicdrive\", \"method\": \"advdiff\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 149, \"minimum_saved_view_pixel_std\": 28.11704114040408, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"274\": 240}, \"guidance_evaluations\": 10, \"VAE_recompute_max_RGB_error\": 0.0}\n"
+    },
+    {
+      "generator": "magicdrive",
+      "method": "apgd",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive",
+      "returncode": 0,
+      "seconds": 1.726722002029419,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"magicdrive\", \"method\": \"apgd\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 28.304568386793772, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "magicdrive",
+      "method": "asymmetry",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive",
+      "returncode": 0,
+      "seconds": 1.711859941482544,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"magicdrive\", \"method\": \"asymmetry\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 1, \"max_uint8_delta\": 155, \"minimum_saved_view_pixel_std\": 28.119196099161748, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "magicdrive",
+      "method": "bait",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive",
+      "returncode": 0,
+      "seconds": 1.8317558765411377,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"magicdrive\", \"method\": \"bait\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 28.122341139505107, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "magicdrive",
+      "method": "pil",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/magicdrive",
+      "returncode": 0,
+      "seconds": 1.9913406372070312,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"magicdrive\", \"method\": \"pil\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 28.127740412952715, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "advdiff",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus",
+      "returncode": 0,
+      "seconds": 1.9700298309326172,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"panacea_plus\", \"method\": \"advdiff\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 31, \"minimum_saved_view_pixel_std\": 29.15491304653285, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"276\": 240}, \"guidance_evaluations\": 10, \"VAE_recompute_max_RGB_error\": 0.0}\n"
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "apgd",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus",
+      "returncode": 0,
+      "seconds": 1.8893377780914307,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"panacea_plus\", \"method\": \"apgd\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 29.33326754434361, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"276\": 240}}\n"
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "asymmetry",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus",
+      "returncode": 0,
+      "seconds": 1.957805871963501,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"panacea_plus\", \"method\": \"asymmetry\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 1, \"max_uint8_delta\": 139, \"minimum_saved_view_pixel_std\": 29.143982125864383, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "bait",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus",
+      "returncode": 0,
+      "seconds": 1.9503026008605957,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"panacea_plus\", \"method\": \"bait\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 29.167957034003287, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"276\": 240}}\n"
+    },
+    {
+      "generator": "panacea_plus",
+      "method": "pil",
+      "folder": "/srv/table2/outputs/table2_cross_generator_validation_20261101/panacea_plus",
+      "returncode": 0,
+      "seconds": 2.0060129165649414,
+      "output": "/srv/table2/envs/streampetr_torch111_cu113/lib/python3.9/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.\n  warnings.warn(\n{\"generator\": \"panacea_plus\", \"method\": \"pil\", \"status\": \"passed\", \"selected_frames\": 1, \"train_frames\": 283, \"test_frames\": 121, \"annotations_and_calibration_unchanged\": true, \"nonselected_paths_unchanged\": true, \"effective_model_optimizer_and_augmentation_unchanged\": true, \"changed_frames\": 1, \"changed_cameras\": 6, \"max_uint8_delta\": 8, \"minimum_saved_view_pixel_std\": 29.18111833433022, \"all_weights_finite\": true, \"optimizer_step_counts\": {\"275\": 240}}\n"
+    }
+  ]
+}
