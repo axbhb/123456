@@ -1,0 +1,1 @@
+{"version": {"cuda": 1103, "torch": "1.11.0+cu113", "python": "3.9.15"}, "env": {"TORCH_CUDA_ARCH_LIST": "7.0", "XFORMERS_BUILD_TYPE": "Release", "XFORMERS_ENABLE_DEBUG_ASSERTIONS": null, "NVCC_FLAGS": null, "XFORMERS_PACKAGE_FROM": null}}
