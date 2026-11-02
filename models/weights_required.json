@@ -85,6 +85,11 @@
     {
       "path": "table2_portable_20261101/resnet18-f37072fd.pth",
       "bytes": 46830571
+    },
+    {
+      "path": "table2_clean_generators_20261030/frozendrive_conditions/checkpoints/ks.pth",
+      "bytes": 57601367,
+      "purpose": "NKSR geometric condition reconstruction; required only when rebuilding omitted geometry caches"
     }
   ]
 }
